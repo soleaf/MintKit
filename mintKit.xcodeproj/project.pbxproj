@@ -224,6 +224,57 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
+		E686C54B17B0FAFE00CBA6C9 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				E686C53B17B0F42F00CBA6C9 /* GraphicsUtil.h */,
+				E686C53C17B0F42F00CBA6C9 /* GraphicsUtil.m */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		E686C54C17B0FB0B00CBA6C9 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E686C51317B0F3BF00CBA6C9 /* ObjectUtil.h */,
+				E686C51417B0F3BF00CBA6C9 /* ObjectUtil.m */,
+				E686C51B17B0F3D600CBA6C9 /* ArrayUtil.h */,
+				E686C51C17B0F3D600CBA6C9 /* ArrayUtil.m */,
+				E686C52317B0F3EE00CBA6C9 /* StringUtil.h */,
+				E686C52417B0F3EE00CBA6C9 /* StringUtil.m */,
+				E686C50B17B0F3A400CBA6C9 /* FormatUtil.h */,
+				E686C50C17B0F3A400CBA6C9 /* FormatUtil.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		E686C54D17B0FB1E00CBA6C9 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				E686C54317B0F43B00CBA6C9 /* FormValidation.h */,
+				E686C54417B0F43B00CBA6C9 /* FormValidation.m */,
+			);
+			name = Form;
+			sourceTree = "<group>";
+		};
+		E686C54E17B0FB4200CBA6C9 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				E686C4FB17B0F37100CBA6C9 /* TestKit.h */,
+				E686C4FC17B0F37100CBA6C9 /* TestKit.m */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		E686C54F17B0FB4900CBA6C9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E686C53317B0F42300CBA6C9 /* MapUtil.h */,
+				E686C53417B0F42300CBA6C9 /* MapUtil.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
 		E6C8C2D117B0C51900B76AEC = {
 			isa = PBXGroup;
 			children = (
@@ -258,22 +309,11 @@
 			children = (
 				E6C8C2E217B0C51900B76AEC /* mintKit.h */,
 				E6C8C2E417B0C51900B76AEC /* mintKit.m */,
-				E686C50B17B0F3A400CBA6C9 /* FormatUtil.h */,
-				E686C50C17B0F3A400CBA6C9 /* FormatUtil.m */,
-				E686C4FB17B0F37100CBA6C9 /* TestKit.h */,
-				E686C4FC17B0F37100CBA6C9 /* TestKit.m */,
-				E686C51317B0F3BF00CBA6C9 /* ObjectUtil.h */,
-				E686C51417B0F3BF00CBA6C9 /* ObjectUtil.m */,
-				E686C51B17B0F3D600CBA6C9 /* ArrayUtil.h */,
-				E686C51C17B0F3D600CBA6C9 /* ArrayUtil.m */,
-				E686C52317B0F3EE00CBA6C9 /* StringUtil.h */,
-				E686C52417B0F3EE00CBA6C9 /* StringUtil.m */,
-				E686C53317B0F42300CBA6C9 /* MapUtil.h */,
-				E686C53417B0F42300CBA6C9 /* MapUtil.m */,
-				E686C53B17B0F42F00CBA6C9 /* GraphicsUtil.h */,
-				E686C53C17B0F42F00CBA6C9 /* GraphicsUtil.m */,
-				E686C54317B0F43B00CBA6C9 /* FormValidation.h */,
-				E686C54417B0F43B00CBA6C9 /* FormValidation.m */,
+				E686C54E17B0FB4200CBA6C9 /* Test */,
+				E686C54C17B0FB0B00CBA6C9 /* Objects */,
+				E686C54F17B0FB4900CBA6C9 /* Map */,
+				E686C54B17B0FAFE00CBA6C9 /* Graphics */,
+				E686C54D17B0FB1E00CBA6C9 /* Form */,
 				E686C4E217B0EFB000CBA6C9 /* UI */,
 				E6C8C2E017B0C51900B76AEC /* Supporting Files */,
 			);
