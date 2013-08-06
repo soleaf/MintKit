@@ -1,5 +1,5 @@
 //
-//  ArrayUtil.h
+//  ArrayUtil.m
 //  travelogue
 //
 //  Created by flonelin on 13. 7. 12..
@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+/*
+    NSArray Utilities
+ 
+ */
+
 @interface ArrayUtil : NSObject
 
-+ (NSMutableArray *) makeTwoInOneRowArray:(NSArray *)array;
+// Make array with two object per row.
++ (NSMutableArray *) ArrayWithTwoPerRow:(NSArray *)array;
 
 @end

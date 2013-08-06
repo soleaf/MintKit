@@ -1,52 +1,57 @@
 //
 //  TestKit.h
-//  travelogue
+//  mintKit
 //
-//  Created by flonelin on 13. 8. 1..
-//  Copyright (c) 2013년 soleaf. All rights reserved.
+//  Created by soleaf on 13. 8. 1..
+//  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
-
-// 설 명 : UnitTest & Debug를 편하게 하기 위해
-// 주 의 : <# 주의사항설명 #>
-// 사 용 : 여저기 저기 엉청 많이
 
 #import <UIKit/UIKit.h>
 
+/*
+    TestKit is help loging and debuging your application.
+    Debuging log should separated by unrecognized 'nslog'. In this case, Use 'debug:' method.
+    In Object Oriend Programing, Some methods that checking implement method could be used.
+*/
+
+// This factor on methods be used '__func__' or 'MINTKIT_DEBUG_METHOD'
+// ex) [TestKit methodNoUse:__func__]; or [TestKit methodNoUse:MINTKIT_DEBUG_METHOD]; 
+#define MINTKIT_DEBUG_METHOD __func__
+#define MINTKIT_DEBUG_METHOD_TYPE const char[60]
 
 @interface TestKit : NSObject
 
 
 /*
- * 일반 디버깅
+ * Normal Debugging
  *
  */
 
+// Print text
 + (void) debug:(NSString*) text;
+
+// Print Object with key
 + (void) debugKey:(NSString*)key andVal:(NSObject*) value;
-+ (void) checkIsUsedMethod: (const char[60]) methodName;
 
-
-/*
- * 부가기능: 추후 분리고려
- *
- */
-
-+ (void) alert:(NSString*)text;
+// Check method is used.
++ (void) debugCheckIsUsedMethod: (MINTKIT_DEBUG_METHOD_TYPE) methodName;
 
 
 
 /*
- * 메서드 경고, 및 알림
+ * OOP Class or method warnings
  *
  */
 
-// SubClass에서 메서드를 구현하지 않음을 경고
-+ (void) NotImplMthod: (const char[60]) methodName;
-// SubClass에서 메서드를 구현하지 않음을 알림
-+ (void) NotImplMthodNoti: (const char[60]) methodName;
-// Deprecated 알림
-+ (void) isDeprecated: (const char[60]) methodName moveTo:(NSString*) newMethodName;
-// 사용않함 알림
-+ (void) DontUse: (const char[60]) methodName;
+// A required method is not implemented by supperclass or subclass. Stop app.
++ (void) notImplRequiredMthod: (MINTKIT_DEBUG_METHOD_TYPE) methodName;
 
+// A optional method is not implemented by supperclass or subclass. Just warning.
++ (void) notImplOptionalMthod: (MINTKIT_DEBUG_METHOD_TYPE) methodName;
+
+// Called method is deprecated. Just warning.
++ (void) methodisDeprecated: (MINTKIT_DEBUG_METHOD_TYPE) methodName moveTo:(NSString*) newMethodName;
+
+// No use this method
++ (void) methodNoUse: (MINTKIT_DEBUG_METHOD_TYPE) methodName;
 @end

@@ -11,20 +11,12 @@
 @implementation StringUtil
 
 
-+ (NSString *) stringByStrippingHTML:(NSString*)s {
-    NSRange r;
-    while ((r = [s rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
-        s = [s stringByReplacingCharactersInRange:r withString:@""];
-    return s;
-}
-
-+ (void) setTextFieldWithNotNilandSpace:(NSString *) str andTextField:(UITextField *)textField
++ (NSString *) stringByStrippingHTML:(NSString*) htmlString
 {
-    if (nil != str && [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length > 0 ){
-        
-        textField.text = str;
-        
-    }
+    NSRange range;
+    while ((range = [htmlString rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
+        htmlString = [htmlString stringByReplacingCharactersInRange:range withString:@""];
+    return htmlString;
 }
 
 // Trim

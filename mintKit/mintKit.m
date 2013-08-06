@@ -16,4 +16,9 @@
     NSLog(@"SUCCESS MINTKIT INSTALLATION");
 }
 
++ (void)version
+{
+    // TODO: return version code.
+}
+
 @end

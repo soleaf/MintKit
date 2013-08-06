@@ -1,5 +1,5 @@
 //
-//  ArrayUtil.m
+//  ArrayUtil.h
 //  travelogue
 //
 //  Created by flonelin on 13. 7. 12..
@@ -10,8 +10,8 @@
 
 @implementation ArrayUtil
 
-// 한줄에 두개씩 아이템을 넣은 배열 만들기
-+ (NSMutableArray *) makeTwoInOneRowArray:(NSArray *)array
+
++ (NSMutableArray *) ArrayWithTwoPerRow:(NSArray *)array
 {
     NSMutableArray *mergedArray = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < array.count; i+=2) {

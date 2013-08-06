@@ -1,9 +1,9 @@
 //
 //  TestKit.m
-//  travelogue
+//  mintKit
 //
-//  Created by flonelin on 13. 8. 1..
-//  Copyright (c) 2013년 soleaf. All rights reserved.
+//  Created by soleaf on 13. 8. 1..
+//  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 
 #import "TestKit.h"
@@ -14,7 +14,7 @@
 
 
 /*
- * 일반 디버깅
+ * Normal Debugging
  *
  */
 
@@ -23,63 +23,44 @@
     NSLog(@"%@ [DEBUG] %@", TestKitConsoleName, text);
 }
 
-+ (void) debugKey:(NSString*)key andVal:(NSObject*) value;
++ (void) debugKey:(NSString*)key andVal:(NSObject*) value
 {
     NSLog(@"%@ [DEBUG] %@ : %@", TestKitConsoleName, key, value);
 }
 
-+(void)checkIsUsedMethod:(const char [60])methodName
++ (void) debugCheckIsUsedMethod: (MINTKIT_DEBUG_METHOD_TYPE) methodName;
 {
-    NSLog(@"%@ [DEBUG] 메서드 사용어부 확인됨: \n%s", TestKitConsoleName, methodName);
-}
-
-
-/*
- * 부가기능: 추후 분리고려
- *
- */
-
-+ (void) alert:(NSString*)text;
-{
-    UIAlertView *alert = [[UIAlertView alloc]init];
-    alert.message = text;
-    [alert addButtonWithTitle:@"확인"];
-    [alert show];
-    
-    [TestKit isDeprecated:__func__ moveTo:@"UIViewController.alertView:"];
+    NSLog(@"%@ [DEBUG] A used method detected > %s", TestKitConsoleName, methodName);
 }
 
 
 
 /*
- * 메서드 경고, 및 알림
+ * OOP Class or method warnings
  *
  */
 
-// methodName들은 __func__로 값을 넘기면 자동으로 됨
-// 예: [TestKit DontUse:__func__];
-
-+ (void) NotImplMthod: (const char[60]) methodName
++ (void) notImplRequiredMthod: (MINTKIT_DEBUG_METHOD_TYPE) methodName
 {
-    NSLog(@"%@ [!]호출한 메서드(%s)는 부모 혹은 자식에서 구현되지 않았습니다.", TestKitConsoleName, methodName);
-    NSAssert(NO, @"------ TEST KIT-------");
+    NSLog(@"%@ [ ✕ REQURED METHOD] '%s' is not implemented. ", TestKitConsoleName, methodName);
+    NSAssert(NO, @"Please Implement above method.");
 
 }
 
-+ (void) NotImplMthodNoti: (const char[60]) methodName
++ (void) notImplOptionalMthod: (MINTKIT_DEBUG_METHOD_TYPE) methodName
 {
-    NSLog(@"%@ [!]호출한 메서드(%s)는 부모 혹은 자식에서 구현되지 않았습니다. 하지만 문제는 없습니다.", TestKitConsoleName, methodName);
+    NSLog(@"%@ [ ✓ OPTIONAL METHOD] '%s' is not Implemented. But that's ok.", TestKitConsoleName, methodName);
 }
 
-+ (void) isDeprecated: (const char[60]) methodName moveTo:(NSString*) newMethodName;
++ (void) methodisDeprecated: (MINTKIT_DEBUG_METHOD_TYPE) methodName moveTo:(NSString*) newMethodName;
 {
-    NSLog(@"%@ [!] 호출하는 메서드(%s)는 Deprecated되었습니다. 다음 메서드(%@)를 사용해야합니다.", TestKitConsoleName, methodName, newMethodName);
+    NSLog(@"%@ [ ✓ DEPRECATED] '%s' is Deprecated. Please use '%@'.", TestKitConsoleName, methodName, newMethodName);
 }
 
-+ (void) DontUse: (const char[60]) methodName;
++ (void) methodNoUse: (MINTKIT_DEBUG_METHOD_TYPE) methodName
 {
-    NSLog(@"%@ [!] 호출하는 메서드(%s)는 사용이 중단되었습니다.", TestKitConsoleName, methodName);
-    NSAssert(NO, @"------ TEST KIT-------");
+    NSLog(@"%@ [ ✕ NO USE] No use '%s'", TestKitConsoleName, methodName);
+    NSAssert(NO, @"Please Do not use above method.");
 }
 
 

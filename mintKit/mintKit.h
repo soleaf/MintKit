@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+/*
+    MINTCODE.ORG
+    htt://www.mintcode.org
+ 
+    MintKit assist developing iOS App.
+*/
+
 @interface mintKit : NSObject
 
 + (void) hello;
