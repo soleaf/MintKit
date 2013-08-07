@@ -10,17 +10,20 @@
 #import <QuartzCore/QuartzCore.h>
 
 /*
- 
+    Graphic Utilites.
  */
 
 @interface GraphicsUtil : NSObject
 
-
+// Resize Image to newSize If image size is saller than minSize
 + (UIImage*)minimizeWithImage:(UIImage*)image scaledToSize:(CGSize)newSize mindetectingSize: (CGSize)minSize;
 
-+ (UIImage*)minimizeWithImage:(UIImage*)image mindetectingWith: (float)minWith;
+// Resize Image to minWith If image size is saller than minSize
++ (UIImage*)minimizeWithImage:(UIImage*)image minWithHeight: (float)min;
 
-+ (UIImage*)sacleWithImage:(UIImage*)image scaledToSize:(CGSize)newSize;
+// Rsize Image to newSize
++ (UIImage*)resizeWithImage:(UIImage*)image toSize:(CGSize)newSize;
 
+// Make UIView animation like dock bounce.
 + (CAKeyframeAnimation*)dockBounceAnimationWithViewHeight:(CGFloat)viewHeight;
 @end

@@ -9,39 +9,35 @@
 
 @implementation GraphicsUtil
 
-
-// 이미지 사이즈 줄이기: 최소 사이즈 이상 되는 것만 잘라줌
 + (UIImage*)minimizeWithImage:(UIImage*)image scaledToSize:(CGSize)newSize mindetectingSize: (CGSize)minSize
 {
     if (image.size.height >= minSize.height && image.size.width >= minSize.width)
-        return [self sacleWithImage:image scaledToSize:newSize];
+        return [self resizeWithImage:image toSize:newSize];
     else
         return image;
 }
 
-+ (UIImage*)minimizeWithImage:(UIImage*)image mindetectingWith: (float)minWidhHeight
++ (UIImage*)minimizeWithImage:(UIImage*)image minWithHeight: (float)min
 {
-    if (image.size.width > minWidhHeight){ // 가로가 크면, 가로를최소에 고정, 세로를 맞춤
-        float sizeHeight = image.size.height * minWidhHeight / image.size.width;
-        CGSize newSize = CGSizeMake(minWidhHeight, sizeHeight);
-        NSLog(@"newSize - W : %f, %f",newSize.width, newSize.height);
+    if (image.size.width > min){ // 가로가 크면, 가로를최소에 고정, 세로를 맞춤
+        float sizeHeight = image.size.height * min / image.size.width;
+        CGSize newSize = CGSizeMake(min, sizeHeight);
         
-        image = [self sacleWithImage:image scaledToSize:newSize];
+        image = [self resizeWithImage:image toSize:newSize];
     }
     
-    if (image.size.height > minWidhHeight){
-        float sizeWidth = image.size.width * minWidhHeight / image.size.height;
-        CGSize newSize = CGSizeMake(sizeWidth, minWidhHeight);
-        NSLog(@"newSize - H : %f, %f",newSize.width, newSize.height);
+    if (image.size.height > min){
+        float sizeWidth = image.size.width * min / image.size.height;
+        CGSize newSize = CGSizeMake(sizeWidth, min);
         
-        return [self sacleWithImage:image scaledToSize:newSize];
+        return [self resizeWithImage:image toSize:newSize];
     }
     
     return image;
 }
 
-// 이미지 사이즈 줄이기
-+ (UIImage*)sacleWithImage:(UIImage*)image scaledToSize:(CGSize)newSize {
++ (UIImage*)resizeWithImage:(UIImage*)image toSize:(CGSize)newSize
+{
     
     UIGraphicsBeginImageContext( newSize );
     [image drawInRect:CGRectMake(0,0,newSize.width+1,newSize.height+1)];
@@ -51,7 +47,7 @@
     return newImage;
 }
 
-// 바운싱 애니메이션
+
 + (CAKeyframeAnimation*)dockBounceAnimationWithViewHeight:(CGFloat)viewHeight
 {
     NSUInteger const kNumFactors    = 24;
@@ -74,7 +70,7 @@
     animation.duration              = kNumFactors * 1.0f/kFactorsPerSec;
     animation.fillMode              = kCAFillModeForwards;
     animation.values                = transforms;
-    animation.removedOnCompletion   = YES; // final stage is equal to starting stage
+    animation.removedOnCompletion   = YES;
     animation.autoreverses          = NO;
     
     return animation;

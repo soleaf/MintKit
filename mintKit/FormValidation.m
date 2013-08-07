@@ -1,15 +1,14 @@
 //
 //  FormValidation.m
-//  travelogue
+//  mintKit
 //
-//  Created by ilho Ahn on 13. 2. 6..
-//  Copyright (c) 2013년 soleaf. All rights reserved.
+//  Created by soleaf on 13. 2. 6..
+//  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 
 #import "FormValidation.h"
 
 @implementation FormValidation
-
 
 +(BOOL) email:(NSString *)checkString
 {

@@ -248,13 +248,13 @@
 			name = Objects;
 			sourceTree = "<group>";
 		};
-		E686C54D17B0FB1E00CBA6C9 /* Form */ = {
+		E686C54D17B0FB1E00CBA6C9 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
 				E686C54317B0F43B00CBA6C9 /* FormValidation.h */,
 				E686C54417B0F43B00CBA6C9 /* FormValidation.m */,
 			);
-			name = Form;
+			name = Validation;
 			sourceTree = "<group>";
 		};
 		E686C54E17B0FB4200CBA6C9 /* Test */ = {
@@ -313,7 +313,7 @@
 				E686C54C17B0FB0B00CBA6C9 /* Objects */,
 				E686C54F17B0FB4900CBA6C9 /* Map */,
 				E686C54B17B0FAFE00CBA6C9 /* Graphics */,
-				E686C54D17B0FB1E00CBA6C9 /* Form */,
+				E686C54D17B0FB1E00CBA6C9 /* Validation */,
 				E686C4E217B0EFB000CBA6C9 /* UI */,
 				E6C8C2E017B0C51900B76AEC /* Supporting Files */,
 			);
