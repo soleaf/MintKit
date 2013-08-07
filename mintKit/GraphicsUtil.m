@@ -1,11 +1,10 @@
 //
-//  GraphicsUtil.m
-//  travelogue
+//  GraphicsUtil.ㅡ
+//  mintKit
 //
-//  Created by ilho Ahn on 1/11/13.
-//  Copyright (c) 2013 soleaf. All rights reserved.
+//  Created by soleaf on 13. 1. 11..
+//  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
-
 #import "GraphicsUtil.h"
 
 @implementation GraphicsUtil

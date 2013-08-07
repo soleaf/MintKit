@@ -1,16 +1,15 @@
 //
-//  MapUtil.m
-//  travelogue
+//  MapUtil.h
+//  mintKit
 //
-//  Created by ilho Ahn on 13. 2. 13..
-//  Copyright (c) 2013년 soleaf. All rights reserved.
+//  Created by soleaf on 13. 2. 13..
+//  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 
 #import "MapUtil.h"
 
 @implementation MapUtil
 
-#pragma mark - GPS값으로 주소를 얻어온다.
 + (NSString *)getAddressFromCoordinate:(CLLocationCoordinate2D)location
 {
     NSString *urlString = [NSString stringWithFormat:@"http://maps.google.com/maps/api/geocode/json?latlng=%f,%f&language=ko&sensor=false", location.latitude, location.longitude];
@@ -39,8 +38,6 @@
 	return nil;
 }
 
-
-#pragma mark - 장소명으로 좌표가져오기
 + (NSDictionary *)getCoordinateFromAddress:(NSString*)address
 {
     NSString *urlString = [NSString stringWithFormat:@"http://maps.googleapis.com/maps/api/geocode/json?address=%@&sensor=false", address];

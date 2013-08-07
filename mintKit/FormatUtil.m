@@ -1,9 +1,9 @@
 //
 //  FormatUtil.m
-//  travelogue
+//  mintKit
 //
-//  Created by flonelin on 13. 7. 18..
-//  Copyright (c) 2013년 soleaf. All rights reserved.
+//  Created by soleaf on 13. 7. 18..
+//  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 
 #import "FormatUtil.h"
@@ -16,7 +16,7 @@
 {
     NSString *rvalue = value == nil ? @"" : [[StringUtil trimed:value] stringByReplacingOccurrencesOfString:@"-" withString:@""];
     
-    // 9자
+    // Length 9
     // 00-000-0000
     if(rvalue.length == 9) {
         return [NSString stringWithFormat:@"%@-%@-%@",
@@ -25,7 +25,7 @@
                                             [rvalue substringWithRange:NSMakeRange(5, 4)]
                 ];
     }
-    // 8자
+    // Length 8
     // 0000-0000
     else if(rvalue.length == 8) {
         
@@ -35,10 +35,10 @@
                 ];
         
     }
-    // 10자
+    // Length 10
     else if(rvalue.length == 10) {
         
-        // 02로 시작시
+        // Start by '02'
         // 02-0000-0000
         if ([@"02" isEqualToString:[rvalue substringWithRange:NSMakeRange(0, 2)]])
             return [NSString stringWithFormat:@"%@-%@-%@",
@@ -46,7 +46,7 @@
                     [rvalue substringWithRange:NSMakeRange(2, 4)],
                     [rvalue substringWithRange:NSMakeRange(6, 4)]
                     ];
-        // 나머지 000-000-0000
+        // else 000-000-0000
         else
             return [NSString stringWithFormat:@"%@-%@-%@",
                     [rvalue substringWithRange:NSMakeRange(0, 3)],
@@ -54,7 +54,7 @@
                     [rvalue substringWithRange:NSMakeRange(6, 4)]
                     ];
     }
-    // 11글자
+    // Length 11
     // 000-0000-0000
     else if(rvalue.length == 11) {
         
@@ -70,12 +70,6 @@
 }
 
 
-/**
- Description: 주소 문자열로부터 limit까지 space로 구분된 주소를 묶어서 반환
-                예) 서울시 관악구 봉천동 limit2 -> 서울시 관악구
- Factors    : <# 인자 #>
- Return     : <# 반환 #>
- **/
 + (NSString *)cutAddress:(NSString *)addressStr limit:(NSInteger)limit
 {
     NSArray *locationArray = [addressStr componentsSeparatedByString: @" "];
