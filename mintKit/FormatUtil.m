@@ -31,7 +31,7 @@
         
         return [NSString stringWithFormat:@"%@-%@",
                 [rvalue substringWithRange:NSMakeRange(0, 4)],
-                [rvalue substringWithRange:NSMakeRange(3, 4)]
+                [rvalue substringWithRange:NSMakeRange(4, 4)]
                 ];
         
     }
