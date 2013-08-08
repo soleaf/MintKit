@@ -8,8 +8,8 @@
 
 #import "mintKit.h"
 
-#define MINTKIT_VERSION            "0.0.1";
-#define MINTKIT_VERSION_DATE       "2013.08.08";
+#define MINTKIT_VERSION            @"0.0.1"
+#define MINTKIT_VERSION_DATE       @"2013.08.08"
 
 @implementation mintKit
 

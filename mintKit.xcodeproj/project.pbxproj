@@ -106,6 +106,18 @@
 		E6C8C30F17B0C64500B76AEC /* Library_Device.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8C30E17B0C64500B76AEC /* Library_Device.m */; };
 		E6C8C31517B0C65900B76AEC /* mintKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C8C2E217B0C51900B76AEC /* mintKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6C8C31617B0C65D00B76AEC /* mintKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8C2E417B0C51900B76AEC /* mintKit.m */; };
+		F7988B7E17B3E683000F63FB /* DateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B7C17B3E683000F63FB /* DateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7988B7F17B3E683000F63FB /* DateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B7C17B3E683000F63FB /* DateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7988B8017B3E683000F63FB /* DateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B7C17B3E683000F63FB /* DateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7988B8117B3E683000F63FB /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B7D17B3E683000F63FB /* DateUtil.m */; };
+		F7988B8217B3E683000F63FB /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B7D17B3E683000F63FB /* DateUtil.m */; };
+		F7988B8317B3E683000F63FB /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B7D17B3E683000F63FB /* DateUtil.m */; };
+		F7988B8617B3E91D000F63FB /* TimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* TimeSet.h */; };
+		F7988B8717B3E91D000F63FB /* TimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* TimeSet.h */; };
+		F7988B8817B3E91D000F63FB /* TimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* TimeSet.h */; };
+		F7988B8917B3E91D000F63FB /* TimeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B8517B3E91D000F63FB /* TimeSet.m */; };
+		F7988B8A17B3E91D000F63FB /* TimeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B8517B3E91D000F63FB /* TimeSet.m */; };
+		F7988B8B17B3E91D000F63FB /* TimeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B8517B3E91D000F63FB /* TimeSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -171,7 +183,7 @@
 		E6C8C2E117B0C51900B76AEC /* mintKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mintKit-Prefix.pch"; sourceTree = "<group>"; };
 		E6C8C2E217B0C51900B76AEC /* mintKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mintKit.h; sourceTree = "<group>"; };
 		E6C8C2E417B0C51900B76AEC /* mintKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mintKit.m; sourceTree = "<group>"; };
-		E6C8C2F217B0C57100B76AEC /* libLibrary-Simulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libLibrary-Simulator.a"; path = "libmintKit-Simulator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C8C2F217B0C57100B76AEC /* libmintKit-Simulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmintKit-Simulator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C8C2F617B0C57100B76AEC /* Library-Simulator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Library-Simulator-Prefix.pch"; sourceTree = "<group>"; };
 		E6C8C2F717B0C57100B76AEC /* Library_Simulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Library_Simulator.h; sourceTree = "<group>"; };
 		E6C8C2F917B0C57100B76AEC /* Library_Simulator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Library_Simulator.m; sourceTree = "<group>"; };
@@ -179,6 +191,10 @@
 		E6C8C30B17B0C64500B76AEC /* Library-Device-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Library-Device-Prefix.pch"; sourceTree = "<group>"; };
 		E6C8C30C17B0C64500B76AEC /* Library_Device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Library_Device.h; sourceTree = "<group>"; };
 		E6C8C30E17B0C64500B76AEC /* Library_Device.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Library_Device.m; sourceTree = "<group>"; };
+		F7988B7C17B3E683000F63FB /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
+		F7988B7D17B3E683000F63FB /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
+		F7988B8417B3E91D000F63FB /* TimeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSet.h; sourceTree = "<group>"; };
+		F7988B8517B3E91D000F63FB /* TimeSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +260,10 @@
 				E686C52417B0F3EE00CBA6C9 /* StringUtil.m */,
 				E686C50B17B0F3A400CBA6C9 /* FormatUtil.h */,
 				E686C50C17B0F3A400CBA6C9 /* FormatUtil.m */,
+				F7988B7C17B3E683000F63FB /* DateUtil.h */,
+				F7988B7D17B3E683000F63FB /* DateUtil.m */,
+				F7988B8417B3E91D000F63FB /* TimeSet.h */,
+				F7988B8517B3E91D000F63FB /* TimeSet.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -290,7 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				E6C8C2DA17B0C51900B76AEC /* libmintKit.a */,
-				E6C8C2F217B0C57100B76AEC /* libLibrary-Simulator.a */,
+				E6C8C2F217B0C57100B76AEC /* libmintKit-Simulator.a */,
 				E6C8C30717B0C64500B76AEC /* libmintKit-Device.a */,
 			);
 			name = Products;
@@ -384,6 +404,8 @@
 				E686C53617B0F42300CBA6C9 /* MapUtil.h in Headers */,
 				E686C53E17B0F42F00CBA6C9 /* GraphicsUtil.h in Headers */,
 				E686C54617B0F43B00CBA6C9 /* FormValidation.h in Headers */,
+				F7988B7F17B3E683000F63FB /* DateUtil.h in Headers */,
+				F7988B8717B3E91D000F63FB /* TimeSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +426,8 @@
 				E686C53717B0F42300CBA6C9 /* MapUtil.h in Headers */,
 				E686C53F17B0F42F00CBA6C9 /* GraphicsUtil.h in Headers */,
 				E686C54717B0F43B00CBA6C9 /* FormValidation.h in Headers */,
+				F7988B8017B3E683000F63FB /* DateUtil.h in Headers */,
+				F7988B8817B3E91D000F63FB /* TimeSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +447,8 @@
 				E686C53517B0F42300CBA6C9 /* MapUtil.h in Headers */,
 				E686C53D17B0F42F00CBA6C9 /* GraphicsUtil.h in Headers */,
 				E686C54517B0F43B00CBA6C9 /* FormValidation.h in Headers */,
+				F7988B7E17B3E683000F63FB /* DateUtil.h in Headers */,
+				F7988B8617B3E91D000F63FB /* TimeSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +488,7 @@
 			);
 			name = "mintKit-Simulator";
 			productName = "Library-Simulator";
-			productReference = E6C8C2F217B0C57100B76AEC /* libLibrary-Simulator.a */;
+			productReference = E6C8C2F217B0C57100B76AEC /* libmintKit-Simulator.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E6C8C30617B0C64500B76AEC /* mintKit-Device */ = {
@@ -546,6 +572,8 @@
 				E686C53817B0F42300CBA6C9 /* MapUtil.m in Sources */,
 				E686C54017B0F42F00CBA6C9 /* GraphicsUtil.m in Sources */,
 				E686C54817B0F43B00CBA6C9 /* FormValidation.m in Sources */,
+				F7988B8117B3E683000F63FB /* DateUtil.m in Sources */,
+				F7988B8917B3E91D000F63FB /* TimeSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +595,8 @@
 				E686C53917B0F42300CBA6C9 /* MapUtil.m in Sources */,
 				E686C54117B0F42F00CBA6C9 /* GraphicsUtil.m in Sources */,
 				E686C54917B0F43B00CBA6C9 /* FormValidation.m in Sources */,
+				F7988B8217B3E683000F63FB /* DateUtil.m in Sources */,
+				F7988B8A17B3E91D000F63FB /* TimeSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +618,8 @@
 				E686C53A17B0F42300CBA6C9 /* MapUtil.m in Sources */,
 				E686C54217B0F42F00CBA6C9 /* GraphicsUtil.m in Sources */,
 				E686C54A17B0F43B00CBA6C9 /* FormValidation.m in Sources */,
+				F7988B8317B3E683000F63FB /* DateUtil.m in Sources */,
+				F7988B8B17B3E91D000F63FB /* TimeSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
