@@ -1,9 +1,9 @@
 //
 //  UIVIewControllerUtil.m
-//  travelogue
+//  mintKit
 //
 //  Created by soleaf on 13. 8. 1..
-//  Copyright (c) 2013년 soleaf. All rights reserved.
+//  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 
 #import "UIVIewControllerUtil.h"
@@ -58,7 +58,7 @@ static char UIButtonBlockKey;
 {
     UIAlertView *alert = [[UIAlertView alloc]init];
     alert.message = text;
-    [alert addButtonWithTitle:@"확인"];
+    [alert addButtonWithTitle:@"OK"];
     [alert show];
 
 }
@@ -91,7 +91,6 @@ static char UIButtonBlockKey;
     [button setTitleEdgeInsets:UIEdgeInsetsMake(0.0, 11.0, 0.0, 0.0)];
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithCustomView:button];
-    //[btnDone setTarget:self];
     
     view.navigationItem.leftBarButtonItem = backButton;
 }

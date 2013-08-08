@@ -1,9 +1,9 @@
 //
 //  UIRobot.m
-//  travelogue
+//  mintKit
 //
-//  Created by flonelin on 13. 7. 26..
-//  Copyright (c) 2013년 soleaf. All rights reserved.
+//  Created by soleaf on 13. 7. 26..
+//  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 
 #import "UIRobot.h"

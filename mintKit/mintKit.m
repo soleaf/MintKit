@@ -8,6 +8,9 @@
 
 #import "mintKit.h"
 
+#define MINTKIT_VERSION            "0.0.1";
+#define MINTKIT_VERSION_DATE       "2013.08.08";
+
 @implementation mintKit
 
 + (void) hello
@@ -18,7 +21,7 @@
 
 + (void)version
 {
-    // TODO: return version code.
+    NSLog(@"MINTKIT_VERSION  %@(%@)",MINTKIT_VERSION, MINTKIT_VERSION_DATE);
 }
 
 @end

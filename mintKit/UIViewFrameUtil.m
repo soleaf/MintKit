@@ -1,10 +1,11 @@
 //
 //  UIViewFrameUtil.m
-//  travelogue
+//  mintKit
 //
-//  Created by flonelin on 13. 7. 18..
-//  Copyright (c) 2013년 soleaf. All rights reserved.
+//  Created by soleaf on 13. 7. 18..
+//  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
+
 
 #import "UIViewFrameUtil.h"
 
@@ -72,5 +73,22 @@
     frame.size.height += height;
     view.frame = frame;
 }
+
++ (void)frame:(UIView *)view moreW:(float)width
+{
+    CGRect frame = view.frame;
+    frame.size.width += width;
+    view.frame = frame;
+}
+
++ (void)frame:(UIView *)view moreW:(float)width andMoreH:(float)height
+{
+    CGRect frame = view.frame;
+    frame.size.width += width;
+    frame.size.width += height;
+    view.frame = frame;
+}
+
+
 
 @end
