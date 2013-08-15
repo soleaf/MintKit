@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TimeSet.h"
+#import "DateTimeSet.h"
 
 /*
  
@@ -24,8 +24,14 @@
 // NSDate -> NSDictionary
 + (NSDictionary *) NSDateToDateDic:(NSDate*) date;
 
+// NSDate -> DateTimeSet
++ (DateTimeSet *)  NSDateToDateTimeSet:(NSDate*) date;
+
 // Get now date with NSdictionary
 + (NSDictionary *) getNowDate;
+
+// Get now date with DateTimeSet
++ (DateTimeSet *)  getNowDateTimeSet;
 
 // Get next +/- offset date with NSDictionary
 // ex) Getting tomorrow -> getNextDate: +1 ....
@@ -41,7 +47,15 @@
                                    andMonth:(NSInteger) theMonth
                                      andDay:(NSInteger) theDay;
 
-// NSInterval -> TimeSet(properties: interval, hours, minutes, seconds)
-+ (TimeSet *) NSIntervalToTimeSet: (NSTimeInterval) interval;
+
+// get next +/- offset date with DateTimeSet
+// ex) Getting tomorrow -> getNextDate: +1 ....
++ (DateTimeSet *) getNextDateSetFromOffset:(NSInteger) offset
+                                    AndYear:(NSInteger) theYear
+                                   andMonth:(NSInteger) theMonth
+                                     andDay:(NSInteger) theDay;
+
+// NSInterval -> DateTimeSet(properties: interval, hours, minutes, seconds)
++ (DateTimeSet *) NSIntervalToTimeSet: (NSTimeInterval) interval;
 
 @end

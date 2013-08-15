@@ -6,9 +6,10 @@
 //  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 
-#import "TimeSet.h"
+#import "DateTimeSet.h"
 
-@implementation TimeSet
+@implementation DateTimeSet
 @synthesize interval,hours,minutes,seconds;
+@synthesize year, month, day;
 
 @end

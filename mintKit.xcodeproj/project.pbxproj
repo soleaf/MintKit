@@ -112,12 +112,12 @@
 		F7988B8117B3E683000F63FB /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B7D17B3E683000F63FB /* DateUtil.m */; };
 		F7988B8217B3E683000F63FB /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B7D17B3E683000F63FB /* DateUtil.m */; };
 		F7988B8317B3E683000F63FB /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B7D17B3E683000F63FB /* DateUtil.m */; };
-		F7988B8617B3E91D000F63FB /* TimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* TimeSet.h */; };
-		F7988B8717B3E91D000F63FB /* TimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* TimeSet.h */; };
-		F7988B8817B3E91D000F63FB /* TimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* TimeSet.h */; };
-		F7988B8917B3E91D000F63FB /* TimeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B8517B3E91D000F63FB /* TimeSet.m */; };
-		F7988B8A17B3E91D000F63FB /* TimeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B8517B3E91D000F63FB /* TimeSet.m */; };
-		F7988B8B17B3E91D000F63FB /* TimeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B8517B3E91D000F63FB /* TimeSet.m */; };
+		F7988B8617B3E91D000F63FB /* DateTimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* DateTimeSet.h */; };
+		F7988B8717B3E91D000F63FB /* DateTimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* DateTimeSet.h */; };
+		F7988B8817B3E91D000F63FB /* DateTimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* DateTimeSet.h */; };
+		F7988B8917B3E91D000F63FB /* DateTimeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B8517B3E91D000F63FB /* DateTimeSet.m */; };
+		F7988B8A17B3E91D000F63FB /* DateTimeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B8517B3E91D000F63FB /* DateTimeSet.m */; };
+		F7988B8B17B3E91D000F63FB /* DateTimeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B8517B3E91D000F63FB /* DateTimeSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -193,8 +193,8 @@
 		E6C8C30E17B0C64500B76AEC /* Library_Device.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Library_Device.m; sourceTree = "<group>"; };
 		F7988B7C17B3E683000F63FB /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
 		F7988B7D17B3E683000F63FB /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
-		F7988B8417B3E91D000F63FB /* TimeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSet.h; sourceTree = "<group>"; };
-		F7988B8517B3E91D000F63FB /* TimeSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeSet.m; sourceTree = "<group>"; };
+		F7988B8417B3E91D000F63FB /* DateTimeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeSet.h; sourceTree = "<group>"; };
+		F7988B8517B3E91D000F63FB /* DateTimeSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,8 +262,8 @@
 				E686C50C17B0F3A400CBA6C9 /* FormatUtil.m */,
 				F7988B7C17B3E683000F63FB /* DateUtil.h */,
 				F7988B7D17B3E683000F63FB /* DateUtil.m */,
-				F7988B8417B3E91D000F63FB /* TimeSet.h */,
-				F7988B8517B3E91D000F63FB /* TimeSet.m */,
+				F7988B8417B3E91D000F63FB /* DateTimeSet.h */,
+				F7988B8517B3E91D000F63FB /* DateTimeSet.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -405,7 +405,7 @@
 				E686C53E17B0F42F00CBA6C9 /* GraphicsUtil.h in Headers */,
 				E686C54617B0F43B00CBA6C9 /* FormValidation.h in Headers */,
 				F7988B7F17B3E683000F63FB /* DateUtil.h in Headers */,
-				F7988B8717B3E91D000F63FB /* TimeSet.h in Headers */,
+				F7988B8717B3E91D000F63FB /* DateTimeSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +427,7 @@
 				E686C53F17B0F42F00CBA6C9 /* GraphicsUtil.h in Headers */,
 				E686C54717B0F43B00CBA6C9 /* FormValidation.h in Headers */,
 				F7988B8017B3E683000F63FB /* DateUtil.h in Headers */,
-				F7988B8817B3E91D000F63FB /* TimeSet.h in Headers */,
+				F7988B8817B3E91D000F63FB /* DateTimeSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +448,7 @@
 				E686C53D17B0F42F00CBA6C9 /* GraphicsUtil.h in Headers */,
 				E686C54517B0F43B00CBA6C9 /* FormValidation.h in Headers */,
 				F7988B7E17B3E683000F63FB /* DateUtil.h in Headers */,
-				F7988B8617B3E91D000F63FB /* TimeSet.h in Headers */,
+				F7988B8617B3E91D000F63FB /* DateTimeSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,7 +573,7 @@
 				E686C54017B0F42F00CBA6C9 /* GraphicsUtil.m in Sources */,
 				E686C54817B0F43B00CBA6C9 /* FormValidation.m in Sources */,
 				F7988B8117B3E683000F63FB /* DateUtil.m in Sources */,
-				F7988B8917B3E91D000F63FB /* TimeSet.m in Sources */,
+				F7988B8917B3E91D000F63FB /* DateTimeSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,7 +596,7 @@
 				E686C54117B0F42F00CBA6C9 /* GraphicsUtil.m in Sources */,
 				E686C54917B0F43B00CBA6C9 /* FormValidation.m in Sources */,
 				F7988B8217B3E683000F63FB /* DateUtil.m in Sources */,
-				F7988B8A17B3E91D000F63FB /* TimeSet.m in Sources */,
+				F7988B8A17B3E91D000F63FB /* DateTimeSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,7 +619,7 @@
 				E686C54217B0F42F00CBA6C9 /* GraphicsUtil.m in Sources */,
 				E686C54A17B0F43B00CBA6C9 /* FormValidation.m in Sources */,
 				F7988B8317B3E683000F63FB /* DateUtil.m in Sources */,
-				F7988B8B17B3E91D000F63FB /* TimeSet.m in Sources */,
+				F7988B8B17B3E91D000F63FB /* DateTimeSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

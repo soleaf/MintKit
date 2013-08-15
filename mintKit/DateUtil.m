@@ -15,22 +15,46 @@
 + (NSDictionary *) NSDateToDateDic:(NSDate*) date
 {
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:date];
-    NSInteger day = [components day];
+    NSInteger day   = [components day];
     NSInteger month = [components month];
-    NSInteger year = [components year];
+    NSInteger year  = [components year];
+    NSInteger hour  = [components hour];
+    NSInteger min   = [components minute];
+    NSInteger sec   = [components second];
     
-    return [[NSDictionary alloc] initWithObjectsAndKeys:[NSNumber numberWithInteger:day ], @"day", [NSNumber numberWithInteger:month ], @"month", [NSNumber numberWithInteger:year ],@"year", nil];
+    return [[NSDictionary alloc] initWithObjectsAndKeys:
+            [NSNumber numberWithInteger:day], @"day",
+            [NSNumber numberWithInteger:month], @"month",
+            [NSNumber numberWithInteger:year],@"year",
+            [NSNumber numberWithInteger:hour],@"hour",
+            [NSNumber numberWithInteger:min],@"minute",
+            [NSNumber numberWithInteger:sec],@"second",
+            nil];
 }
 
++ (DateTimeSet *) NSDateToDateTimeSet:(NSDate *)date
+{
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:date];
+
+    DateTimeSet *dateTimeSet = [[DateTimeSet alloc] init];
+    dateTimeSet.year    = [components year];
+    dateTimeSet.month   = [components month];
+    dateTimeSet.day     = [components day];
+    dateTimeSet.hours   = [components hour];
+    dateTimeSet.minutes = [components minute];
+    dateTimeSet.seconds = [components second];
+    
+    return dateTimeSet;
+}
 
 + (NSDictionary *)getNowDate
 {
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:[NSDate date]];
-    NSInteger day = [components day];
-    NSInteger month = [components month];
-    NSInteger year = [components year];
-    
-    return [[NSDictionary alloc] initWithObjectsAndKeys:[NSNumber numberWithInteger:day ], @"day", [NSNumber numberWithInteger:month ], @"month", [NSNumber numberWithInteger:year ],@"year", nil];
+    return [DateUtil NSDateToDateDic:[NSDate date]];
+}
+
++ (DateTimeSet *)getNowDateTimeSet
+{
+    return [DateUtil NSDateToDateTimeSet:[NSDate date]];
 }
 
 + (NSDate *)getNextDate:(NSInteger) offset AndYear:(NSInteger) theYear andMonth:(NSInteger) theMonth andDay:(NSInteger) theDay
@@ -56,7 +80,7 @@
     return [DateUtil NSDateToDateDic:nextDate];
 }
 
-+ (TimeSet *) NSIntervalToTimeSet: (NSTimeInterval) interval
++ (DateTimeSet *) NSIntervalToTimeSet: (NSTimeInterval) interval
 {
     int nowCount = interval;
     
@@ -68,12 +92,12 @@
     
     NSInteger seconds = nowCount;
     
-    TimeSet *timeSet = [[TimeSet alloc] init];
-    timeSet.interval = interval;
-    timeSet.hours = hours;
-    timeSet.minutes = minutes;
-    timeSet.seconds = seconds;
+    DateTimeSet *dateTimeSet = [[DateTimeSet alloc] init];
+    dateTimeSet.interval = interval;
+    dateTimeSet.hours    = hours;
+    dateTimeSet.minutes  = minutes;
+    dateTimeSet.seconds  = seconds;
     
-    return timeSet;
+    return dateTimeSet;
 }
 @end

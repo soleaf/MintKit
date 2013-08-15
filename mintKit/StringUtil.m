@@ -7,6 +7,7 @@
 //
 
 #import "StringUtil.h"
+#import "TestKit.h"
 
 @implementation StringUtil
 
@@ -19,7 +20,7 @@
     return htmlString;
 }
 
-// Trim
+
 + (NSString *)trimed:(NSString *)str
 {
     return [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -27,18 +28,30 @@
 
 + (NSString *) nvl:(NSString *)str
 {
-    if ([StringUtil isNilOrLength0:str]) return  @"";
+    if ([StringUtil hasLength:str]) return  @"";
     else return  str;
 }
 
 + (NSString *)nvl:(NSString *)str nilStr:(NSString *)nilStr
 {
-    if ([StringUtil isNilOrLength0:str]) return  nilStr;
+    if ([StringUtil hasLength:str]) return  nilStr;
     else return  str;
 }
 
-// nil이거나 길이가 0인지검사(공백제거 )
-+ (BOOL)isNilOrLength0:(NSString *)str
++ (BOOL)isNilOrLength0:(NSString *)str // Deprecated.
+{
+    [TestKit methodisDeprecated:__func__ moveTo:@"hasLength:"];
+    
+    if (nil == str) return YES;
+    
+    NSString *trimed = [StringUtil trimed:str];
+    if (trimed.length < 1)
+        return YES;
+    else
+        return NO;
+}
+
++ (BOOL)hasLength:(NSString *)str
 {
     if (nil == str) return YES;
     
@@ -49,20 +62,18 @@
         return NO;
 }
 
-
-// nil이 아닌 첫번째 값을 취함
 + (NSString *)getNotNilOn:(NSString *)first and:(NSString *)second
 {
-    if (![StringUtil isNilOrLength0:first]) return first;
-    else if (![StringUtil isNilOrLength0:second]) return second;
+    if (![StringUtil hasLength:first]) return first;
+    else if (![StringUtil hasLength:second]) return second;
     else return nil;
 }
 
 + (NSString *)getNotNilOn:(NSString *)first and:(NSString *)second and:(NSString *)third
 {
-    if (![StringUtil isNilOrLength0:first]) return first;
-    else if (![StringUtil isNilOrLength0:second]) return second;
-    else if (![StringUtil isNilOrLength0:third]) return third;
+    if (![StringUtil hasLength:first]) return first;
+    else if (![StringUtil hasLength:second]) return second;
+    else if (![StringUtil hasLength:third]) return third;
     else return nil;
 }
 
