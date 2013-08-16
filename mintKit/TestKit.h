@@ -37,6 +37,17 @@
 + (void) debugCheckIsUsedMethod: (MINTKIT_DEBUG_METHOD_TYPE) methodName;
 
 
+/*
+ * Error handelling
+ * : Just loging.
+ */
+ 
+// RunTime Error
++ (void) errorRuntime:(MINTKIT_DEBUG_METHOD_TYPE) methodName;
++ (void) errorRuntime:(MINTKIT_DEBUG_METHOD_TYPE) methodName code:(NSString*) code;
++ (void) errorRuntime:(MINTKIT_DEBUG_METHOD_TYPE) methodName code:(NSString*) code reason:(NSString*) reason;
++ (void) errorRuntime:(MINTKIT_DEBUG_METHOD_TYPE) methodName code:(NSString*) code reason:(NSString*) reason error:(NSError*) errorObj;
+
 
 /*
  * OOP Class or method warnings

@@ -80,6 +80,12 @@
     return [DateUtil NSDateToDateDic:nextDate];
 }
 
++ (DateTimeSet *)getNextDateSetFromOffset:(NSInteger)offset AndYear:(NSInteger)theYear andMonth:(NSInteger)theMonth andDay:(NSInteger)theDay
+{
+    NSDate *nextDate = [DateUtil getNextDate:offset AndYear:theYear andMonth:theMonth andDay:theDay];
+    return [DateUtil NSDateToDateTimeSet:nextDate];
+}
+
 + (DateTimeSet *) NSIntervalToTimeSet: (NSTimeInterval) interval
 {
     int nowCount = interval;

@@ -112,9 +112,9 @@
 		F7988B8117B3E683000F63FB /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B7D17B3E683000F63FB /* DateUtil.m */; };
 		F7988B8217B3E683000F63FB /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B7D17B3E683000F63FB /* DateUtil.m */; };
 		F7988B8317B3E683000F63FB /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B7D17B3E683000F63FB /* DateUtil.m */; };
-		F7988B8617B3E91D000F63FB /* DateTimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* DateTimeSet.h */; };
-		F7988B8717B3E91D000F63FB /* DateTimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* DateTimeSet.h */; };
-		F7988B8817B3E91D000F63FB /* DateTimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* DateTimeSet.h */; };
+		F7988B8617B3E91D000F63FB /* DateTimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* DateTimeSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7988B8717B3E91D000F63FB /* DateTimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* DateTimeSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7988B8817B3E91D000F63FB /* DateTimeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B8417B3E91D000F63FB /* DateTimeSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7988B8917B3E91D000F63FB /* DateTimeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B8517B3E91D000F63FB /* DateTimeSet.m */; };
 		F7988B8A17B3E91D000F63FB /* DateTimeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B8517B3E91D000F63FB /* DateTimeSet.m */; };
 		F7988B8B17B3E91D000F63FB /* DateTimeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F7988B8517B3E91D000F63FB /* DateTimeSet.m */; };

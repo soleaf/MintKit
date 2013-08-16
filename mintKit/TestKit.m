@@ -34,6 +34,36 @@
 }
 
 
+/*
+ * Error handelling
+ * : Just loging.
+ */
+
++ (void)errorRuntime:(const char [60])methodName
+{
+    [TestKit errorRuntime:methodName code:nil reason:nil error:nil];
+}
+
++ (void)errorRuntime:(const char [60])methodName code:(NSString *)code
+{
+    [TestKit errorRuntime:methodName code:code reason:nil error:nil];
+}
+
++ (void) errorRuntime:(MINTKIT_DEBUG_METHOD_TYPE) methodName code:(NSString*) code reason:(NSString*) reason;
+{
+    [TestKit errorRuntime:methodName code:code reason:reason error:nil];
+}
+
++ (void) errorRuntime:(MINTKIT_DEBUG_METHOD_TYPE) methodName code:(NSString*) code reason:(NSString*) reason error:(NSError*) errorObj
+{
+    code    = code?     [NSString stringWithFormat:@" [%@]",code]   : @"";
+    reason  = reason?   [NSString stringWithFormat:@" [%@]",reason] : @"";
+    
+    NSString *errorObjStr = errorObj ? [NSString stringWithFormat:@"\n%@",errorObj] : @"";
+    
+    NSLog(@"%@ [ ✕ ERROR]%@%@", code, reason, errorObjStr);
+}
+
 
 /*
  * OOP Class or method warnings
