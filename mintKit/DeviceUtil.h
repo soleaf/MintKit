@@ -9,9 +9,8 @@
 #import <Foundation/Foundation.h>
 
 /*
- 
- Some Informations for device
- 
+    Some Informations for device
+    Checking Retina device, iPhone5...
  */
 
 @interface DeviceUtil : NSObject

@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 /*
-    Graphic Utilites.
+    Graphic Utilite like reszing image.
  */
 
 @interface GraphicsUtil : NSObject

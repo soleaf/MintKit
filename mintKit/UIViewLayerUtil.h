@@ -10,6 +10,7 @@
 
 /*
     Make UIView Layer by One line code.
+    For drop shadow, gradient, etc...
  */
 
 @interface UIViewLayerUtil : NSObject
@@ -20,5 +21,10 @@
 
 // Fill gradient
 + (void) gradient:(UIView *) view start:(UIColor *)startColor endColor:(UIColor*) endColor;
+
+// Make border
++ (void) border:(UIView*) view size:(float) size andColor:(UIColor) uiColor;
++ (void) border:(UIView*) view size:(float) size andColor:(UIColor) uiColor andRadius:(float) radius;
+
 
 @end

@@ -12,6 +12,7 @@
 /*
 
  Automatic UI configurations.
+ Example. SetText on UITextField, If text is not nil.
  
  */
 

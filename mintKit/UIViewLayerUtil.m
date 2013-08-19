@@ -15,12 +15,12 @@
 
 + (void)dropShadow:(UIView *)view Opacity:(float)opacity andOffset:(CGSize)offset andColor:(UIColor *)color
 {
-    UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:view.bounds];
-    view.layer.masksToBounds = NO;
-    view.layer.shadowColor = color.CGColor;
-    view.layer.shadowOffset = offset;
-    view.layer.shadowOpacity = opacity;
-    view.layer.shadowPath = shadowPath.CGPath;
+    UIBezierPath *shadowPath    = [UIBezierPath bezierPathWithRect:view.bounds];
+    view.layer.masksToBounds    = NO;
+    view.layer.shadowColor      = color.CGColor;
+    view.layer.shadowOffset     = offset;
+    view.layer.shadowOpacity    = opacity;
+    view.layer.shadowPath       = shadowPath.CGPath;
 }
 
 + (void)dropShadow:(UIView *)view Opacity:(float)opacity andOffset:(CGSize)offset
@@ -31,9 +31,22 @@
 + (void)gradient:(UIView *)view start:(UIColor *)startColor endColor:(UIColor *)endColor
 {
     CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = view.bounds;
-    gradient.colors = [NSArray arrayWithObjects:(id)[startColor CGColor], (id)[endColor CGColor], nil];
+    gradient.frame            = view.bounds;
+    gradient.colors           = [NSArray arrayWithObjects:(id)[startColor CGColor], (id)[endColor CGColor], nil];
     [view.layer insertSublayer:gradient atIndex:0];
+}
+
++ (void)border:(UIView *)view size:(float)size andColor:(UIColor)uiColor
+{
+    view.layer.borderWidth  = size;
+    view.layer.borderColor  = uiColor.CGColor;
+}
+
++ (void)border:(UIView *)view size:(float)size andColor:(UIColor)uiColor andRadius:(float)radius
+{
+    view.layer.borderWidth  = size;
+    view.layer.borderColor  = uiColor.CGColor;
+    view.layer.cornerRadius = radius;
 }
 
 @end

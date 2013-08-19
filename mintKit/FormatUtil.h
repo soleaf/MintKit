@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+/*
+ Make String be foramtted like phone number.
+ */
+
 @interface FormatUtil : NSObject
 
 // Number to phone format: 12345678 -> 1234-5678 .. etc. (Korean type)
