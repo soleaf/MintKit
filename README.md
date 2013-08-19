@@ -22,7 +22,9 @@ How To Get Started
 ====
 
 ###Only Use Compiled Library
-*Just copy Files on Release folder and Link Your project!*
+Just copy Files on Release folder and Link Your project!
+
+**There is Sample Project for Installing. Check `mintKitSample.xcodeproj` on WorkSpace or '/Sample'**
 
 1. [Download](https://github.com/soleaf/MintKit/archive/master.zip) or [Clone](github-mac://openRepo/https://github.com/soleaf/MintKit) to any directory.
 2. Copy `mintKit/Release/libMintKit.a`, `headers` to your project folder.
