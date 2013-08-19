@@ -6,6 +6,7 @@
 //  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 #import "GraphicsUtil.h"
+#import "TestKit.h"
 
 @implementation GraphicsUtil
 
@@ -72,6 +73,10 @@
     animation.values                = transforms;
     animation.removedOnCompletion   = YES;
     animation.autoreverses          = NO;
+    
+    // IS DERPECATED!
+    // 2013.08.19
+    [TestKit methodisDeprecated:__func__ moveTo:@"AnimationUtil Class"];
     
     return animation;
 }

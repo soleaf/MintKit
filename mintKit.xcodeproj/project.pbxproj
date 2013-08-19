@@ -112,6 +112,12 @@
 		E6F4ED8F17C1B48F003D115F /* DeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F4ED8917C1B2FC003D115F /* DeviceUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6F4ED9017C1B498003D115F /* DeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4ED8A17C1B2FC003D115F /* DeviceUtil.m */; };
 		E6F4ED9117C1B498003D115F /* DeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4ED8A17C1B2FC003D115F /* DeviceUtil.m */; };
+		E6F4EDA417C1ED97003D115F /* AnimationUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F4EDA217C1ED97003D115F /* AnimationUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6F4EDA517C1ED97003D115F /* AnimationUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F4EDA217C1ED97003D115F /* AnimationUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6F4EDA617C1ED97003D115F /* AnimationUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F4EDA217C1ED97003D115F /* AnimationUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6F4EDA717C1ED97003D115F /* AnimationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4EDA317C1ED97003D115F /* AnimationUtil.m */; };
+		E6F4EDA817C1ED97003D115F /* AnimationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4EDA317C1ED97003D115F /* AnimationUtil.m */; };
+		E6F4EDA917C1ED97003D115F /* AnimationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4EDA317C1ED97003D115F /* AnimationUtil.m */; };
 		F7988B7E17B3E683000F63FB /* DateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B7C17B3E683000F63FB /* DateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7988B7F17B3E683000F63FB /* DateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B7C17B3E683000F63FB /* DateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7988B8017B3E683000F63FB /* DateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B7C17B3E683000F63FB /* DateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -199,6 +205,8 @@
 		E6C8C30E17B0C64500B76AEC /* Library_Device.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Library_Device.m; sourceTree = "<group>"; };
 		E6F4ED8917C1B2FC003D115F /* DeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtil.h; sourceTree = "<group>"; };
 		E6F4ED8A17C1B2FC003D115F /* DeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtil.m; sourceTree = "<group>"; };
+		E6F4EDA217C1ED97003D115F /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
+		E6F4EDA317C1ED97003D115F /* AnimationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationUtil.m; sourceTree = "<group>"; };
 		F7988B7C17B3E683000F63FB /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
 		F7988B7D17B3E683000F63FB /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
 		F7988B8417B3E91D000F63FB /* DateTimeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeSet.h; sourceTree = "<group>"; };
@@ -253,6 +261,8 @@
 			children = (
 				E686C53B17B0F42F00CBA6C9 /* GraphicsUtil.h */,
 				E686C53C17B0F42F00CBA6C9 /* GraphicsUtil.m */,
+				E6F4EDA217C1ED97003D115F /* AnimationUtil.h */,
+				E6F4EDA317C1ED97003D115F /* AnimationUtil.m */,
 			);
 			name = Graphics;
 			sourceTree = "<group>";
@@ -425,6 +435,7 @@
 				F7988B7F17B3E683000F63FB /* DateUtil.h in Headers */,
 				F7988B8717B3E91D000F63FB /* DateTimeSet.h in Headers */,
 				E6F4ED8E17C1B48E003D115F /* DeviceUtil.h in Headers */,
+				E6F4EDA517C1ED97003D115F /* AnimationUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +459,7 @@
 				F7988B8017B3E683000F63FB /* DateUtil.h in Headers */,
 				F7988B8817B3E91D000F63FB /* DateTimeSet.h in Headers */,
 				E6F4ED8F17C1B48F003D115F /* DeviceUtil.h in Headers */,
+				E6F4EDA617C1ED97003D115F /* AnimationUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +482,7 @@
 				F7988B7E17B3E683000F63FB /* DateUtil.h in Headers */,
 				F7988B8617B3E91D000F63FB /* DateTimeSet.h in Headers */,
 				E6F4ED8B17C1B2FC003D115F /* DeviceUtil.h in Headers */,
+				E6F4EDA417C1ED97003D115F /* AnimationUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +584,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -rf ${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a\n\nlipo -create \"${BUILT_PRODUCTS_DIR}/../${CONFIGURATION}-iphonesimulator/libMintKit-Simulator.a\" \\\n\"${BUILT_PRODUCTS_DIR}/libMintKit-Device.a\" -output \\\n\"${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a\"";
+			shellScript = "rm -rf ${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a\n\nlipo -create \"${BUILT_PRODUCTS_DIR}/../${CONFIGURATION}-iphonesimulator/libMintKit-Simulator.a\" \\\n\"${BUILT_PRODUCTS_DIR}/libMintKit-Device.a\" -output \\\n\"${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a\"\n\nrsync ${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a ${PROJECT_DIR}/Release/libMintKit.a\nrsync -r ${BUILT_PRODUCTS_DIR}/headers ${PROJECT_DIR}/Release";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -596,6 +609,7 @@
 				F7988B8117B3E683000F63FB /* DateUtil.m in Sources */,
 				F7988B8917B3E91D000F63FB /* DateTimeSet.m in Sources */,
 				E6F4ED8C17C1B2FC003D115F /* DeviceUtil.m in Sources */,
+				E6F4EDA717C1ED97003D115F /* AnimationUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +634,7 @@
 				F7988B8217B3E683000F63FB /* DateUtil.m in Sources */,
 				F7988B8A17B3E91D000F63FB /* DateTimeSet.m in Sources */,
 				E6F4ED9017C1B498003D115F /* DeviceUtil.m in Sources */,
+				E6F4EDA817C1ED97003D115F /* AnimationUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +659,7 @@
 				F7988B8317B3E683000F63FB /* DateUtil.m in Sources */,
 				F7988B8B17B3E91D000F63FB /* DateTimeSet.m in Sources */,
 				E6F4ED9117C1B498003D115F /* DeviceUtil.m in Sources */,
+				E6F4EDA917C1ED97003D115F /* AnimationUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
