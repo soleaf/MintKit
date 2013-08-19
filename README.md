@@ -2,12 +2,19 @@ MintKit
 =======
 
 MintKis is simple iOS coding utils package based Objective-C, For only convenience on coding.
+* Handling NSString
+* Add Shadow, border .. etc layers with One line code
+* Move, Resize UIView very easy One line code
+* Automatic Check NSString is null and Put TextFieldText, UIButtonTitle.
+* Etc... Better Tools for iOS Developers.
 
 It's now basic and immature. So, It need other's contributions.
-For make adding new fuction or modification better performance.. etc, Commit frankly! Thank you.
-Welcome togther coding Anyone! 
+For make adding new fuction or modification better performance.. etc,
+Commit frankly! Thank you.
+**Welcome Togeher Coding Anyone!**
 
 This Project in mintcode.org
+
 <http://www.mintcode.org>
 
 
