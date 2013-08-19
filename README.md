@@ -65,6 +65,9 @@ Just copy Files on Release folder and Link Your project!
 Library Summary
 ===
 *Will update soon for detail method informations.*
+```
+IF YOU WANT DETAIL HOW TO USE METHODS, CHECK ANY HEADER FILES AND NOTE!
+```
 
 ####mintKit.h
 Information for mitKit
