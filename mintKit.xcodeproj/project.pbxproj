@@ -27,67 +27,67 @@
 		E686C4E817B0EFD100CBA6C9 /* UIViewFrameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C4E417B0EFD100CBA6C9 /* UIViewFrameUtil.m */; };
 		E686C4E917B0EFD100CBA6C9 /* UIViewFrameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C4E417B0EFD100CBA6C9 /* UIViewFrameUtil.m */; };
 		E686C4EA17B0EFD100CBA6C9 /* UIViewFrameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C4E417B0EFD100CBA6C9 /* UIViewFrameUtil.m */; };
-		E686C4F517B0F36000CBA6C9 /* UIRobot.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4F317B0F36000CBA6C9 /* UIRobot.h */; };
+		E686C4F517B0F36000CBA6C9 /* UIRobot.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4F317B0F36000CBA6C9 /* UIRobot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C4F617B0F36000CBA6C9 /* UIRobot.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4F317B0F36000CBA6C9 /* UIRobot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C4F717B0F36000CBA6C9 /* UIRobot.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4F317B0F36000CBA6C9 /* UIRobot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C4F817B0F36000CBA6C9 /* UIRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C4F417B0F36000CBA6C9 /* UIRobot.m */; };
 		E686C4F917B0F36000CBA6C9 /* UIRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C4F417B0F36000CBA6C9 /* UIRobot.m */; };
 		E686C4FA17B0F36000CBA6C9 /* UIRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C4F417B0F36000CBA6C9 /* UIRobot.m */; };
-		E686C4FD17B0F37100CBA6C9 /* TestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4FB17B0F37100CBA6C9 /* TestKit.h */; };
+		E686C4FD17B0F37100CBA6C9 /* TestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4FB17B0F37100CBA6C9 /* TestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C4FE17B0F37100CBA6C9 /* TestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4FB17B0F37100CBA6C9 /* TestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C4FF17B0F37100CBA6C9 /* TestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4FB17B0F37100CBA6C9 /* TestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C50017B0F37100CBA6C9 /* TestKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C4FC17B0F37100CBA6C9 /* TestKit.m */; };
 		E686C50117B0F37100CBA6C9 /* TestKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C4FC17B0F37100CBA6C9 /* TestKit.m */; };
 		E686C50217B0F37100CBA6C9 /* TestKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C4FC17B0F37100CBA6C9 /* TestKit.m */; };
-		E686C50517B0F38200CBA6C9 /* UIViewLayerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C50317B0F38100CBA6C9 /* UIViewLayerUtil.h */; };
+		E686C50517B0F38200CBA6C9 /* UIViewLayerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C50317B0F38100CBA6C9 /* UIViewLayerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C50617B0F38200CBA6C9 /* UIViewLayerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C50317B0F38100CBA6C9 /* UIViewLayerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C50717B0F38200CBA6C9 /* UIViewLayerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C50317B0F38100CBA6C9 /* UIViewLayerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C50817B0F38200CBA6C9 /* UIViewLayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C50417B0F38100CBA6C9 /* UIViewLayerUtil.m */; };
 		E686C50917B0F38200CBA6C9 /* UIViewLayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C50417B0F38100CBA6C9 /* UIViewLayerUtil.m */; };
 		E686C50A17B0F38200CBA6C9 /* UIViewLayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C50417B0F38100CBA6C9 /* UIViewLayerUtil.m */; };
-		E686C50D17B0F3A400CBA6C9 /* FormatUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C50B17B0F3A400CBA6C9 /* FormatUtil.h */; };
+		E686C50D17B0F3A400CBA6C9 /* FormatUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C50B17B0F3A400CBA6C9 /* FormatUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C50E17B0F3A400CBA6C9 /* FormatUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C50B17B0F3A400CBA6C9 /* FormatUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C50F17B0F3A400CBA6C9 /* FormatUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C50B17B0F3A400CBA6C9 /* FormatUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C51017B0F3A400CBA6C9 /* FormatUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C50C17B0F3A400CBA6C9 /* FormatUtil.m */; };
 		E686C51117B0F3A400CBA6C9 /* FormatUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C50C17B0F3A400CBA6C9 /* FormatUtil.m */; };
 		E686C51217B0F3A400CBA6C9 /* FormatUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C50C17B0F3A400CBA6C9 /* FormatUtil.m */; };
-		E686C51517B0F3BF00CBA6C9 /* ObjectUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C51317B0F3BF00CBA6C9 /* ObjectUtil.h */; };
+		E686C51517B0F3BF00CBA6C9 /* ObjectUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C51317B0F3BF00CBA6C9 /* ObjectUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C51617B0F3BF00CBA6C9 /* ObjectUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C51317B0F3BF00CBA6C9 /* ObjectUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C51717B0F3BF00CBA6C9 /* ObjectUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C51317B0F3BF00CBA6C9 /* ObjectUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C51817B0F3BF00CBA6C9 /* ObjectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C51417B0F3BF00CBA6C9 /* ObjectUtil.m */; };
 		E686C51917B0F3BF00CBA6C9 /* ObjectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C51417B0F3BF00CBA6C9 /* ObjectUtil.m */; };
 		E686C51A17B0F3BF00CBA6C9 /* ObjectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C51417B0F3BF00CBA6C9 /* ObjectUtil.m */; };
-		E686C51D17B0F3D700CBA6C9 /* ArrayUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C51B17B0F3D600CBA6C9 /* ArrayUtil.h */; };
+		E686C51D17B0F3D700CBA6C9 /* ArrayUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C51B17B0F3D600CBA6C9 /* ArrayUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C51E17B0F3D700CBA6C9 /* ArrayUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C51B17B0F3D600CBA6C9 /* ArrayUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C51F17B0F3D700CBA6C9 /* ArrayUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C51B17B0F3D600CBA6C9 /* ArrayUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C52017B0F3D700CBA6C9 /* ArrayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C51C17B0F3D600CBA6C9 /* ArrayUtil.m */; };
 		E686C52117B0F3D700CBA6C9 /* ArrayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C51C17B0F3D600CBA6C9 /* ArrayUtil.m */; };
 		E686C52217B0F3D700CBA6C9 /* ArrayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C51C17B0F3D600CBA6C9 /* ArrayUtil.m */; };
-		E686C52517B0F3EE00CBA6C9 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52317B0F3EE00CBA6C9 /* StringUtil.h */; };
+		E686C52517B0F3EE00CBA6C9 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52317B0F3EE00CBA6C9 /* StringUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C52617B0F3EE00CBA6C9 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52317B0F3EE00CBA6C9 /* StringUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C52717B0F3EE00CBA6C9 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52317B0F3EE00CBA6C9 /* StringUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C52817B0F3EE00CBA6C9 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C52417B0F3EE00CBA6C9 /* StringUtil.m */; };
 		E686C52917B0F3EE00CBA6C9 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C52417B0F3EE00CBA6C9 /* StringUtil.m */; };
 		E686C52A17B0F3EE00CBA6C9 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C52417B0F3EE00CBA6C9 /* StringUtil.m */; };
-		E686C52D17B0F40F00CBA6C9 /* UIVIewControllerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52B17B0F40F00CBA6C9 /* UIVIewControllerUtil.h */; };
+		E686C52D17B0F40F00CBA6C9 /* UIVIewControllerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52B17B0F40F00CBA6C9 /* UIVIewControllerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C52E17B0F40F00CBA6C9 /* UIVIewControllerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52B17B0F40F00CBA6C9 /* UIVIewControllerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C52F17B0F40F00CBA6C9 /* UIVIewControllerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52B17B0F40F00CBA6C9 /* UIVIewControllerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C53017B0F40F00CBA6C9 /* UIVIewControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C52C17B0F40F00CBA6C9 /* UIVIewControllerUtil.m */; };
 		E686C53117B0F40F00CBA6C9 /* UIVIewControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C52C17B0F40F00CBA6C9 /* UIVIewControllerUtil.m */; };
 		E686C53217B0F40F00CBA6C9 /* UIVIewControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C52C17B0F40F00CBA6C9 /* UIVIewControllerUtil.m */; };
-		E686C53517B0F42300CBA6C9 /* MapUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C53317B0F42300CBA6C9 /* MapUtil.h */; };
+		E686C53517B0F42300CBA6C9 /* MapUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C53317B0F42300CBA6C9 /* MapUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C53617B0F42300CBA6C9 /* MapUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C53317B0F42300CBA6C9 /* MapUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C53717B0F42300CBA6C9 /* MapUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C53317B0F42300CBA6C9 /* MapUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C53817B0F42300CBA6C9 /* MapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C53417B0F42300CBA6C9 /* MapUtil.m */; };
 		E686C53917B0F42300CBA6C9 /* MapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C53417B0F42300CBA6C9 /* MapUtil.m */; };
 		E686C53A17B0F42300CBA6C9 /* MapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C53417B0F42300CBA6C9 /* MapUtil.m */; };
-		E686C53D17B0F42F00CBA6C9 /* GraphicsUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C53B17B0F42F00CBA6C9 /* GraphicsUtil.h */; };
+		E686C53D17B0F42F00CBA6C9 /* GraphicsUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C53B17B0F42F00CBA6C9 /* GraphicsUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C53E17B0F42F00CBA6C9 /* GraphicsUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C53B17B0F42F00CBA6C9 /* GraphicsUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C53F17B0F42F00CBA6C9 /* GraphicsUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C53B17B0F42F00CBA6C9 /* GraphicsUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C54017B0F42F00CBA6C9 /* GraphicsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C53C17B0F42F00CBA6C9 /* GraphicsUtil.m */; };
 		E686C54117B0F42F00CBA6C9 /* GraphicsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C53C17B0F42F00CBA6C9 /* GraphicsUtil.m */; };
 		E686C54217B0F42F00CBA6C9 /* GraphicsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C53C17B0F42F00CBA6C9 /* GraphicsUtil.m */; };
-		E686C54517B0F43B00CBA6C9 /* FormValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C54317B0F43B00CBA6C9 /* FormValidation.h */; };
+		E686C54517B0F43B00CBA6C9 /* FormValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C54317B0F43B00CBA6C9 /* FormValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C54617B0F43B00CBA6C9 /* FormValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C54317B0F43B00CBA6C9 /* FormValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C54717B0F43B00CBA6C9 /* FormValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C54317B0F43B00CBA6C9 /* FormValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C54817B0F43B00CBA6C9 /* FormValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C54417B0F43B00CBA6C9 /* FormValidation.m */; };
@@ -106,6 +106,12 @@
 		E6C8C30F17B0C64500B76AEC /* Library_Device.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8C30E17B0C64500B76AEC /* Library_Device.m */; };
 		E6C8C31517B0C65900B76AEC /* mintKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C8C2E217B0C51900B76AEC /* mintKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6C8C31617B0C65D00B76AEC /* mintKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8C2E417B0C51900B76AEC /* mintKit.m */; };
+		E6F4ED8B17C1B2FC003D115F /* DeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F4ED8917C1B2FC003D115F /* DeviceUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6F4ED8C17C1B2FC003D115F /* DeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4ED8A17C1B2FC003D115F /* DeviceUtil.m */; };
+		E6F4ED8E17C1B48E003D115F /* DeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F4ED8917C1B2FC003D115F /* DeviceUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6F4ED8F17C1B48F003D115F /* DeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F4ED8917C1B2FC003D115F /* DeviceUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6F4ED9017C1B498003D115F /* DeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4ED8A17C1B2FC003D115F /* DeviceUtil.m */; };
+		E6F4ED9117C1B498003D115F /* DeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4ED8A17C1B2FC003D115F /* DeviceUtil.m */; };
 		F7988B7E17B3E683000F63FB /* DateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B7C17B3E683000F63FB /* DateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7988B7F17B3E683000F63FB /* DateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B7C17B3E683000F63FB /* DateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7988B8017B3E683000F63FB /* DateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7988B7C17B3E683000F63FB /* DateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -191,6 +197,8 @@
 		E6C8C30B17B0C64500B76AEC /* Library-Device-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Library-Device-Prefix.pch"; sourceTree = "<group>"; };
 		E6C8C30C17B0C64500B76AEC /* Library_Device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Library_Device.h; sourceTree = "<group>"; };
 		E6C8C30E17B0C64500B76AEC /* Library_Device.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Library_Device.m; sourceTree = "<group>"; };
+		E6F4ED8917C1B2FC003D115F /* DeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtil.h; sourceTree = "<group>"; };
+		E6F4ED8A17C1B2FC003D115F /* DeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtil.m; sourceTree = "<group>"; };
 		F7988B7C17B3E683000F63FB /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
 		F7988B7D17B3E683000F63FB /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
 		F7988B8417B3E91D000F63FB /* DateTimeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeSet.h; sourceTree = "<group>"; };
@@ -335,6 +343,7 @@
 				E686C54B17B0FAFE00CBA6C9 /* Graphics */,
 				E686C54D17B0FB1E00CBA6C9 /* Validation */,
 				E686C4E217B0EFB000CBA6C9 /* UI */,
+				E6F4ED8D17C1B300003D115F /* ETC */,
 				E6C8C2E017B0C51900B76AEC /* Supporting Files */,
 			);
 			path = mintKit;
@@ -384,6 +393,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E6F4ED8D17C1B300003D115F /* ETC */ = {
+			isa = PBXGroup;
+			children = (
+				E6F4ED8917C1B2FC003D115F /* DeviceUtil.h */,
+				E6F4ED8A17C1B2FC003D115F /* DeviceUtil.m */,
+			);
+			name = ETC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -406,6 +424,7 @@
 				E686C54617B0F43B00CBA6C9 /* FormValidation.h in Headers */,
 				F7988B7F17B3E683000F63FB /* DateUtil.h in Headers */,
 				F7988B8717B3E91D000F63FB /* DateTimeSet.h in Headers */,
+				E6F4ED8E17C1B48E003D115F /* DeviceUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +447,7 @@
 				E686C54717B0F43B00CBA6C9 /* FormValidation.h in Headers */,
 				F7988B8017B3E683000F63FB /* DateUtil.h in Headers */,
 				F7988B8817B3E91D000F63FB /* DateTimeSet.h in Headers */,
+				E6F4ED8F17C1B48F003D115F /* DeviceUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +469,7 @@
 				E686C54517B0F43B00CBA6C9 /* FormValidation.h in Headers */,
 				F7988B7E17B3E683000F63FB /* DateUtil.h in Headers */,
 				F7988B8617B3E91D000F63FB /* DateTimeSet.h in Headers */,
+				E6F4ED8B17C1B2FC003D115F /* DeviceUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +595,7 @@
 				E686C54817B0F43B00CBA6C9 /* FormValidation.m in Sources */,
 				F7988B8117B3E683000F63FB /* DateUtil.m in Sources */,
 				F7988B8917B3E91D000F63FB /* DateTimeSet.m in Sources */,
+				E6F4ED8C17C1B2FC003D115F /* DeviceUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +619,7 @@
 				E686C54917B0F43B00CBA6C9 /* FormValidation.m in Sources */,
 				F7988B8217B3E683000F63FB /* DateUtil.m in Sources */,
 				F7988B8A17B3E91D000F63FB /* DateTimeSet.m in Sources */,
+				E6F4ED9017C1B498003D115F /* DeviceUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +643,7 @@
 				E686C54A17B0F43B00CBA6C9 /* FormValidation.m in Sources */,
 				F7988B8317B3E683000F63FB /* DateUtil.m in Sources */,
 				F7988B8B17B3E91D000F63FB /* DateTimeSet.m in Sources */,
+				E6F4ED9117C1B498003D115F /* DeviceUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
