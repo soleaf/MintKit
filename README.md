@@ -40,5 +40,5 @@ Will update soon...
 
 Credits
 ===
-Ahn il ho(soleaf) in iOS developer & UX designer of mintcode.org.
+mintcode.org.
 
