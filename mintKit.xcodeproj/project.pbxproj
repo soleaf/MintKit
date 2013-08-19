@@ -100,7 +100,6 @@
 		E6C8C2F817B0C57100B76AEC /* Library_Simulator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C8C2F717B0C57100B76AEC /* Library_Simulator.h */; };
 		E6C8C2FA17B0C57100B76AEC /* Library_Simulator.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8C2F917B0C57100B76AEC /* Library_Simulator.m */; };
 		E6C8C30017B0C5F200B76AEC /* mintKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8C2E417B0C51900B76AEC /* mintKit.m */; };
-		E6C8C30117B0C60700B76AEC /* mintKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C8C2E217B0C51900B76AEC /* mintKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6C8C30817B0C64500B76AEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C8C2DD17B0C51900B76AEC /* Foundation.framework */; };
 		E6C8C30D17B0C64500B76AEC /* Library_Device.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6C8C30C17B0C64500B76AEC /* Library_Device.h */; };
 		E6C8C30F17B0C64500B76AEC /* Library_Device.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8C30E17B0C64500B76AEC /* Library_Device.m */; };
@@ -421,7 +420,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6C8C30117B0C60700B76AEC /* mintKit.h in Headers */,
 				E686C4E617B0EFD100CBA6C9 /* UIViewFrameUtil.h in Headers */,
 				E686C4F617B0F36000CBA6C9 /* UIRobot.h in Headers */,
 				E686C4FE17B0F37100CBA6C9 /* TestKit.h in Headers */,
