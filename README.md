@@ -123,6 +123,10 @@ Simple Alert ...
 Some Informations for device
 Checking Retina device, iPhone5...
 
+Requirement
+===
+* ARC
+
 Credits
 ===
 mintcode.org.
