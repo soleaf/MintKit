@@ -3,6 +3,4 @@
 
 mintKit.xcodeproj/project.xcworkspace/xcuserdata/flonelin.xcuserdatad/UserInterfaceState.xcuserstate
 
-*.xcuserstate
-
-*.xcuserstate
+*.DS_Store
