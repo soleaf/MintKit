@@ -36,16 +36,16 @@
     [view.layer insertSublayer:gradient atIndex:0];
 }
 
-+ (void)border:(UIView *)view size:(float)size andColor:(UIColor)uiColor
++ (void)border:(UIView *)view size:(float)size andColor:(UIColor*)color
 {
     view.layer.borderWidth  = size;
-    view.layer.borderColor  = uiColor.CGColor;
+    view.layer.borderColor  = color.CGColor;
 }
 
-+ (void)border:(UIView *)view size:(float)size andColor:(UIColor)uiColor andRadius:(float)radius
++ (void)border:(UIView *)view size:(float)size andColor:(UIColor*)color andRadius:(float)radius
 {
     view.layer.borderWidth  = size;
-    view.layer.borderColor  = uiColor.CGColor;
+    view.layer.borderColor  = color.CGColor;
     view.layer.cornerRadius = radius;
 }
 

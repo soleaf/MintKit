@@ -23,8 +23,8 @@
 + (void) gradient:(UIView *) view start:(UIColor *)startColor endColor:(UIColor*) endColor;
 
 // Make border
-+ (void) border:(UIView*) view size:(float) size andColor:(UIColor) uiColor;
-+ (void) border:(UIView*) view size:(float) size andColor:(UIColor) uiColor andRadius:(float) radius;
++ (void) border:(UIView*) view size:(float) size andColor:(UIColor*) color;
++ (void) border:(UIView*) view size:(float) size andColor:(UIColor*) color andRadius:(float) radius;
 
 
 @end
