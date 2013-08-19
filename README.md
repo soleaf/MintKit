@@ -23,14 +23,15 @@ How To Get Started
 6. Right click 'Product > ibmint-device.a' in project navigator(CMD+1) 
 7. Show in finder
 8. Copy 'libMintKit-Aggregate.a' and 'headers' on your project directory
+
 9. Open your project
 10. Project Setting > Target > Build Phases> Link Binary With Libraries> Add 'libMintKit-Aggregate.a' in your project directory
 11. … > Build Setting > search 'Header Search Paths'  and Add '"$(SRCROOT)/Lib/MintKit/Headers"' ('Lib' is my location. If you use other location for MintKit, change it.)
 12. Use It! with import, <MintKit/[header]>
 
-	```objective-c
-		#import <MintKit/mintKit.h>
-		
-		 [mintKit hello];
-	```
+```objective-c
+#import <MintKit/mintKit.h>
+(...)
+[mintKit hello];
+```
 			 
