@@ -207,6 +207,7 @@
 		E6F4ED8A17C1B2FC003D115F /* DeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtil.m; sourceTree = "<group>"; };
 		E6F4EDA217C1ED97003D115F /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
 		E6F4EDA317C1ED97003D115F /* AnimationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationUtil.m; sourceTree = "<group>"; };
+		E6F4EDAA17C1FFE2003D115F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		F7988B7C17B3E683000F63FB /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
 		F7988B7D17B3E683000F63FB /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
 		F7988B8417B3E91D000F63FB /* DateTimeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeSet.h; sourceTree = "<group>"; };
@@ -316,6 +317,7 @@
 		E6C8C2D117B0C51900B76AEC = {
 			isa = PBXGroup;
 			children = (
+				E6F4EDAA17C1FFE2003D115F /* README.md */,
 				E6C8C2DF17B0C51900B76AEC /* mintKit */,
 				E6C8C2F417B0C57100B76AEC /* Library-Simulator */,
 				E6C8C30917B0C64500B76AEC /* Library-Device */,
