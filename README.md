@@ -22,11 +22,13 @@ How To Get Started
 ====
 
 ###Only Use Compiled Library
-1. Download MintKit any directory.
+*Just copy Files on Release folder and Link Your project!*
+
+1. [Download](https://github.com/soleaf/MintKit/archive/master.zip) or [Clone](github-mac://openRepo/https://github.com/soleaf/MintKit) to any directory.
 2. Copy `mintKit/Release/libMintKit.a`, `headers` to your project folder.
 3. Open your project
-4. Project Setting > Target > Build Phases> Link Binary With Libraries> Add 'libMintKit-Aggregate.a' in your project directory
-5. … > Build Setting > search `Header Search Paths`  and Add `"$(SRCROOT)/Lib/MintKit/Headers"` ('Lib' is my location. If you use other location for MintKit, change it.)
+4. Project Setting > Target > Build Phases> `Link Binary With Libraries`> Add 'libMintKit-Aggregate.a' in your project directory
+5. … > Build Setting > search `Header Search Paths`  and Add `"$(SRCROOT)/Lib/MintKit/Headers"` *('Lib' is my location. If You use other location for MintKit, change it.)*
 6. Use It! with import headers `MintKit/[header]`
 
 ```objective-c
@@ -37,17 +39,20 @@ How To Get Started
 
 ###Compile and Use
 
-1. Download MintKit any directory.
+1. [Download](https://github.com/soleaf/MintKit/archive/master.zip) or [Clone](github-mac://openRepo/https://github.com/soleaf/MintKit) to any directory.
 2. Open MintKit Project in Xcode.
-3. Build 'Library-Simulator' > iPhone simulator
-4. Build 'Library-Device' > iOS Device
-5. Build 'Library-Aggregate' > iOS Device
-6. Right click `Product > ibmint-device.a` in project navigator(CMD+1)  and Show in finder
-7. Copy `libMintKit-Aggregate.a` and `headers` on your project directory
-8. Open your project
-9. Project Setting > Target > Build Phases> Link Binary With Libraries> Add 'libMintKit-Aggregate.a' in your project directory
-10. … > Build Setting > search `Header Search Paths`  and Add `"$(SRCROOT)/Lib/MintKit/Headers"` ('Lib' is my location. If you use other location for MintKit, change it.)
-11. Use It! with import headers `MintKit/[header]`
+3. Build
+    * Build 'Library-Simulator' > iPhone simulator
+    * Build 'Library-Device' > iOS Device
+    * Build 'Library-Aggregate' > iOS Device
+4. Copy to Your Project folder
+    * Right click `Product > ibmint-device.a` in project navigator(CMD+1)  and Show in finder
+    * Copy `libMintKit-Aggregate.a` and `headers` on your project directory
+5. Link Library
+    * Open your project
+    * Project Setting > Target > Build Phases> `Link Binary With Libraries`> Add 'libMintKit-Aggregate.a' on your project directory
+    *  … > Build Setting > search `Header Search Paths`  and Add `"$(SRCROOT)/Lib/MintKit/Headers"` *('Lib' is my location. If You use other location for MintKit, change it.)*
+6. Use It! with import headers `MintKit/[header]`
 
 ```objective-c
 #import <MintKit/mintKit.h>
