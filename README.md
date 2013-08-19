@@ -1,4 +1,4 @@
-MINTKit
+MintKit
 =======
 
 MintKis is simple iOS coding utils package based Objective-C, for only convenience on coding.
