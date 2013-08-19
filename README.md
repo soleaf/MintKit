@@ -46,7 +46,7 @@ How To Get Started
     * Build 'Library-Device' > iOS Device
     * Build 'Library-Aggregate' > iOS Device
 4. Copy to Your Project folder
-    * Right click `Product > ibmint-device.a` in project navigator(CMD+1)  and Show in finder
+    * Click right `Product > ibmint-device.a` in project navigator(CMD+1)  and Show in finder
     * Copy `libMintKit-Aggregate.a` and `headers` on your project directory
 5. Link Library
     * Open your project
