@@ -1,3 +1,5 @@
+![logo](http://www.mintcode.org/images/mintkit.png)
+
 MintKit
 =======
 
