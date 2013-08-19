@@ -1,11 +1,11 @@
 MintKit
 =======
 
-MintKis is simple iOS coding utils package based Objective-C, for only convenience on coding.
+MintKis is simple iOS coding utils package based Objective-C, For only convenience on coding.
 
 It's now basic and immature. So, It need other's contributions.
 
-For make adding new fuction or modification better performance.. etc, commit frankly! Thank you.
+For make adding new fuction or modification better performance.. etc, Commit frankly! Thank you.
 
 Welcome togther coding Anyone! 
 
