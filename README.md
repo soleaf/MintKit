@@ -69,57 +69,63 @@ Library Summary
 ####mintKit.h
 Information for mitKit
 
-
-####Test/TestKit.h
+###Test
+####TestKit.h
 TestKit is help loging and debuging your application.
     Debuging log should separated by unrecognized 'nslog'. In this case, Use 'debug:' method.
     In Object Oriend Programing, Some methods that checking implement method could be used.
 
-
-####Objects/ObjectUtil.h
+###Objects
+####ObjectUtil.h
 ObjectUtil supply some object tools.
 These methods could be moved info other class.
 
-####Objects/ArrayUtil.h
+####ArrayUtil.h
 NSArray Utilities
 
-####Objects/FormatUtil.h
+####FormatUtil.h
 Make String be foramtted like phone number.
 
-
-####objects/DateUtil.h
+####DateUtil.h
 For easy using Date calculation.
 
-####objects/DateTimeSet.h
- Model Object For Date and time.
+####DateTimeSet.h
+Model Object For Date and time.
  
- 
-####Map/MapUtil.h
+###Map
+####MapUtil.h
 MKMapKit assistance.
 
-####Graphics/GraphicUtil.h
+###Graphics
+####GraphicUtil.h
 Graphic Utilities like reszing image.
 
-####Validation/FromValidation.h
+####Animation.h
+Animation Effect by One line Code.
+
+###Validation
+####FromValidation.h
 Checking value is valid from.
 
-####UI/UIViewFrameUtil.h
+###UI
+####UIViewFrameUtil.h
 UIViewFrameUtil make coding to modify UIView frame very easy.
  
-####UI/UIRobot.h
+####UIRobot.h
 Automatic UI configurations.
 Example. SetText on UITextField, If text is not nil.
 
-####UI/UILayerUtil.h
+####UILayerUtil.h
 Make UIView Layer by One line code.
 For drop shadow, gradient, etc...
 
-####UI/UIViewControllerUtil.h
+####UIViewControllerUtil.h
 UIViewController's helper
 Make customed image back button in navigation bar,
 Simple Alert ...
 
-####ETC/DeviceUtil.h
+###ETC
+####DeviceUtil.h
 Some Informations for device
 Checking Retina device, iPhone5...
 
