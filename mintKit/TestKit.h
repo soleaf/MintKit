@@ -15,7 +15,9 @@
 */
 
 // This factor on methods be used '__func__' or 'MINTKIT_DEBUG_METHOD'
-// ex) [TestKit methodNoUse:__func__]; or [TestKit methodNoUse:MINTKIT_DEBUG_METHOD]; 
+// ex) [TestKit methodNoUse:__func__];
+//     or [TestKit methodNoUse:MINTKIT_DEBUG_METHOD];
+
 #define MINTKIT_DEBUG_METHOD __func__
 #define MINTKIT_DEBUG_METHOD_TYPE const char[60]
 
