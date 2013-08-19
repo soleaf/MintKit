@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E6C8C32217B0CFAB00B76AEC"
-               BuildableName = "kit"
-               BlueprintName = "kit"
-               ReferencedContainer = "container:mintKit.xcodeproj">
+               BlueprintIdentifier = "E6F4EDB317C210BF003D115F"
+               BuildableName = "mintKitSample.app"
+               BlueprintName = "mintKitSample"
+               ReferencedContainer = "container:mintKitSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E6F4EDB317C210BF003D115F"
+            BuildableName = "mintKitSample.app"
+            BlueprintName = "mintKitSample"
+            ReferencedContainer = "container:mintKitSample.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -39,6 +48,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E6F4EDB317C210BF003D115F"
+            BuildableName = "mintKitSample.app"
+            BlueprintName = "mintKitSample"
+            ReferencedContainer = "container:mintKitSample.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -48,6 +66,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E6F4EDB317C210BF003D115F"
+            BuildableName = "mintKitSample.app"
+            BlueprintName = "mintKitSample"
+            ReferencedContainer = "container:mintKitSample.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

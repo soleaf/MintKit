@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6F4EDB817C210BF003D115F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDB717C210BF003D115F /* UIKit.framework */; };
+		E6F4EDBA17C210BF003D115F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDB917C210BF003D115F /* Foundation.framework */; };
+		E6F4EDBC17C210BF003D115F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDBB17C210BF003D115F /* CoreGraphics.framework */; };
+		E6F4EDC217C210BF003D115F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6F4EDC017C210BF003D115F /* InfoPlist.strings */; };
+		E6F4EDC417C210BF003D115F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4EDC317C210BF003D115F /* main.m */; };
+		E6F4EDC817C210BF003D115F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4EDC717C210BF003D115F /* AppDelegate.m */; };
+		E6F4EDCA17C210BF003D115F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F4EDC917C210BF003D115F /* Default.png */; };
+		E6F4EDCC17C210BF003D115F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F4EDCB17C210BF003D115F /* Default@2x.png */; };
+		E6F4EDCE17C210BF003D115F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F4EDCD17C210BF003D115F /* Default-568h@2x.png */; };
+		E6F4EDDB17C21168003D115F /* libMintKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDDA17C21168003D115F /* libMintKit.a */; };
+		E6F4EDE117C211EC003D115F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4EDDF17C211EC003D115F /* MainViewController.m */; };
+		E6F4EDE217C211EC003D115F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F4EDE017C211EC003D115F /* MainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E6F4EDB417C210BF003D115F /* mintKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mintKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6F4EDB717C210BF003D115F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E6F4EDB917C210BF003D115F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E6F4EDBB17C210BF003D115F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E6F4EDBF17C210BF003D115F /* mintKitSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mintKitSample-Info.plist"; sourceTree = "<group>"; };
+		E6F4EDC117C210BF003D115F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6F4EDC317C210BF003D115F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6F4EDC517C210BF003D115F /* mintKitSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mintKitSample-Prefix.pch"; sourceTree = "<group>"; };
+		E6F4EDC617C210BF003D115F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E6F4EDC717C210BF003D115F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E6F4EDC917C210BF003D115F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E6F4EDCB17C210BF003D115F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E6F4EDCD17C210BF003D115F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E6F4EDDA17C21168003D115F /* libMintKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMintKit.a; path = Lib/MintKit/libMintKit.a; sourceTree = "<group>"; };
+		E6F4EDDE17C211EC003D115F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E6F4EDDF17C211EC003D115F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E6F4EDE017C211EC003D115F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6F4EDB117C210BF003D115F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F4EDDB17C21168003D115F /* libMintKit.a in Frameworks */,
+				E6F4EDB817C210BF003D115F /* UIKit.framework in Frameworks */,
+				E6F4EDBA17C210BF003D115F /* Foundation.framework in Frameworks */,
+				E6F4EDBC17C210BF003D115F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6F4EDAB17C210BF003D115F = {
+			isa = PBXGroup;
+			children = (
+				E6F4EDBD17C210BF003D115F /* mintKitSample */,
+				E6F4EDB617C210BF003D115F /* Frameworks */,
+				E6F4EDB517C210BF003D115F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6F4EDB517C210BF003D115F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6F4EDB417C210BF003D115F /* mintKitSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6F4EDB617C210BF003D115F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6F4EDDA17C21168003D115F /* libMintKit.a */,
+				E6F4EDB717C210BF003D115F /* UIKit.framework */,
+				E6F4EDB917C210BF003D115F /* Foundation.framework */,
+				E6F4EDBB17C210BF003D115F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6F4EDBD17C210BF003D115F /* mintKitSample */ = {
+			isa = PBXGroup;
+			children = (
+				E6F4EDC617C210BF003D115F /* AppDelegate.h */,
+				E6F4EDC717C210BF003D115F /* AppDelegate.m */,
+				E6F4EDDE17C211EC003D115F /* MainViewController.h */,
+				E6F4EDDF17C211EC003D115F /* MainViewController.m */,
+				E6F4EDE017C211EC003D115F /* MainViewController.xib */,
+				E6F4EDBE17C210BF003D115F /* Supporting Files */,
+			);
+			path = mintKitSample;
+			sourceTree = "<group>";
+		};
+		E6F4EDBE17C210BF003D115F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6F4EDBF17C210BF003D115F /* mintKitSample-Info.plist */,
+				E6F4EDC017C210BF003D115F /* InfoPlist.strings */,
+				E6F4EDC317C210BF003D115F /* main.m */,
+				E6F4EDC517C210BF003D115F /* mintKitSample-Prefix.pch */,
+				E6F4EDC917C210BF003D115F /* Default.png */,
+				E6F4EDCB17C210BF003D115F /* Default@2x.png */,
+				E6F4EDCD17C210BF003D115F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6F4EDB317C210BF003D115F /* mintKitSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6F4EDD117C210BF003D115F /* Build configuration list for PBXNativeTarget "mintKitSample" */;
+			buildPhases = (
+				E6F4EDB017C210BF003D115F /* Sources */,
+				E6F4EDB117C210BF003D115F /* Frameworks */,
+				E6F4EDB217C210BF003D115F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mintKitSample;
+			productName = mintKitSample;
+			productReference = E6F4EDB417C210BF003D115F /* mintKitSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6F4EDAC17C210BF003D115F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = mintcode.org;
+			};
+			buildConfigurationList = E6F4EDAF17C210BF003D115F /* Build configuration list for PBXProject "mintKitSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E6F4EDAB17C210BF003D115F;
+			productRefGroup = E6F4EDB517C210BF003D115F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6F4EDB317C210BF003D115F /* mintKitSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6F4EDB217C210BF003D115F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F4EDC217C210BF003D115F /* InfoPlist.strings in Resources */,
+				E6F4EDCA17C210BF003D115F /* Default.png in Resources */,
+				E6F4EDCC17C210BF003D115F /* Default@2x.png in Resources */,
+				E6F4EDCE17C210BF003D115F /* Default-568h@2x.png in Resources */,
+				E6F4EDE217C211EC003D115F /* MainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6F4EDB017C210BF003D115F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F4EDC417C210BF003D115F /* main.m in Sources */,
+				E6F4EDC817C210BF003D115F /* AppDelegate.m in Sources */,
+				E6F4EDE117C211EC003D115F /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E6F4EDC017C210BF003D115F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6F4EDC117C210BF003D115F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6F4EDCF17C210BF003D115F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E6F4EDD017C210BF003D115F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6F4EDD217C210BF003D115F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mintKitSample/mintKitSample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit/Headers\"";
+				INFOPLIST_FILE = "mintKitSample/mintKitSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Lib/MintKit\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E6F4EDD317C210BF003D115F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mintKitSample/mintKitSample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit/Headers\"";
+				INFOPLIST_FILE = "mintKitSample/mintKitSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Lib/MintKit\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6F4EDAF17C210BF003D115F /* Build configuration list for PBXProject "mintKitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6F4EDCF17C210BF003D115F /* Debug */,
+				E6F4EDD017C210BF003D115F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6F4EDD117C210BF003D115F /* Build configuration list for PBXNativeTarget "mintKitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6F4EDD217C210BF003D115F /* Debug */,
+				E6F4EDD317C210BF003D115F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6F4EDAC17C210BF003D115F /* Project object */;
+}
