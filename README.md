@@ -29,7 +29,7 @@ Just copy Files on Release folder and Link Your project!
 **There is Sample Project for Installing. Check `mintKitSample.xcodeproj` on WorkSpace or '/Sample'**
 
 1. [Download](https://github.com/soleaf/MintKit/archive/master.zip) or [Clone](github-mac://openRepo/https://github.com/soleaf/MintKit) to any directory.
-2. Copy `mintKit/Release/libMintKit.a`, `headers` to your project folder.
+2. Copy folder `mintKit/Release/MintKit` into your project folder.
 3. Open your project
 4. Project Setting > Target > Build Phases> `Link Binary With Libraries`> Add 'libMintKit-Aggregate.a' in your project directory
 5. … > Build Setting > search `Header Search Paths`  and Add `"$(SRCROOT)/Lib/MintKit/Headers"` *('Lib' is my location. If You use other location for MintKit, change it.)*
@@ -50,8 +50,7 @@ Just copy Files on Release folder and Link Your project!
     * Build 'Library-Device' > iOS Device
     * Build 'Library-Aggregate' > iOS Device
 4. Copy to Your Project folder
-    * Click right `Product > ibmint-device.a` in project navigator(CMD+1)  and Show in finder
-    * Copy `libMintKit-Aggregate.a` and `headers` on your project directory
+    * Copy folder `mintKit/Release/MintKit` into your project folder.
 5. Link Library
     * Open your project
     * Project Setting > Target > Build Phases> `Link Binary With Libraries`> Add 'libMintKit-Aggregate.a' on your project directory
