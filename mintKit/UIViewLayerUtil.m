@@ -36,6 +36,19 @@
     [view.layer insertSublayer:gradient atIndex:0];
 }
 
++ (void)gradient:(UIView *)view colors:(NSArray *)colorArray
+{
+    NSMutableArray *cgColorArray = [[NSMutableArray alloc] init];
+    for (UIColor *color in colorArray) {
+        [cgColorArray addObject:(id)[color CGColor]];
+    }
+    
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame            = view.bounds;
+    gradient.colors           = cgColorArray;
+    [view.layer insertSublayer:gradient atIndex:0];
+}
+
 + (void)border:(UIView *)view size:(float)size andColor:(UIColor*)color
 {
     view.layer.borderWidth  = size;

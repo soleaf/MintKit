@@ -8,6 +8,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /*
     Checking value is valid from.
@@ -18,5 +19,14 @@
 
 // Eamil format check. ex) abc@ab.com
 +(BOOL) email:(NSString *)checkString;
+
+// Limit text field length
+/* ex)
+    - (BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string)
+    {
+        return [FromValidation limitLength:5 onTextField:textfiled inRange:range replaceString:string];
+    }
+*/
++(BOOL) limitLength:(NSInteger) limit onTextField:(UITextField *)textField inRange:(NSRange)range replaceString:(NSString *)string;
 
 @end

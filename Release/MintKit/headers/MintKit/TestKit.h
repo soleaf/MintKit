@@ -35,7 +35,7 @@
 // Print Object with key
 + (void) debugKey:(NSString*)key andVal:(NSObject*) value;
 
-// Check method is used.
+// Checking if method is used.
 + (void) debugCheckIsUsedMethod: (MINTKIT_DEBUG_METHOD_TYPE) methodName;
 
 

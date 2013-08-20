@@ -7,6 +7,7 @@
 //
 
 #import "UIRobot.h"
+#import "TestKit.h"
 
 @implementation UIRobot
 
@@ -20,7 +21,9 @@
     
     else if ([target isKindOfClass:[UITextField class]])
         [UIRobot putIfNotnillOrLength0:str toTextField  :(UITextField *) target];
-
+    
+    else
+        [TestKit errorRuntime:__func__ code:@"UIRobot putIfNotnillOrLength0: toUI:" reason:@"Not found matched Class"];
 }
 
 + (void) putIfNotnillOrLength0:(NSString *)str toTextField:(UITextField*) target

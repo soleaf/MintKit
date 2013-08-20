@@ -584,7 +584,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -rf ${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a\n\nlipo -create \"${BUILT_PRODUCTS_DIR}/../${CONFIGURATION}-iphonesimulator/libMintKit-Simulator.a\" \\\n\"${BUILT_PRODUCTS_DIR}/libMintKit-Device.a\" -output \\\n\"${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a\"\n\nrsync ${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a ${PROJECT_DIR}/Release/libMintKit.a\nrsync -r ${BUILT_PRODUCTS_DIR}/headers ${PROJECT_DIR}/Release";
+			shellScript = "rm -rf ${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a\n\nlipo -create \"${BUILT_PRODUCTS_DIR}/../${CONFIGURATION}-iphonesimulator/libMintKit-Simulator.a\" \\\n\"${BUILT_PRODUCTS_DIR}/libMintKit-Device.a\" -output \\\n\"${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a\"\n\nrsync ${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a ${PROJECT_DIR}/Release/MintKit/libMintKit.a\nrsync -r ${BUILT_PRODUCTS_DIR}/headers ${PROJECT_DIR}/Release/MintKit/";
 		};
 /* End PBXShellScriptBuildPhase section */
 

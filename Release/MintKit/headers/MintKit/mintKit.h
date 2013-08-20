@@ -13,6 +13,15 @@
     htt://www.mintcode.org
  
     MintKit assist developing iOS App.
+ 
+    This Project's reposigoty is https://github.com/soleaf/MintKit
+    Welcome togther coding Anyone!
+ 
+    How To Use and Other Detail Information is on README.md
+    And More References on GitHub repository above.
+    
+    If You any question or Contact me?, Send mail to milk@mintcode.org.
+ 
 */
 
 @interface mintKit : NSObject

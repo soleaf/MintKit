@@ -27,4 +27,22 @@
     return mergedArray;
 }
 
++ (NSMutableArray *)ArrayWith:(NSArray *)array itemsPer1Row:(NSInteger)num
+{
+    NSMutableArray *mergedArray = [[NSMutableArray alloc] init];
+    for (NSInteger i = 0; i < array.count; i+=num) {
+        
+        NSMutableArray *rowSet = [[NSMutableArray alloc] init];
+        
+        for(NSInteger items = i; items < i+num && items < array.count; items++)
+        {
+            [rowSet addObject:[array objectAtIndex:items]];
+        }
+        
+        if (rowSet.count > 0) [mergedArray addObject:rowSet];
+        
+    }
+    return mergedArray;
+}
+
 @end

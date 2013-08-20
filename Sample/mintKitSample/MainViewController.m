@@ -18,6 +18,8 @@
  
  */
 #import <MintKit/mintKit.h>
+#import <MintKit/ArrayUtil.h>
+#import <MintKit/TestKit.h>
 
 @interface MainViewController ()
 
@@ -43,6 +45,11 @@
     // It appear some text on Console.
     [mintKit hello];
     [mintKit version];
+    
+    
+    // mutilItems in 1Row test
+    NSArray *ttt = [[NSArray alloc] initWithObjects:@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7", nil];
+    [TestKit debugKey:@"mutli items in 1row" andVal:[ArrayUtil ArrayWith:ttt itemsPer1Row:3]];
     
 }
 

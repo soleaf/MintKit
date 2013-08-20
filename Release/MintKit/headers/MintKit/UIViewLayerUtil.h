@@ -19,8 +19,9 @@
 + (void) dropShadow:(UIView *) view Opacity:(float)opacity andOffset:(CGSize) offset andColor:(UIColor*) color;
 + (void) dropShadow:(UIView *) view Opacity:(float)opacity andOffset:(CGSize) offset;
 
-// Fill gradient
+// Fill vertical gradient
 + (void) gradient:(UIView *) view start:(UIColor *)startColor endColor:(UIColor*) endColor;
++ (void) gradient:(UIView *) view colors:(NSArray*)colorArray; // (colorArray: UIColor array)
 
 // Make border
 + (void) border:(UIView*) view size:(float) size andColor:(UIColor*) color;
