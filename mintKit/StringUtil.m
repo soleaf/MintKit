@@ -57,23 +57,23 @@
     
     NSString *trimed = [StringUtil trimed:str];
     if (trimed.length < 1)
-        return YES;
-    else
         return NO;
+    else
+        return YES;
 }
 
 + (NSString *)getNotNilOn:(NSString *)first and:(NSString *)second
 {
-    if (![StringUtil hasLength:first]) return first;
-    else if (![StringUtil hasLength:second]) return second;
+    if ([StringUtil hasLength:first]) return first;
+    else if ([StringUtil hasLength:second]) return second;
     else return nil;
 }
 
 + (NSString *)getNotNilOn:(NSString *)first and:(NSString *)second and:(NSString *)third
 {
-    if (![StringUtil hasLength:first]) return first;
-    else if (![StringUtil hasLength:second]) return second;
-    else if (![StringUtil hasLength:third]) return third;
+    if ([StringUtil hasLength:first]) return first;
+    else if ([StringUtil hasLength:second]) return second;
+    else if ([StringUtil hasLength:third]) return third;
     else return nil;
 }
 
