@@ -21,10 +21,10 @@
  
  */
 
-// If A str is nil or length is 0, return "" else It.
+// If a str is nil or length is 0, return "" else It.
 + (NSString *)nvl:(NSString*)str;
 
-// If A str is nil or length is 0, return nilStr else It.
+// If a str is nil or length is 0, return nilStr else Str.
 + (NSString *)nvl:(NSString*)str nilStr:(NSString*)nilStr;
 
 // Is nil or length 0?
