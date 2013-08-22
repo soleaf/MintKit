@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		E61DD1AF17C5DDCB00AFC224 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52317B0F3EE00CBA6C9 /* StringUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C4E517B0EFD100CBA6C9 /* UIViewFrameUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4E317B0EFD100CBA6C9 /* UIViewFrameUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C4E617B0EFD100CBA6C9 /* UIViewFrameUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4E317B0EFD100CBA6C9 /* UIViewFrameUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C4E717B0EFD100CBA6C9 /* UIViewFrameUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4E317B0EFD100CBA6C9 /* UIViewFrameUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,7 +66,6 @@
 		E686C52217B0F3D700CBA6C9 /* ArrayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C51C17B0F3D600CBA6C9 /* ArrayUtil.m */; };
 		E686C52517B0F3EE00CBA6C9 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52317B0F3EE00CBA6C9 /* StringUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C52617B0F3EE00CBA6C9 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52317B0F3EE00CBA6C9 /* StringUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E686C52717B0F3EE00CBA6C9 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52317B0F3EE00CBA6C9 /* StringUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C52817B0F3EE00CBA6C9 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C52417B0F3EE00CBA6C9 /* StringUtil.m */; };
 		E686C52917B0F3EE00CBA6C9 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C52417B0F3EE00CBA6C9 /* StringUtil.m */; };
 		E686C52A17B0F3EE00CBA6C9 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C52417B0F3EE00CBA6C9 /* StringUtil.m */; };
@@ -451,7 +451,6 @@
 				E686C50F17B0F3A400CBA6C9 /* FormatUtil.h in Headers */,
 				E686C51717B0F3BF00CBA6C9 /* ObjectUtil.h in Headers */,
 				E686C51F17B0F3D700CBA6C9 /* ArrayUtil.h in Headers */,
-				E686C52717B0F3EE00CBA6C9 /* StringUtil.h in Headers */,
 				E686C52F17B0F40F00CBA6C9 /* UIVIewControllerUtil.h in Headers */,
 				E686C53717B0F42300CBA6C9 /* MapUtil.h in Headers */,
 				E686C53F17B0F42F00CBA6C9 /* GraphicsUtil.h in Headers */,
@@ -460,6 +459,7 @@
 				F7988B8817B3E91D000F63FB /* DateTimeSet.h in Headers */,
 				E6F4ED8F17C1B48F003D115F /* DeviceUtil.h in Headers */,
 				E6F4EDA617C1ED97003D115F /* AnimationUtil.h in Headers */,
+				E61DD1AF17C5DDCB00AFC224 /* StringUtil.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

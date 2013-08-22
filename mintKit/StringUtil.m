@@ -12,20 +12,6 @@
 @implementation StringUtil
 
 
-+ (NSString *) stringByStrippingHTML:(NSString*) htmlString
-{
-    NSRange range;
-    while ((range = [htmlString rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
-        htmlString = [htmlString stringByReplacingCharactersInRange:range withString:@""];
-    return htmlString;
-}
-
-
-+ (NSString *)trimed:(NSString *)str
-{
-    return [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-}
-
 + (NSString *) nvl:(NSString *)str
 {
     if ([StringUtil hasLength:str]) return  @"";
@@ -93,6 +79,25 @@
         return checked;
     else
         return @"";
+}
+
++ (NSString *) stringByStrippingHTML:(NSString*) htmlString
+{
+    NSRange range;
+    while ((range = [htmlString rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
+        htmlString = [htmlString stringByReplacingCharactersInRange:range withString:@""];
+    return htmlString;
+}
+
+
++ (NSString *)trimed:(NSString *)str
+{
+    return [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
++ (NSString*)uppercaseFirst:(NSString*)str
+{
+    return [str stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[str substringToIndex:1] uppercaseString]];
 }
 
 @end

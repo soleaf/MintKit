@@ -20,6 +20,7 @@
 #import <MintKit/mintKit.h>
 #import <MintKit/ArrayUtil.h>
 #import <MintKit/TestKit.h>
+#import <MintKit/StringUtil.h>
 
 @interface MainViewController ()
 
@@ -46,11 +47,12 @@
     [mintKit hello];
     [mintKit version];
     
-    
     // mutilItems in 1Row test
     NSArray *ttt = [[NSArray alloc] initWithObjects:@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7", nil];
     [TestKit debugKey:@"mutli items in 1row" andVal:[ArrayUtil ArrayWith:ttt itemsPer1Row:3]];
     
+    // Frist String Uppercase test
+    [TestKit debugKey:@"First String Uppercase" andVal:[StringUtil uppercaseFirst:@"the magic of leaf"]];
 }
 
 - (void)didReceiveMemoryWarning

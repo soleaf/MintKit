@@ -10,7 +10,7 @@
 
 /*
     MINTCODE.ORG
-    htt://www.mintcode.org
+    http://www.mintcode.org
  
     MintKit assist developing iOS App.
  

@@ -14,11 +14,12 @@
 
 @interface StringUtil : NSObject
 
-// Remove HTML tags.
-+ (NSString *) stringByStrippingHTML:(NSString*) htmlString;
 
-// Trim String
-+ (NSString *)trimed:(NSString *)str;
+/*
+ 
+ Checking haslength, nvl
+ 
+ */
 
 // If A str is nil or length is 0, return "" else It.
 + (NSString *)nvl:(NSString*)str;
@@ -37,5 +38,22 @@
 // Return first String not nil and length 0 in Strings. If all strings is nil, return "".
 + (NSString*)getNotNilWithNVLOn:(NSString *) first and:(NSString*) second;
 + (NSString*)getNotNilWithNVLOn:(NSString *) first and:(NSString*) second and:(NSString*) third;
+
+
+
+/*
+ 
+ Transformations
+ 
+ */
+
+// Remove HTML tags.
++ (NSString *) stringByStrippingHTML:(NSString*) htmlString;
+
+// Trim String
++ (NSString *)trimed:(NSString *)str;
+
+// Uppercase First string in sentence
++ (NSString*)uppercaseFirst:(NSString*)str;
 
 @end
