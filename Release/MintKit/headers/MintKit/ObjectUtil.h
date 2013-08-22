@@ -11,7 +11,7 @@
 
 /*
  ObjectUtil supply some object tools.
- These methods could be moved info other class.
+ These methods could be moved into other class.
  
  */
 
