@@ -17,6 +17,11 @@
 
 @interface ObjectUtil : NSObject
 
+/*
+ 
+ Comparison
+ 
+ */
 
 // Check A point is equal to other point.
 + (BOOL) CGPoint:(CGPoint) point isEqual:(CGPoint) otherPoint;

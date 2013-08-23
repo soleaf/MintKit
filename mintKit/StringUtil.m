@@ -14,14 +14,14 @@
 
 + (NSString *) nvl:(NSString *)str
 {
-    if ([StringUtil hasLength:str]) return  @"";
-    else return  str;
+    if ([StringUtil hasLength:str]) return  str;
+    else return  @"";
 }
 
 + (NSString *)nvl:(NSString *)str nilStr:(NSString *)nilStr
 {
-    if ([StringUtil hasLength:str]) return  nilStr;
-    else return  str;
+    if ([StringUtil hasLength:str]) return  str;
+    else return  nilStr;
 }
 
 + (BOOL)isNilOrLength0:(NSString *)str // Deprecated.
