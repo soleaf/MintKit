@@ -3,7 +3,7 @@
 MintKit
 =======
 
-MintKis is simple iOS coding utils package based Objective-C, For only convenience on coding.
+MintKis is a simple fundemental iOS coding utils package based Objective-C, For only convenience on coding. It help you don't bother about fundemental functions or implementing simple functions.
 * Handling NSString
 * Add Shadow, border .. etc layers with One line code
 * Move, Resize UIView very easy One line code
