@@ -39,7 +39,7 @@
 
 + (BOOL)hasLength:(NSString *)str
 {
-    if (nil == str) return YES;
+    if (nil == str) return NO;
     
     NSString *trimed = [StringUtil trimed:str];
     if (trimed.length < 1)
