@@ -10,6 +10,20 @@ MintKis is a simple fundemental iOS coding utils package based Objective-C, For 
 * Automatic Check NSString is null and Put TextFieldText, UIButtonTitle.
 * Etc... Better Tools for iOS Developers.
 
+
+#### Example of codebase down.
+Before Code)
+```objective-c
+CGRect frame = self.ui_textField.frame;
+frame.x += 320;
+self.ui_textField.frame = frame;
+```
+MintKit Code)
+```objective-c
+[UIViewFrameUtil move:self.ui_textField moreX:320];
+```
+
+#### Contribute 
 It's now basic and immature. So, It need other's contributions.
 For make adding new fuction or modification better performance.. etc,
 Commit frankly! Thank you.
@@ -40,8 +54,7 @@ Just copy Files on Release folder and Link Your project!
 (...)
 [mintKit hello];
 ```
-
-7. Reference Document [Wiki](https://github.com/soleaf/MintKit/wiki)
+> **Reference Document** [Wiki](https://github.com/soleaf/MintKit/wiki)
 
 ###Compile and Use
 
@@ -65,16 +78,15 @@ Just copy Files on Release folder and Link Your project!
 [mintKit hello];
 ```
 
-7. Reference Document [Wiki](https://github.com/soleaf/MintKit/wiki)
+> **Reference Document** [Wiki](https://github.com/soleaf/MintKit/wiki)
 
 Library Summary
 ===
 *Will update soon for detail method informations.*
 ```
-IF YOU WANT DETAIL HOW TO USE METHODS, CHECK ANY HEADER FILES AND NOTE!
+IF YOU WANT DETAIL HOW TO USE METHODS, CHECK `ANY HEADER FILES` AND `REFERENCE`
 ```
-
-> Reference Document [Wiki](https://github.com/soleaf/MintKit/wiki)
+> **REFERENCE** [HERE](https://github.com/soleaf/MintKit/wiki)
 
 ####mintKit.h
 Information for mitKit
