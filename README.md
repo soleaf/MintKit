@@ -41,6 +41,8 @@ Just copy Files on Release folder and Link Your project!
 [mintKit hello];
 ```
 
+7. Reference Document [Wiki](https://github.com/soleaf/MintKit/wiki)
+
 ###Compile and Use
 
 1. [Download](https://github.com/soleaf/MintKit/archive/master.zip) or [Clone](github-mac://openRepo/https://github.com/soleaf/MintKit) to any directory.
@@ -63,12 +65,16 @@ Just copy Files on Release folder and Link Your project!
 [mintKit hello];
 ```
 
+7. Reference Document [Wiki](https://github.com/soleaf/MintKit/wiki)
+
 Library Summary
 ===
 *Will update soon for detail method informations.*
 ```
 IF YOU WANT DETAIL HOW TO USE METHODS, CHECK ANY HEADER FILES AND NOTE!
 ```
+
+> Reference Document [Wiki](https://github.com/soleaf/MintKit/wiki)
 
 ####mintKit.h
 Information for mitKit
