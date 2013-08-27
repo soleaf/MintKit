@@ -15,8 +15,13 @@
 
 @interface MapUtil : NSObject
 
+/*
+    Convert bettwen 2D Coordinate and address
+ */
+
 // Address from CLLocationCoordinate2D by GoogleMapAPI.
-+ (NSString *) getAddressFromCoordinate:(CLLocationCoordinate2D) location;
+// lang is display language -> ex 'ko'
++ (NSString *) getAddressFromCoordinate:(CLLocationCoordinate2D) location andLang:(NSString*) lang;
 
 // CLLocationCoordinate2D Dictoinary from address by GoogleMapAPI.
 + (NSDictionary *) getCoordinateFromAddress:(NSString*) address;

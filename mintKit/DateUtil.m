@@ -47,6 +47,28 @@
     return dateTimeSet;
 }
 
++ (DateTimeSet *) NSIntervalToTimeSet: (NSTimeInterval) interval
+{
+    int nowCount = interval;
+    
+    NSInteger hours = nowCount/ 60/ 60;
+    nowCount =  nowCount % (60 * 60);
+    
+    NSInteger minutes = nowCount / 60;
+    nowCount = nowCount % 60;
+    
+    NSInteger seconds = nowCount;
+    
+    DateTimeSet *dateTimeSet = [[DateTimeSet alloc] init];
+    dateTimeSet.interval = interval;
+    dateTimeSet.hours    = hours;
+    dateTimeSet.minutes  = minutes;
+    dateTimeSet.seconds  = seconds;
+    
+    return dateTimeSet;
+}
+
+
 + (NSDictionary *)getNowDate
 {
     return [DateUtil NSDateToDateDic:[NSDate date]];
@@ -86,24 +108,4 @@
     return [DateUtil NSDateToDateTimeSet:nextDate];
 }
 
-+ (DateTimeSet *) NSIntervalToTimeSet: (NSTimeInterval) interval
-{
-    int nowCount = interval;
-    
-    NSInteger hours = nowCount/ 60/ 60;
-    nowCount =  nowCount % (60 * 60);
-    
-    NSInteger minutes = nowCount / 60;
-    nowCount = nowCount % 60;
-    
-    NSInteger seconds = nowCount;
-    
-    DateTimeSet *dateTimeSet = [[DateTimeSet alloc] init];
-    dateTimeSet.interval = interval;
-    dateTimeSet.hours    = hours;
-    dateTimeSet.minutes  = minutes;
-    dateTimeSet.seconds  = seconds;
-    
-    return dateTimeSet;
-}
 @end

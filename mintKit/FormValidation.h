@@ -17,8 +17,18 @@
 
 @interface FormValidation : NSObject
 
+
+/*
+ Validation values
+*/
+
 // Eamil format check. ex) abc@ab.com
 +(BOOL) email:(NSString *)checkString;
+
+
+/*
+ Restrict UI
+ */
 
 // Limit text field length
 /* ex)

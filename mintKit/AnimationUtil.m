@@ -13,6 +13,9 @@
 
 + (CAKeyframeAnimation*)dockBounceAnimationWithViewHeight:(CGFloat)viewHeight
 {
+    // This code is searched on stackoverfollow. but I cant find contributor.
+    // If anyone know this code maker, notice to me.
+    
     NSUInteger const kNumFactors    = 24;
     CGFloat const kFactorsPerSec    = 30.0f;
     CGFloat const kFactorsMaxValue  = 128.0f;

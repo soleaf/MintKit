@@ -10,10 +10,9 @@
 
 @implementation MapUtil
 
-+ (NSString *)getAddressFromCoordinate:(CLLocationCoordinate2D)location
++ (NSString *)getAddressFromCoordinate:(CLLocationCoordinate2D)location andLang:(NSString *)lang
 {
-    NSString *urlString = [NSString stringWithFormat:@"http://maps.google.com/maps/api/geocode/json?latlng=%f,%f&language=ko&sensor=false", location.latitude, location.longitude];
-    //NSLog(@"urlString :%@",urlString);
+    NSString *urlString = [NSString stringWithFormat:@"http://maps.google.com/maps/api/geocode/json?latlng=%f,%f&language=%@&sensor=false", location.latitude, location.longitude,lang];
 
     NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
     if (!data) return nil;
@@ -30,7 +29,6 @@
     
     if ([resultArray objectAtIndex:0] != nil && [[resultArray objectAtIndex:0] objectForKey:@"formatted_address"]){
         NSString* locationString = [[resultArray objectAtIndex:0] objectForKey:@"formatted_address"];
-        NSLog(@"locationString :%@",locationString);
         
             return locationString;
     }
@@ -60,7 +58,6 @@
     
     if ( resultArray.count > 0 && [resultArray objectAtIndex:0]){
         NSDictionary* geometry = [[[resultArray objectAtIndex:0] objectForKey:@"geometry"] objectForKey:@"location"];
-        NSLog(@"urlString: %@ geo :%@",urlString,geometry);
         
         return geometry;
     }

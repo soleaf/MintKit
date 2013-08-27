@@ -10,10 +10,14 @@
 #import <QuartzCore/QuartzCore.h>
 
 /*
-    Graphic Utilite like reszing image.
+    Handling like reszing image.
  */
 
 @interface GraphicsUtil : NSObject
+
+/*
+    Resize image
+*/
 
 // Resize Image to newSize If image size is saller than minSize
 + (UIImage*)minimizeWithImage:(UIImage*)image scaledToSize:(CGSize)newSize mindetectingSize: (CGSize)minSize;
@@ -24,6 +28,4 @@
 // Rsize Image to newSize
 + (UIImage*)resizeWithImage:(UIImage*)image toSize:(CGSize)newSize;
 
-// Make UIView animation like dock bounce. : IS DEPRECATED. AND MOVED TO AnimationUtil Class.
-+ (CAKeyframeAnimation*)dockBounceAnimationWithViewHeight:(CGFloat)viewHeight;
 @end

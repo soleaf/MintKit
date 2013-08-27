@@ -21,6 +21,7 @@
     view.layer.shadowOffset     = offset;
     view.layer.shadowOpacity    = opacity;
     view.layer.shadowPath       = shadowPath.CGPath;
+    
 }
 
 + (void)dropShadow:(UIView *)view Opacity:(float)opacity andOffset:(CGSize)offset

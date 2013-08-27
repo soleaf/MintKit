@@ -16,14 +16,27 @@
 
 @interface UIVIewControllerUtil : NSObject
 
+/*
+ Navigation
+ */
 
 // Get a before controller in navigation viewcontrollers stack.
 + (UIViewController *)backViewController: (UIViewController *) view;
 
-// Show UIAlert with contents text
-+ (void) alertView:(NSString*)text;
+
+/*
+ Customize UI
+ */
 
 // Show BackButtonIn UIViewNavigationBar With Custome Image
 + (void) showBackButton:(UIViewController *)view title: (NSString *) titleText andImageNamed: (NSString *) imgName;
+
+
+/*
+ Alert
+ */
+
+// Show UIAlert with contents text
++ (void) alertView:(NSString*)text;
 
 @end
