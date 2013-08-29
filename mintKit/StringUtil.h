@@ -56,4 +56,12 @@
 // Uppercase First string in sentence
 + (NSString*)uppercaseFirst:(NSString*)str;
 
+
+/* 
+ 
+ ETC character split
+ 
+ */
+
++ (NSMutableArray *)LinearHangul:(NSString *)string;
 @end

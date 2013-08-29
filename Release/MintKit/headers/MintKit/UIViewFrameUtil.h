@@ -16,6 +16,11 @@
 
 @interface UIViewFrameUtil : NSObject
 
+
+/* 
+ Moving UIView
+ */
+
 // Move to releative offset +/-
 +(void) move:(UIView *) view moreY:(float) offset;
 +(void) move:(UIView *) view moreX:(float) offset;
@@ -24,12 +29,17 @@
 +(void) move:(UIView *) view toY:(float) offset;
 +(void) move:(UIView *) view toX:(float) offset;
 
+
+/*
+ Resizing UIView
+ */
+
 // Resize one property or all.
 +(void) frame:(UIView *) view height:(float) height;
 +(void) frame:(UIView *) view width:(float) width;
 +(void) frame:(UIView *) view w:(float) width andH:(float)height;
 
-// Resize to reslative size
+// Resize to relative size
 +(void) frame:(UIView *) view moreH:(float) height;
 +(void) frame:(UIView *) view moreW:(float) width;
 +(void) frame:(UIView *) view moreW:(float) width andMoreH:(float)height;

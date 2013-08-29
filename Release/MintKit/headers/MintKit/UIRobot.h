@@ -18,7 +18,12 @@
 
 @interface UIRobot : NSObject
 
-// setText or setTitle, If str is not nil and not length0
+
+/*
+ SettingText
+ */
+
+// SetText or setTitle, If str is not nil and not length0
 + (void) putIfNotnillOrLength0:(NSString *)str toUI:(UIView*) target;
 + (void) putIfNotnillOrLength0:(NSString *)str toTextField:(UITextField*) target;
 + (void) putIfNotnillOrLength0:(NSString *)str toButton:(UIButton*) target;

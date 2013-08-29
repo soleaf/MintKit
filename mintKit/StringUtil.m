@@ -100,4 +100,29 @@
     return [str stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:[[str substringToIndex:1] uppercaseString]];
 }
 
+
++ (NSMutableArray *)LinearHangul:(NSString *)string
+{
+    
+    // This Code scrapped from
+    // http://nicejinux.net/bbs/zboard.php?id=lecture&page=1&sn1=&divpage=1&category=5&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=206&PHPSESSID=a47abd937cd1c885493f55f7c5f2387f
+    
+    NSArray *chosung = [NSArray arrayWithObjects:@"ㄱ",@"ㄲ",@"ㄴ",@"ㄷ",@"ㄸ",@"ㄹ",@"ㅁ",@"ㅂ",@"ㅃ",@"ㅅ",@"ㅆ",@"ㅇ",@"ㅈ",@"ㅉ",@"ㅊ",@"ㅋ",@"ㅌ",@"ㅍ",@"ㅎ",nil];
+    NSArray *jungsung = [NSArray arrayWithObjects:@"ㅏ",@"ㅐ",@"ㅑ",@"ㅒ",@"ㅓ",@"ㅔ",@"ㅕ",@"ㅖ",@"ㅗ",@"ㅘ",@"ㅙ",@"ㅚ",@"ㅛ",@"ㅜ",@"ㅝ",@"ㅞ",@"ㅟ",@"ㅠ",@"ㅡ",@"ㅢ",@"ㅣ",nil];
+    NSArray *jongsung = [NSArray arrayWithObjects:@"",@"ㄱ",@"ㄲ",@"ㄳ",@"ㄴ",@"ㄵ",@"ㄶ",@"ㄷ",@"ㄹ",@"ㄺ",@"ㄻ",@"ㄼ",@"ㄽ",@"ㄾ",@"ㄿ",@"ㅀ",@"ㅁ",@"ㅂ",@"ㅄ",@"ㅅ",@"ㅆ",@"ㅇ",@"ㅈ",@"ㅊ",@"ㅋ",@" ㅌ",@"ㅍ",@"ㅎ",nil];
+    NSMutableArray *resultList = [NSMutableArray arrayWithCapacity:0];
+    
+    for (int i=0;i<[string length];i++) {
+        int code = [string characterAtIndex:i];
+        if (code >= 44032 && code <= 55203) {
+            int unicode = code - 44032;
+            int chosungIdx  = unicode / 21 / 28;
+            int jungsungIdx = unicode % (21 * 28) / 28;
+            int jongsungIdx = unicode % 28;
+            NSArray *result = [NSArray arrayWithObjects:[chosung objectAtIndex:chosungIdx], [jungsung objectAtIndex:jungsungIdx], [jongsung objectAtIndex:jongsungIdx], nil];
+            [resultList addObject:result];
+        }
+    }
+    return resultList;
+}
 @end
