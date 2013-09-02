@@ -25,9 +25,7 @@
 }
 
 + (BOOL)isNilOrLength0:(NSString *)str // Deprecated.
-{
-    [TestKit methodisDeprecated:__func__ moveTo:@"hasLength:"];
-    
+{    
     if (nil == str) return YES;
     
     NSString *trimed = [StringUtil trimed:str];
