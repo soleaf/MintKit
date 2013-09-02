@@ -42,7 +42,7 @@
     return animation;
 }
 
-+ (void) fadeInMove:(UIView *)view fromMoreY:(float)y interval:(float)time;
++ (void) fadeInMove:(UIView *)view fromMoreY:(float)y interval:(float)time callBack:(void(^)(void))callback
 {
     view.alpha = 0.0;
     CGRect endFrame = view.frame;
@@ -56,11 +56,13 @@
                          view.frame = endFrame;
                          view.alpha = 1.0;
                          
-                     } completion:nil];
+                     } completion:^(BOOL finished) {
+                         callback();
+                     }];
     
 }
 
-+ (void) fadeInMove:(UIView *)view fromMoreX:(float)x interval:(float)time
++ (void) fadeInMove:(UIView *)view fromMoreX:(float)x interval:(float)time callBack:(void (^)(void))callback
 {
     view.alpha = 0.0;
     CGRect endFrame = view.frame;
@@ -74,16 +76,51 @@
                          view.frame = endFrame;
                          view.alpha = 1.0;
                          
-                     } completion:nil];
+                     } completion:^(BOOL finished) {
+                         callback();
+                     }];
+}
+
++ (void) fadeInMove:(UIView *)view toMoreX:(float)x interval:(float)time callBack:(void (^)(void))callback
+{
+    view.alpha = 0.0;
+
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         [UIViewFrameUtil move:view moreX:x];
+                         view.alpha = 1.0;
+                         
+                     } completion:^(BOOL finished) {
+                         callback();
+                     }];
+}
+
++ (void) fadeInMove:(UIView *)view toMoreY:(float)y interval:(float)time callBack:(void (^)(void))callback
+{
+    view.alpha = 0.0;
     
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         [UIViewFrameUtil move:view moreY:y];
+                         view.alpha = 1.0;
+                         
+                     } completion:^(BOOL finished) {
+                         callback();
+                     }];
 }
 
 + (void)fadeIn:(UIView *)view
 {
-    [AnimationUtil fadeIn:view interval:0.3];
+    [AnimationUtil fadeIn:view interval:0.3 callBack:nil];
 }
 
-+ (void)fadeIn:(UIView *)view interval:(float)time
++ (void)fadeIn:(UIView *)view interval:(float)time callBack:(void (^)(void))callback
 {
     view.alpha = 0.0;
     [UIView animateWithDuration:time
@@ -91,22 +128,26 @@
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          view.alpha = 1.0;
-                     } completion:nil];
+                     } completion:^(BOOL finished) {
+                         callback();
+                     }];
 }
 
 + (void)fadeOut:(UIView *)view
 {
-    [AnimationUtil fadeOut:view interval:0.3];
+    [AnimationUtil fadeOut:view interval:0.3 callBack:nil];
 }
 
-+ (void)fadeOut:(UIView *)view interval:(float)time
++ (void)fadeOut:(UIView *)view interval:(float)time callBack:(void (^)(void))callback
 {
     [UIView animateWithDuration:time
                           delay:0
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          view.alpha = 0.0;
-                     } completion:nil];
+                     } completion:^(BOOL finished) {
+                         callback();
+                     }];
 }
 
 @end
