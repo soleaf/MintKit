@@ -39,12 +39,12 @@
  * : Just loging.
  */
 
-+ (void)errorRuntime:(const char [60])methodName
++ (void)errorRuntime:(MINTKIT_DEBUG_METHOD_TYPE)methodName
 {
     [TestKit errorRuntime:methodName code:nil reason:nil error:nil];
 }
 
-+ (void)errorRuntime:(const char [60])methodName code:(NSString *)code
++ (void)errorRuntime:(MINTKIT_DEBUG_METHOD_TYPE)methodName code:(NSString *)code
 {
     [TestKit errorRuntime:methodName code:code reason:nil error:nil];
 }
@@ -59,7 +59,7 @@
     code    = code?     [NSString stringWithFormat:@" [%@]",code]   : @"";
     reason  = reason?   [NSString stringWithFormat:@" [%@]",reason] : @"";
     
-    NSString *errorObjStr = errorObj ? [NSString stringWithFormat:@"\n%@",errorObj] : @"";
+    NSString *errorObjStr = errorObj ? [NSString stringWithFormat:@"\nNSError:\n%@",errorObj] : @"";
     
     NSLog(@"%@ [ ✕ ERROR]%@%@", code, reason, errorObjStr);
 }
