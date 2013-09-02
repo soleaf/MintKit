@@ -23,7 +23,7 @@
 +(BOOL) limitLength:(NSInteger) limit onTextField:(UITextField *)textField inRange:(NSRange)range replaceString:(NSString *)string
 {
     NSUInteger newLength = [textField.text length] + [string length] - range.length;
-    if (limit > 20) return NO;
+    if (newLength > limit) return NO;
     else return YES;
 }
 
