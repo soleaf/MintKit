@@ -12,4 +12,17 @@
 @synthesize interval,hours,minutes,seconds;
 @synthesize year, month, day;
 
+- (NSString *)description {
+    
+    // Existing date
+    NSString *dateDesc = nil;
+    if (year > 0 && month> 0 && day >0)
+        dateDesc = [NSString stringWithFormat:@" Date(%d.%d.%d)",year, month,day ];
+    else
+        dateDesc = @"";
+    
+    return [NSString stringWithFormat:@"DateTimeSet: %@Time(%d:%d:%d) Interval(%f)", dateDesc, hours, minutes, seconds, interval];
+}
+
+
 @end

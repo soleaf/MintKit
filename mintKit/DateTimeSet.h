@@ -32,4 +32,6 @@
 @property NSInteger hours, minutes, seconds;
 @property NSInteger year, month, day;
 
+- (NSString *)description;
+
 @end
