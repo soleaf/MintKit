@@ -25,7 +25,6 @@
     NSInteger       year;
     NSInteger       month;
     NSInteger       day;
-       
 }
 
 @property NSTimeInterval interval;
