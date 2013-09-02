@@ -78,10 +78,6 @@
 		E6C8C30F17B0C64500B76AEC /* Library_Device.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8C30E17B0C64500B76AEC /* Library_Device.m */; };
 		E6C8C31517B0C65900B76AEC /* mintKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C8C2E217B0C51900B76AEC /* mintKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6C8C31617B0C65D00B76AEC /* mintKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8C2E417B0C51900B76AEC /* mintKit.m */; };
-		E6DAD54D17D4337F00572F80 /* UIButton+NSDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = E6DAD54B17D4337F00572F80 /* UIButton+NSDictionary.h */; };
-		E6DAD54E17D4337F00572F80 /* UIButton+NSDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = E6DAD54B17D4337F00572F80 /* UIButton+NSDictionary.h */; };
-		E6DAD54F17D4337F00572F80 /* UIButton+NSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DAD54C17D4337F00572F80 /* UIButton+NSDictionary.m */; };
-		E6DAD55017D4337F00572F80 /* UIButton+NSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DAD54C17D4337F00572F80 /* UIButton+NSDictionary.m */; };
 		E6F4ED8E17C1B48E003D115F /* DeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F4ED8917C1B2FC003D115F /* DeviceUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6F4ED8F17C1B48F003D115F /* DeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F4ED8917C1B2FC003D115F /* DeviceUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6F4ED9017C1B498003D115F /* DeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4ED8A17C1B2FC003D115F /* DeviceUtil.m */; };
@@ -160,8 +156,6 @@
 		E6C8C30B17B0C64500B76AEC /* Library-Device-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Library-Device-Prefix.pch"; sourceTree = "<group>"; };
 		E6C8C30C17B0C64500B76AEC /* Library_Device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Library_Device.h; sourceTree = "<group>"; };
 		E6C8C30E17B0C64500B76AEC /* Library_Device.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Library_Device.m; sourceTree = "<group>"; };
-		E6DAD54B17D4337F00572F80 /* UIButton+NSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NSDictionary.h"; sourceTree = "<group>"; };
-		E6DAD54C17D4337F00572F80 /* UIButton+NSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+NSDictionary.m"; sourceTree = "<group>"; };
 		E6F4ED8917C1B2FC003D115F /* DeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUtil.h; sourceTree = "<group>"; };
 		E6F4ED8A17C1B2FC003D115F /* DeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUtil.m; sourceTree = "<group>"; };
 		E6F4EDA217C1ED97003D115F /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
@@ -204,8 +198,6 @@
 				E686C50417B0F38100CBA6C9 /* UIViewLayerUtil.m */,
 				E686C52B17B0F40F00CBA6C9 /* UIVIewControllerUtil.h */,
 				E686C52C17B0F40F00CBA6C9 /* UIVIewControllerUtil.m */,
-				E6DAD54B17D4337F00572F80 /* UIButton+NSDictionary.h */,
-				E6DAD54C17D4337F00572F80 /* UIButton+NSDictionary.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -389,7 +381,6 @@
 				F7988B8717B3E91D000F63FB /* DateTimeSet.h in Headers */,
 				E6F4ED8E17C1B48E003D115F /* DeviceUtil.h in Headers */,
 				E6F4EDA517C1ED97003D115F /* AnimationUtil.h in Headers */,
-				E6DAD54D17D4337F00572F80 /* UIButton+NSDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +405,6 @@
 				E6F4ED8F17C1B48F003D115F /* DeviceUtil.h in Headers */,
 				E6F4EDA617C1ED97003D115F /* AnimationUtil.h in Headers */,
 				E61DD1AF17C5DDCB00AFC224 /* StringUtil.h in Headers */,
-				E6DAD54E17D4337F00572F80 /* UIButton+NSDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,7 +514,6 @@
 				F7988B8A17B3E91D000F63FB /* DateTimeSet.m in Sources */,
 				E6F4ED9017C1B498003D115F /* DeviceUtil.m in Sources */,
 				E6F4EDA817C1ED97003D115F /* AnimationUtil.m in Sources */,
-				E6DAD54F17D4337F00572F80 /* UIButton+NSDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +539,6 @@
 				F7988B8B17B3E91D000F63FB /* DateTimeSet.m in Sources */,
 				E6F4ED9117C1B498003D115F /* DeviceUtil.m in Sources */,
 				E6F4EDA917C1ED97003D115F /* AnimationUtil.m in Sources */,
-				E6DAD55017D4337F00572F80 /* UIButton+NSDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
