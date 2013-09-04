@@ -16,11 +16,20 @@
 
 @interface DeviceUtil : NSObject
 
+/*
+ Screen
+ */
+
 // Is retina this device?
 + (BOOL) isRetina;
 
 // Screen is 4Inch
 + (BOOL) is4InchScreen;
+
+
+/*
+ Device type
+ */
 
 // Is iPhone?
 + (BOOL) isiPhone;

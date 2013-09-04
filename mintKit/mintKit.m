@@ -9,13 +9,13 @@
 #import "mintKit.h"
 
 #define MINTKIT_VERSION            @"0.0.1"
-#define MINTKIT_BUILD              2
+#define MINTKIT_BUILD              3
 #define MINTKIT_RELEASE            0
-#define MINTKIT_VERSION_DATE       @"2013.09.02"
+#define MINTKIT_VERSION_DATE       @"2013.09.04"
 
 @implementation mintKit
 
-+ (void) hello
++ (void)hello
 {
     NSLog(@"HELLO MINTKIT!!!!");
     NSLog(@"SUCCESS MINTKIT INSTALLATION");

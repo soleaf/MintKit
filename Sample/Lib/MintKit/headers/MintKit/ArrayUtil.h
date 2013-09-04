@@ -15,6 +15,13 @@
 
 @interface ArrayUtil : NSObject
 
+
+/*
+ 
+ Organization
+ 
+ */
+
 // Make array with two object per row.
 + (NSMutableArray *) ArrayWithTwoPerRow:(NSArray *)array;
 // Make array with user setted numer of items per row.

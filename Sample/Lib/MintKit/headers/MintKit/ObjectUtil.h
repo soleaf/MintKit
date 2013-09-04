@@ -11,12 +11,17 @@
 
 /*
  ObjectUtil supply some object tools.
- These methods could be moved info other class.
+ These methods could be moved into other class.
  
  */
 
 @interface ObjectUtil : NSObject
 
+/*
+ 
+ Comparison
+ 
+ */
 
 // Check A point is equal to other point.
 + (BOOL) CGPoint:(CGPoint) point isEqual:(CGPoint) otherPoint;

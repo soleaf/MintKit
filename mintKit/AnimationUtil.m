@@ -57,7 +57,7 @@
                          view.alpha = 1.0;
                          
                      } completion:^(BOOL finished) {
-                         callback();
+                         if (callback != nil) callback();
                      }];
     
 }
@@ -77,7 +77,7 @@
                          view.alpha = 1.0;
                          
                      } completion:^(BOOL finished) {
-                         callback();
+                         if (callback != nil) callback();
                      }];
 }
 
@@ -94,7 +94,7 @@
                          view.alpha = 1.0;
                          
                      } completion:^(BOOL finished) {
-                         callback();
+                         if (callback != nil) callback();
                      }];
 }
 
@@ -111,7 +111,7 @@
                          view.alpha = 1.0;
                          
                      } completion:^(BOOL finished) {
-                         callback();
+                         if (callback != nil) callback();
                      }];
 }
 
@@ -129,7 +129,7 @@
                      animations:^{
                          view.alpha = 1.0;
                      } completion:^(BOOL finished) {
-                         callback();
+                         if (callback != nil) callback();
                      }];
 }
 
@@ -146,7 +146,7 @@
                      animations:^{
                          view.alpha = 0.0;
                      } completion:^(BOOL finished) {
-                         callback();
+                         if (callback != nil) callback();
                      }];
 }
 

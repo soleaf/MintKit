@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E610BAD117D6CA2400E3B1A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E610BAD017D6CA2400E3B1A9 /* QuartzCore.framework */; };
 		E6F4EDB817C210BF003D115F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDB717C210BF003D115F /* UIKit.framework */; };
 		E6F4EDBA17C210BF003D115F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDB917C210BF003D115F /* Foundation.framework */; };
 		E6F4EDBC17C210BF003D115F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDBB17C210BF003D115F /* CoreGraphics.framework */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E610BAD017D6CA2400E3B1A9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E6F4EDB417C210BF003D115F /* mintKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mintKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F4EDB717C210BF003D115F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E6F4EDB917C210BF003D115F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E610BAD117D6CA2400E3B1A9 /* QuartzCore.framework in Frameworks */,
 				E6F4EDDB17C21168003D115F /* libMintKit.a in Frameworks */,
 				E6F4EDB817C210BF003D115F /* UIKit.framework in Frameworks */,
 				E6F4EDBA17C210BF003D115F /* Foundation.framework in Frameworks */,
@@ -77,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E6F4EDDA17C21168003D115F /* libMintKit.a */,
+				E610BAD017D6CA2400E3B1A9 /* QuartzCore.framework */,
 				E6F4EDB717C210BF003D115F /* UIKit.framework */,
 				E6F4EDB917C210BF003D115F /* Foundation.framework */,
 				E6F4EDBB17C210BF003D115F /* CoreGraphics.framework */,

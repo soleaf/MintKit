@@ -21,6 +21,7 @@
 #import <MintKit/ArrayUtil.h>
 #import <MintKit/TestKit.h>
 #import <MintKit/StringUtil.h>
+#import <MintKit/AnimationUtil.h>
 
 @interface MainViewController ()
 
@@ -53,6 +54,9 @@
     
     // Frist String Uppercase test
     [TestKit debugKey:@"First String Uppercase" andVal:[StringUtil uppercaseFirst:@"the magic of leaf"]];
+    
+    // UIView Animation  test
+    [AnimationUtil fadeOut:self.ui_button];
 }
 
 - (void)didReceiveMemoryWarning

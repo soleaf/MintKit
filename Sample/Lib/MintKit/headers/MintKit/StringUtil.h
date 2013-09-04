@@ -28,7 +28,7 @@
 + (NSString *)nvl:(NSString*)str nilStr:(NSString*)nilStr;
 
 // Is nil or length 0?
-+ (BOOL) isNilOrLength0:(NSString*) str; // is deprecatd. Use hasLength:
++ (BOOL) isNilOrLength0:(NSString*) str;
 + (BOOL) hasLength: (NSString*)str;
 
 // Return first String not nil and length 0 in Strings. If all strings is nil, return nil.
@@ -56,4 +56,12 @@
 // Uppercase First string in sentence
 + (NSString*)uppercaseFirst:(NSString*)str;
 
+
+/* 
+ 
+ ETC character split
+ 
+ */
+
++ (NSMutableArray *)LinearHangul:(NSString *)string;
 @end

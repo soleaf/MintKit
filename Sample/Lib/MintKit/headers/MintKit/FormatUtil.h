@@ -14,6 +14,12 @@
 
 @interface FormatUtil : NSObject
 
+/*
+ 
+ Personal Information
+ 
+ */
+
 // Number to phone format: 12345678 -> 1234-5678 .. etc. (Korean type)
 + (NSString*) toPhoneNumberwithDash:(NSString *) value;
 
