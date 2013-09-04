@@ -61,4 +61,6 @@
 + (void) fadeInMove:(UIView *)view moreY:(float)y interval:(float)time callBack:(void(^)(void))callback;
 + (void) fadeInMove:(UIView *)view moreX:(float)x interval:(float)time callBack:(void(^)(void))callback;
 
+
+
 @end

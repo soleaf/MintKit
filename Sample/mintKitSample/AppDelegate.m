@@ -29,9 +29,15 @@
     [self.window addSubview:consol];
     
     [Consol log:@"테스입니다."];
-    [Consol log:@"졸려"];
-    [Consol log:@"테스입니다."];
-    [Consol log:@"테스입니다."];    [Consol log:@"테스입니다."];    [Consol log:@"테스입니다."];    [Consol log:@"테스입니다."];
+
+    
+    double delayInSeconds = 3.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        
+            [Consol log:@"테스입니다."];
+        
+    });
     
     return YES;
 }

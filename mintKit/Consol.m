@@ -9,9 +9,11 @@
 #import "Consol.h"
 #import "StringUtil.h"
 
+
 @interface Consol()
 {
     UITextView *textView;
+
 }
 
 @end
@@ -47,15 +49,6 @@
 
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
 -(void) logTest:(NSNotification*) notification {
     NSDictionary *userInfo = [notification userInfo];
     
@@ -70,7 +63,25 @@
     
     // Scroll bottom
     CGPoint bottomOffset = CGPointMake(0, textView.contentSize.height - textView.bounds.size.height);
-    [TextView setContentOffset:bottomOffset animated:YES];
+    [textView setContentOffset:bottomOffset animated:YES];
+    
+    [self dim:0];
+}
+
+
+- (void) dim:(MINT_CONSOL_LOG_TYPES) logType
+{
+    // dim animation
+    [UIView animateWithDuration:1
+                          delay:0
+                        options:UIViewAnimationOptionAutoreverse
+                     animations:^
+    {
+        self.backgroundColor = [UIColor redColor];
+    }
+                     completion:nil 
+     ];
+
 }
 
 
