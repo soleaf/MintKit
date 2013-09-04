@@ -8,6 +8,12 @@
 
 #import "Consol.h"
 
+@interface Consol()
+{
+    UITextView *textView;
+}
+
+@end
 
 @implementation Consol
 
@@ -16,11 +22,28 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        
-        self.backgroundColor = [UIColor blackColor];
-
     }
     return self;
+}
+
+
+- (void) ready
+{
+    self.backgroundColor = [UIColor blackColor];
+    
+    NSNotificationCenter*defaultCenter = [NSNotificationCenter defaultCenter];
+    [defaultCenter addObserver:self
+                      selector:@selector(logTest:)
+                          name:@"MINTKIT_CONSOL_LOG_TEST"
+                        object:nil];
+    
+    CGRect frame = self.frame;
+    textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+    textView.backgroundColor = [UIColor blackColor];
+    textView.textColor = [UIColor whiteColor];
+    textView.editable = NO;
+    [self addSubview:textView];
+
 }
 
 /*
@@ -31,5 +54,12 @@
     // Drawing code
 }
 */
+
+-(void) logTest:(NSNotification*) notification {
+    
+    NSLog(@"asdfasdf1231231");
+    textView.text = @"asdfasdfasdfsdf11111_dddf";
+}
+
 
 @end
