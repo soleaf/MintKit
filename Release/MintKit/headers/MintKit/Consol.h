@@ -16,6 +16,5 @@
 
 @interface Consol : UIControl
 
-
-
+- (void)ready;
 @end

@@ -23,8 +23,13 @@
     MainViewController *mainCtr = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
     self.window.rootViewController = mainCtr;
     
-    Consol *consol = [[Consol alloc] initWithFrame:CGRectMake(5, 25, 40, 40)];
+    // Consol Test
+    Consol *consol = [[Consol alloc] initWithFrame:CGRectMake(5, 25, 300, 100)];
+    [consol ready];
     [self.window addSubview:consol];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MINTKIT_CONSOL_LOG_TEST"object:nil];
+
     
     return YES;
 }
