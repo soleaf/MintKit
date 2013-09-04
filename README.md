@@ -88,69 +88,6 @@ IF YOU WANT DETAIL HOW TO USE METHODS, CHECK `ANY HEADER FILES` AND `REFERENCE`
 ```
 > **REFERENCE** [HERE](https://github.com/soleaf/MintKit/wiki)
 
-####mintKit.h
-Information for mitKit
-
-###Test
-####TestKit.h
-TestKit is help loging and debuging your application.
-    Debuging log should separated by unrecognized 'nslog'. In this case, Use 'debug:' method.
-    In Object Oriend Programing, Some methods that checking implement method could be used.
-
-###Objects
-####ObjectUtil.h
-ObjectUtil supply some object tools.
-These methods could be moved info other class.
-
-####ArrayUtil.h
-NSArray Utilities
-
-####FormatUtil.h
-Make String be foramtted like phone number.
-
-####DateUtil.h
-For easy using Date calculation.
-
-####DateTimeSet.h
-Model Object For Date and time.
- 
-###Map
-####MapUtil.h
-MKMapKit assistance.
-
-###Graphics
-####GraphicUtil.h
-Graphic Utilities like reszing image.
-
-####Animation.h
-Animation Effect by One line Code.
-
-###Validation
-####FromValidation.h
-Checking value is valid from.
-
-###UI
-####UIViewFrameUtil.h
-UIViewFrameUtil make coding to modify UIView frame very easy.
- 
-####UIRobot.h
-Automatic UI configurations.
-Example. SetText on UITextField, If text is not nil.
-
-####UILayerUtil.h
-Make UIView Layer by One line code.
-For drop shadow, gradient, etc...
-
-####UIViewControllerUtil.h
-UIViewController's helper
-Make customed image back button in navigation bar,
-Simple Alert ...
-
-###ETC
-####DeviceUtil.h
-Some Informations for device
-Checking Retina device, iPhone5...
-
 Requirement
 ===
 * ARC
