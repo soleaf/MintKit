@@ -154,6 +154,10 @@ Checking Retina device, iPhone5...
 Requirement
 ===
 * ARC
+* Frameworks
+   * <b>QuartzCore.framework<b/>
+   * UIkit.framework
+   * CoreGraphics.framework
 
 Credits
 ===
