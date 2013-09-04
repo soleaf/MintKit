@@ -28,8 +28,10 @@
     [consol ready];
     [self.window addSubview:consol];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"MINTKIT_CONSOL_LOG_TEST"object:nil];
-
+    [Consol log:@"테스입니다."];
+    [Consol log:@"졸려"];
+    [Consol log:@"테스입니다."];
+    [Consol log:@"테스입니다."];    [Consol log:@"테스입니다."];    [Consol log:@"테스입니다."];    [Consol log:@"테스입니다."];
     
     return YES;
 }

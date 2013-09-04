@@ -17,4 +17,10 @@
 @interface Consol : UIControl
 
 - (void)ready;
+
+/*
+ loging
+ */
++ (void)log:(NSString*)text;
+
 @end

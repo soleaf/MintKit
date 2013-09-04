@@ -7,6 +7,7 @@
 //
 
 #import "Consol.h"
+#import "StringUtil.h"
 
 @interface Consol()
 {
@@ -56,9 +57,29 @@
 */
 
 -(void) logTest:(NSNotification*) notification {
+    NSDictionary *userInfo = [notification userInfo];
     
-    NSLog(@"asdfasdf1231231");
-    textView.text = @"asdfasdfasdfsdf11111_dddf";
+    // TODO: filter text (ex: remove:'[MINTKIT]')
+    
+    if (![StringUtil hasLength:textView.text]){
+        textView.text = [userInfo objectForKey:@"log"];
+    }
+    else{
+        textView.text = [NSString stringWithFormat:@"%@\n%@", textView.text, [userInfo objectForKey:@"log"]];
+    }
+    
+    // Scroll bottom
+    CGPoint bottomOffset = CGPointMake(0, textView.contentSize.height - textView.bounds.size.height);
+    [TextView setContentOffset:bottomOffset animated:YES];
+}
+
+
+#pragma mark - Call Loging
+
++ (void)log:(NSString *)text
+{
+    NSDictionary *userInfo =[NSDictionary dictionaryWithObject:text forKey:@"log"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MINTKIT_CONSOL_LOG_TEST" object:nil userInfo:userInfo];
 }
 
 
