@@ -38,11 +38,16 @@
 /*
  Move
  */
-
+// Moving Animation relative pos
 + (void) move:(UIView *) view moreX:(float)x;
 + (void) move:(UIView *) view moreX:(float)x interval:(float)time callBack:(void(^)(void))callBack;
 + (void) move:(UIView *) view moreY:(float)y;
 + (void) move:(UIView *) view moreY:(float)y interval:(float)time callBack:(void(^)(void))callBack;
+// Moving Animation absolute pos 
++ (void) move:(UIView *) view toX:(float)x;
++ (void) move:(UIView *) view toX:(float)x interval:(float)time callBack:(void(^)(void))callBack;
++ (void) move:(UIView *) view toY:(float)y;
++ (void) move:(UIView *) view toY:(float)y interval:(float)time callBack:(void(^)(void))callBack;
 
 
 /*

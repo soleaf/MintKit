@@ -188,6 +188,43 @@
                      }];
 }
 
++ (void)move:(UIView *)view toX:(float)x
+{
+    [AnimationUtil move:view toX:x interval:0.3 callBack:nil];
+}
+
++ (void)move:(UIView *)view toX:(float)x interval:(float)time callBack:(void (^)(void))callBack
+{
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         [UIViewFrameUtil move:view toX:x];
+                         
+                     } completion:^(BOOL finished) {
+                         if (callBack != nil) callBack();
+                     }];
+}
+
++ (void)move:(UIView *)view toY:(float)y
+{
+    [AnimationUtil move:view toY:y interval:0.3 callBack:nil];
+}
+
++ (void)move:(UIView *)view toY:(float)y interval:(float)time callBack:(void (^)(void))callBack
+{
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         [UIViewFrameUtil move:view toY:y];
+                         
+                     } completion:^(BOOL finished) {
+                         if (callBack != nil) callBack();
+                     }];
+}
 
 
 @end
