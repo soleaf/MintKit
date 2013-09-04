@@ -26,6 +26,10 @@
 		E610BAE917D72AB800E3B1A9 /* UIViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E610BAE617D72AB800E3B1A9 /* UIViewUtil.m */; };
 		E610BAEA17D72AB800E3B1A9 /* UIViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E610BAE617D72AB800E3B1A9 /* UIViewUtil.m */; };
 		E61DD1AF17C5DDCB00AFC224 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C52317B0F3EE00CBA6C9 /* StringUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6350DC717D7490100911902 /* Consol.h in Headers */ = {isa = PBXBuildFile; fileRef = E6350DC517D7490100911902 /* Consol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6350DC817D7490100911902 /* Consol.h in Headers */ = {isa = PBXBuildFile; fileRef = E6350DC517D7490100911902 /* Consol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6350DC917D7490100911902 /* Consol.m in Sources */ = {isa = PBXBuildFile; fileRef = E6350DC617D7490100911902 /* Consol.m */; };
+		E6350DCA17D7490100911902 /* Consol.m in Sources */ = {isa = PBXBuildFile; fileRef = E6350DC617D7490100911902 /* Consol.m */; };
 		E686C4E617B0EFD100CBA6C9 /* UIViewFrameUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4E317B0EFD100CBA6C9 /* UIViewFrameUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C4E717B0EFD100CBA6C9 /* UIViewFrameUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E686C4E317B0EFD100CBA6C9 /* UIViewFrameUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E686C4E917B0EFD100CBA6C9 /* UIViewFrameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E686C4E417B0EFD100CBA6C9 /* UIViewFrameUtil.m */; };
@@ -126,6 +130,8 @@
 /* Begin PBXFileReference section */
 		E610BAE517D72AB800E3B1A9 /* UIViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewUtil.h; sourceTree = "<group>"; };
 		E610BAE617D72AB800E3B1A9 /* UIViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewUtil.m; sourceTree = "<group>"; };
+		E6350DC517D7490100911902 /* Consol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Consol.h; sourceTree = "<group>"; };
+		E6350DC617D7490100911902 /* Consol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Consol.m; sourceTree = "<group>"; };
 		E686C4E317B0EFD100CBA6C9 /* UIViewFrameUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewFrameUtil.h; sourceTree = "<group>"; };
 		E686C4E417B0EFD100CBA6C9 /* UIViewFrameUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewFrameUtil.m; sourceTree = "<group>"; };
 		E686C4F317B0F36000CBA6C9 /* UIRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRobot.h; sourceTree = "<group>"; };
@@ -254,6 +260,8 @@
 			children = (
 				E686C4FB17B0F37100CBA6C9 /* TestKit.h */,
 				E686C4FC17B0F37100CBA6C9 /* TestKit.m */,
+				E6350DC517D7490100911902 /* Consol.h */,
+				E6350DC617D7490100911902 /* Consol.m */,
 			);
 			name = Test;
 			sourceTree = "<group>";
@@ -390,6 +398,7 @@
 				E6F4ED8E17C1B48E003D115F /* DeviceUtil.h in Headers */,
 				E6F4EDA517C1ED97003D115F /* AnimationUtil.h in Headers */,
 				E610BAE717D72AB800E3B1A9 /* UIViewUtil.h in Headers */,
+				E6350DC717D7490100911902 /* Consol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +424,7 @@
 				E6F4EDA617C1ED97003D115F /* AnimationUtil.h in Headers */,
 				E61DD1AF17C5DDCB00AFC224 /* StringUtil.h in Headers */,
 				E610BAE817D72AB800E3B1A9 /* UIViewUtil.h in Headers */,
+				E6350DC817D7490100911902 /* Consol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +535,7 @@
 				E6F4ED9017C1B498003D115F /* DeviceUtil.m in Sources */,
 				E6F4EDA817C1ED97003D115F /* AnimationUtil.m in Sources */,
 				E610BAE917D72AB800E3B1A9 /* UIViewUtil.m in Sources */,
+				E6350DC917D7490100911902 /* Consol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +562,7 @@
 				E6F4ED9117C1B498003D115F /* DeviceUtil.m in Sources */,
 				E6F4EDA917C1ED97003D115F /* AnimationUtil.m in Sources */,
 				E610BAEA17D72AB800E3B1A9 /* UIViewUtil.m in Sources */,
+				E6350DCA17D7490100911902 /* Consol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

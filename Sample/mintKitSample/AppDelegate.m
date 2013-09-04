@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 
+#import <MintKit/Consol.h>
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -20,6 +22,9 @@
     
     MainViewController *mainCtr = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
     self.window.rootViewController = mainCtr;
+    
+    Consol *consol = [[Consol alloc] initWithFrame:CGRectMake(5, 25, 40, 40)];
+    [self.window addSubview:consol];
     
     return YES;
 }
