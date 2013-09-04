@@ -81,7 +81,7 @@
                      }];
 }
 
-+ (void) fadeInMove:(UIView *)view toMoreX:(float)x interval:(float)time callBack:(void (^)(void))callback
++ (void) fadeInMove:(UIView *)view moreX:(float)x interval:(float)time callBack:(void (^)(void))callback
 {
     view.alpha = 0.0;
 
@@ -98,7 +98,7 @@
                      }];
 }
 
-+ (void) fadeInMove:(UIView *)view toMoreY:(float)y interval:(float)time callBack:(void (^)(void))callback
++ (void) fadeInMove:(UIView *)view moreY:(float)y interval:(float)time callBack:(void (^)(void))callback
 {
     view.alpha = 0.0;
     
@@ -149,5 +149,45 @@
                          if (callback != nil) callback();
                      }];
 }
+
++ (void)move:(UIView *)view moreX:(float)x
+{
+    [AnimationUtil move:view moreX:x interval:0.3 callBack:nil];
+}
+
++ (void)move:(UIView *)view moreX:(float)x interval:(float)time callBack:(void (^)(void))callBack
+{
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         [UIViewFrameUtil move:view moreX:x];
+                     
+                     } completion:^(BOOL finished) {
+                         if (callBack != nil) callBack();
+                     }];
+}
+
++ (void)move:(UIView *)view moreY:(float)y
+{
+    [AnimationUtil move:view moreY:y interval:0.3 callBack:nil];
+}
+
++ (void)move:(UIView *)view moreY:(float)y interval:(float)time callBack:(void (^)(void))callBack
+{
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         [UIViewFrameUtil move:view moreY:y];
+                         
+                     } completion:^(BOOL finished) {
+                         if (callBack != nil) callBack();
+                     }];
+}
+
+
 
 @end
