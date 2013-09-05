@@ -27,7 +27,7 @@ MintKit Code)
 It's now basic and immature. So, It need other's contributions.
 For make adding new fuction or modification better performance.. etc,
 Commit frankly! Thank you.
-**Welcome Togeher Coding Anyone!**
+**Welcome Together Coding Anyone!**
 
 This Project in mintcode.org
 
