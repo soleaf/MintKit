@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		E62ABA8F17DB401C0037ADB0 /* minKit-deployToSampleProject */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E62ABA9217DB401C0037ADB0 /* Build configuration list for PBXAggregateTarget "minKit-deployToSampleProject" */;
+			buildPhases = (
+				E62ABA9317DB40200037ADB0 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "minKit-deployToSampleProject";
+			productName = "minKit-deployToSampleProject";
+		};
 		E6C8C31817B0C72000B76AEC /* mintKit-Aggregate */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = E6C8C31917B0C72000B76AEC /* Build configuration list for PBXAggregateTarget "mintKit-Aggregate" */;
@@ -481,11 +492,25 @@
 				E6C8C2F117B0C57100B76AEC /* mintKit-Simulator */,
 				E6C8C30617B0C64500B76AEC /* mintKit-Device */,
 				E6C8C31817B0C72000B76AEC /* mintKit-Aggregate */,
+				E62ABA8F17DB401C0037ADB0 /* minKit-deployToSampleProject */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		E62ABA9317DB40200037ADB0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf ${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a\n\nlipo -create \"${BUILT_PRODUCTS_DIR}/../${CONFIGURATION}-iphonesimulator/libMintKit-Simulator.a\" \\\n\"${BUILT_PRODUCTS_DIR}/libMintKit-Device.a\" -output \\\n\"${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a\"\n\nrsync ${BUILT_PRODUCTS_DIR}/libMintKit-Aggregate.a ${PROJECT_DIR}/Sample/Lib/MintKit/libMintKit.a\nrsync -r ${BUILT_PRODUCTS_DIR}/headers ${PROJECT_DIR}/Sample/Lib/MintKit/";
+		};
 		E6C8C31E17B0CB6600B76AEC /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -557,6 +582,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		E62ABA9017DB401C0037ADB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E62ABA9117DB401C0037ADB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		E6C8C2E617B0C51900B76AEC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -679,6 +718,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E62ABA9217DB401C0037ADB0 /* Build configuration list for PBXAggregateTarget "minKit-deployToSampleProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E62ABA9017DB401C0037ADB0 /* Debug */,
+				E62ABA9117DB401C0037ADB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E6C8C2D517B0C51900B76AEC /* Build configuration list for PBXProject "mintKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
