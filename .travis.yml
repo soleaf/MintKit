@@ -1,4 +1,4 @@
 language: objective-c
-before_install: "sudo gem update --system && sudo gem install bundler && bundle install"
+before_install: "git submodule init && git submodule update &&sudo gem update --system && sudo gem install bundler && bundle install"
 xcode_sdk: iphonesimulator
 script: "bundle exec rake test --trace"
