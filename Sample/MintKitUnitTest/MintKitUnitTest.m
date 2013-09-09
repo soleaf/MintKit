@@ -30,17 +30,25 @@
 - (void)testStringUtilHaslengthNil
 {
     // nil
+    NSLog(@"%@ Start",self.name);
+    
     NSString *originStr = nil;
     BOOL hasLength = [StringUtil hasLength:originStr];
     STAssertTrue(!hasLength, @"nil has not length");
+    
+    NSLog(@"%@ End",self.name);
 }
 
 - (void)testStringUtilHasLengthBlank
 {
     // blank
+    NSLog(@"%@ Start",self.name);
+    
     NSString *originStr = @"  ";
     BOOL hasLength = [StringUtil hasLength:originStr];
     STAssertTrue(!hasLength, @"blank has no length");
+    
+   NSLog(@"%@ End",self.name);
 }
 
 @end
