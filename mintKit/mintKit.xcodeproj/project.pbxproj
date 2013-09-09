@@ -910,6 +910,7 @@
 				F791DACF17DE0B5B0092A474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
