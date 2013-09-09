@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:mintKitSample.xcodeproj">
+      location = "self:mintKit.xcodeproj">
    </FileRef>
 </Workspace>

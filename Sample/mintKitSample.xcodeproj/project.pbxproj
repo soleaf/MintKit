@@ -7,157 +7,165 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E610BAD117D6CA2400E3B1A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E610BAD017D6CA2400E3B1A9 /* QuartzCore.framework */; };
-		E690ED9A17DD673700F2730E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E690ED9917DD673700F2730E /* SenTestingKit.framework */; };
-		E690ED9B17DD673700F2730E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDB717C210BF003D115F /* UIKit.framework */; };
-		E690ED9C17DD673700F2730E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDB917C210BF003D115F /* Foundation.framework */; };
-		E690EDA217DD673700F2730E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E690EDA017DD673700F2730E /* InfoPlist.strings */; };
-		E690EDA517DD673700F2730E /* MintKitUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E690EDA417DD673700F2730E /* MintKitUnitTest.m */; };
-		E690EDAA17DD681100F2730E /* libMintKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDDA17C21168003D115F /* libMintKit.a */; };
-		E6F4EDB817C210BF003D115F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDB717C210BF003D115F /* UIKit.framework */; };
-		E6F4EDBA17C210BF003D115F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDB917C210BF003D115F /* Foundation.framework */; };
-		E6F4EDBC17C210BF003D115F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDBB17C210BF003D115F /* CoreGraphics.framework */; };
-		E6F4EDC217C210BF003D115F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6F4EDC017C210BF003D115F /* InfoPlist.strings */; };
-		E6F4EDC417C210BF003D115F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4EDC317C210BF003D115F /* main.m */; };
-		E6F4EDC817C210BF003D115F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4EDC717C210BF003D115F /* AppDelegate.m */; };
-		E6F4EDCA17C210BF003D115F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F4EDC917C210BF003D115F /* Default.png */; };
-		E6F4EDCC17C210BF003D115F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F4EDCB17C210BF003D115F /* Default@2x.png */; };
-		E6F4EDCE17C210BF003D115F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6F4EDCD17C210BF003D115F /* Default-568h@2x.png */; };
-		E6F4EDDB17C21168003D115F /* libMintKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDDA17C21168003D115F /* libMintKit.a */; };
-		E6F4EDE117C211EC003D115F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4EDDF17C211EC003D115F /* MainViewController.m */; };
-		E6F4EDE217C211EC003D115F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F4EDE017C211EC003D115F /* MainViewController.xib */; };
+		F706E03317DDF74C004783CB /* libMintKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93CAE17DDF074007E4EB6 /* libMintKit.a */; };
+		F7A93C7217DDEF01007E4EB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93C7117DDEF01007E4EB6 /* UIKit.framework */; };
+		F7A93C7417DDEF01007E4EB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93C7317DDEF01007E4EB6 /* Foundation.framework */; };
+		F7A93C7617DDEF01007E4EB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93C7517DDEF01007E4EB6 /* CoreGraphics.framework */; };
+		F7A93C7C17DDEF01007E4EB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7A93C7A17DDEF01007E4EB6 /* InfoPlist.strings */; };
+		F7A93C7E17DDEF01007E4EB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A93C7D17DDEF01007E4EB6 /* main.m */; };
+		F7A93C8217DDEF01007E4EB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A93C8117DDEF01007E4EB6 /* AppDelegate.m */; };
+		F7A93C8417DDEF01007E4EB6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A93C8317DDEF01007E4EB6 /* Default.png */; };
+		F7A93C8617DDEF01007E4EB6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A93C8517DDEF01007E4EB6 /* Default@2x.png */; };
+		F7A93C8817DDEF01007E4EB6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A93C8717DDEF01007E4EB6 /* Default-568h@2x.png */; };
+		F7A93C8B17DDEF01007E4EB6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A93C8917DDEF01007E4EB6 /* MainStoryboard.storyboard */; };
+		F7A93C8E17DDEF01007E4EB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A93C8D17DDEF01007E4EB6 /* ViewController.m */; };
+		F7A93C9617DDEF02007E4EB6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93C9517DDEF02007E4EB6 /* SenTestingKit.framework */; };
+		F7A93C9717DDEF02007E4EB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93C7117DDEF01007E4EB6 /* UIKit.framework */; };
+		F7A93C9817DDEF02007E4EB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93C7317DDEF01007E4EB6 /* Foundation.framework */; };
+		F7A93CA017DDEF02007E4EB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7A93C9E17DDEF02007E4EB6 /* InfoPlist.strings */; };
+		F7A93CA317DDEF02007E4EB6 /* mintKitSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A93CA217DDEF02007E4EB6 /* mintKitSampleTests.m */; };
+		F7A93CAD17DDF024007E4EB6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93CAC17DDF024007E4EB6 /* QuartzCore.framework */; };
+		F7A93CAF17DDF074007E4EB6 /* libMintKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93CAE17DDF074007E4EB6 /* libMintKit.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F7A93C9917DDEF02007E4EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7A93C6617DDEF01007E4EB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7A93C6D17DDEF01007E4EB6;
+			remoteInfo = mintKitSample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		E610BAD017D6CA2400E3B1A9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		E690ED9817DD673700F2730E /* MintKitUnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MintKitUnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E690ED9917DD673700F2730E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E690ED9F17DD673700F2730E /* MintKitUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MintKitUnitTest-Info.plist"; sourceTree = "<group>"; };
-		E690EDA117DD673700F2730E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E690EDA317DD673700F2730E /* MintKitUnitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintKitUnitTest.h; sourceTree = "<group>"; };
-		E690EDA417DD673700F2730E /* MintKitUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MintKitUnitTest.m; sourceTree = "<group>"; };
-		E690EDA617DD673700F2730E /* MintKitUnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MintKitUnitTest-Prefix.pch"; sourceTree = "<group>"; };
-		E6F4EDB417C210BF003D115F /* mintKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mintKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6F4EDB717C210BF003D115F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E6F4EDB917C210BF003D115F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E6F4EDBB17C210BF003D115F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E6F4EDBF17C210BF003D115F /* mintKitSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mintKitSample-Info.plist"; sourceTree = "<group>"; };
-		E6F4EDC117C210BF003D115F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E6F4EDC317C210BF003D115F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E6F4EDC517C210BF003D115F /* mintKitSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mintKitSample-Prefix.pch"; sourceTree = "<group>"; };
-		E6F4EDC617C210BF003D115F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E6F4EDC717C210BF003D115F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E6F4EDC917C210BF003D115F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		E6F4EDCB17C210BF003D115F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		E6F4EDCD17C210BF003D115F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		E6F4EDDA17C21168003D115F /* libMintKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMintKit.a; path = Lib/MintKit/libMintKit.a; sourceTree = "<group>"; };
-		E6F4EDDE17C211EC003D115F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		E6F4EDDF17C211EC003D115F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		E6F4EDE017C211EC003D115F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		F7A93C6E17DDEF01007E4EB6 /* mintKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mintKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7A93C7117DDEF01007E4EB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F7A93C7317DDEF01007E4EB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F7A93C7517DDEF01007E4EB6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F7A93C7917DDEF01007E4EB6 /* mintKitSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mintKitSample-Info.plist"; sourceTree = "<group>"; };
+		F7A93C7B17DDEF01007E4EB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F7A93C7D17DDEF01007E4EB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7A93C7F17DDEF01007E4EB6 /* mintKitSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mintKitSample-Prefix.pch"; sourceTree = "<group>"; };
+		F7A93C8017DDEF01007E4EB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F7A93C8117DDEF01007E4EB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F7A93C8317DDEF01007E4EB6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F7A93C8517DDEF01007E4EB6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F7A93C8717DDEF01007E4EB6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F7A93C8A17DDEF01007E4EB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F7A93C8C17DDEF01007E4EB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F7A93C8D17DDEF01007E4EB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F7A93C9417DDEF02007E4EB6 /* mintKitSampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mintKitSampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7A93C9517DDEF02007E4EB6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F7A93C9D17DDEF02007E4EB6 /* mintKitSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mintKitSampleTests-Info.plist"; sourceTree = "<group>"; };
+		F7A93C9F17DDEF02007E4EB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F7A93CA117DDEF02007E4EB6 /* mintKitSampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mintKitSampleTests.h; sourceTree = "<group>"; };
+		F7A93CA217DDEF02007E4EB6 /* mintKitSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mintKitSampleTests.m; sourceTree = "<group>"; };
+		F7A93CAC17DDF024007E4EB6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F7A93CAE17DDF074007E4EB6 /* libMintKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMintKit.a; path = Lib/MintKit/libMintKit.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E690ED9417DD673700F2730E /* Frameworks */ = {
+		F7A93C6B17DDEF01007E4EB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E690ED9A17DD673700F2730E /* SenTestingKit.framework in Frameworks */,
-				E690ED9B17DD673700F2730E /* UIKit.framework in Frameworks */,
-				E690ED9C17DD673700F2730E /* Foundation.framework in Frameworks */,
-				E690EDAA17DD681100F2730E /* libMintKit.a in Frameworks */,
+				F7A93CAF17DDF074007E4EB6 /* libMintKit.a in Frameworks */,
+				F7A93CAD17DDF024007E4EB6 /* QuartzCore.framework in Frameworks */,
+				F7A93C7217DDEF01007E4EB6 /* UIKit.framework in Frameworks */,
+				F7A93C7417DDEF01007E4EB6 /* Foundation.framework in Frameworks */,
+				F7A93C7617DDEF01007E4EB6 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6F4EDB117C210BF003D115F /* Frameworks */ = {
+		F7A93C9017DDEF02007E4EB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E610BAD117D6CA2400E3B1A9 /* QuartzCore.framework in Frameworks */,
-				E6F4EDDB17C21168003D115F /* libMintKit.a in Frameworks */,
-				E6F4EDB817C210BF003D115F /* UIKit.framework in Frameworks */,
-				E6F4EDBA17C210BF003D115F /* Foundation.framework in Frameworks */,
-				E6F4EDBC17C210BF003D115F /* CoreGraphics.framework in Frameworks */,
+				F706E03317DDF74C004783CB /* libMintKit.a in Frameworks */,
+				F7A93C9617DDEF02007E4EB6 /* SenTestingKit.framework in Frameworks */,
+				F7A93C9717DDEF02007E4EB6 /* UIKit.framework in Frameworks */,
+				F7A93C9817DDEF02007E4EB6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E690ED9D17DD673700F2730E /* MintKitUnitTest */ = {
+		F7A93C6517DDEF01007E4EB6 = {
 			isa = PBXGroup;
 			children = (
-				E690EDA317DD673700F2730E /* MintKitUnitTest.h */,
-				E690EDA417DD673700F2730E /* MintKitUnitTest.m */,
-				E690ED9E17DD673700F2730E /* Supporting Files */,
-			);
-			path = MintKitUnitTest;
-			sourceTree = "<group>";
-		};
-		E690ED9E17DD673700F2730E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E690ED9F17DD673700F2730E /* MintKitUnitTest-Info.plist */,
-				E690EDA017DD673700F2730E /* InfoPlist.strings */,
-				E690EDA617DD673700F2730E /* MintKitUnitTest-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E6F4EDAB17C210BF003D115F = {
-			isa = PBXGroup;
-			children = (
-				E6F4EDBD17C210BF003D115F /* mintKitSample */,
-				E690ED9D17DD673700F2730E /* MintKitUnitTest */,
-				E6F4EDB617C210BF003D115F /* Frameworks */,
-				E6F4EDB517C210BF003D115F /* Products */,
+				F7A93CAC17DDF024007E4EB6 /* QuartzCore.framework */,
+				F7A93C7717DDEF01007E4EB6 /* mintKitSample */,
+				F7A93C9B17DDEF02007E4EB6 /* mintKitSampleTests */,
+				F7A93C7017DDEF01007E4EB6 /* Frameworks */,
+				F7A93C6F17DDEF01007E4EB6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E6F4EDB517C210BF003D115F /* Products */ = {
+		F7A93C6F17DDEF01007E4EB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E6F4EDB417C210BF003D115F /* mintKitSample.app */,
-				E690ED9817DD673700F2730E /* MintKitUnitTest.octest */,
+				F7A93C6E17DDEF01007E4EB6 /* mintKitSample.app */,
+				F7A93C9417DDEF02007E4EB6 /* mintKitSampleTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E6F4EDB617C210BF003D115F /* Frameworks */ = {
+		F7A93C7017DDEF01007E4EB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E6F4EDDA17C21168003D115F /* libMintKit.a */,
-				E610BAD017D6CA2400E3B1A9 /* QuartzCore.framework */,
-				E6F4EDB717C210BF003D115F /* UIKit.framework */,
-				E6F4EDB917C210BF003D115F /* Foundation.framework */,
-				E6F4EDBB17C210BF003D115F /* CoreGraphics.framework */,
-				E690ED9917DD673700F2730E /* SenTestingKit.framework */,
+				F7A93CAE17DDF074007E4EB6 /* libMintKit.a */,
+				F7A93C7117DDEF01007E4EB6 /* UIKit.framework */,
+				F7A93C7317DDEF01007E4EB6 /* Foundation.framework */,
+				F7A93C7517DDEF01007E4EB6 /* CoreGraphics.framework */,
+				F7A93C9517DDEF02007E4EB6 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E6F4EDBD17C210BF003D115F /* mintKitSample */ = {
+		F7A93C7717DDEF01007E4EB6 /* mintKitSample */ = {
 			isa = PBXGroup;
 			children = (
-				E6F4EDC617C210BF003D115F /* AppDelegate.h */,
-				E6F4EDC717C210BF003D115F /* AppDelegate.m */,
-				E6F4EDDE17C211EC003D115F /* MainViewController.h */,
-				E6F4EDDF17C211EC003D115F /* MainViewController.m */,
-				E6F4EDE017C211EC003D115F /* MainViewController.xib */,
-				E6F4EDBE17C210BF003D115F /* Supporting Files */,
+				F7A93C8017DDEF01007E4EB6 /* AppDelegate.h */,
+				F7A93C8117DDEF01007E4EB6 /* AppDelegate.m */,
+				F7A93C8917DDEF01007E4EB6 /* MainStoryboard.storyboard */,
+				F7A93C8C17DDEF01007E4EB6 /* ViewController.h */,
+				F7A93C8D17DDEF01007E4EB6 /* ViewController.m */,
+				F7A93C7817DDEF01007E4EB6 /* Supporting Files */,
 			);
 			path = mintKitSample;
 			sourceTree = "<group>";
 		};
-		E6F4EDBE17C210BF003D115F /* Supporting Files */ = {
+		F7A93C7817DDEF01007E4EB6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E6F4EDBF17C210BF003D115F /* mintKitSample-Info.plist */,
-				E6F4EDC017C210BF003D115F /* InfoPlist.strings */,
-				E6F4EDC317C210BF003D115F /* main.m */,
-				E6F4EDC517C210BF003D115F /* mintKitSample-Prefix.pch */,
-				E6F4EDC917C210BF003D115F /* Default.png */,
-				E6F4EDCB17C210BF003D115F /* Default@2x.png */,
-				E6F4EDCD17C210BF003D115F /* Default-568h@2x.png */,
+				F7A93C7917DDEF01007E4EB6 /* mintKitSample-Info.plist */,
+				F7A93C7A17DDEF01007E4EB6 /* InfoPlist.strings */,
+				F7A93C7D17DDEF01007E4EB6 /* main.m */,
+				F7A93C7F17DDEF01007E4EB6 /* mintKitSample-Prefix.pch */,
+				F7A93C8317DDEF01007E4EB6 /* Default.png */,
+				F7A93C8517DDEF01007E4EB6 /* Default@2x.png */,
+				F7A93C8717DDEF01007E4EB6 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7A93C9B17DDEF02007E4EB6 /* mintKitSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7A93CA117DDEF02007E4EB6 /* mintKitSampleTests.h */,
+				F7A93CA217DDEF02007E4EB6 /* mintKitSampleTests.m */,
+				F7A93C9C17DDEF02007E4EB6 /* Supporting Files */,
+			);
+			path = mintKitSampleTests;
+			sourceTree = "<group>";
+		};
+		F7A93C9C17DDEF02007E4EB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7A93C9D17DDEF02007E4EB6 /* mintKitSampleTests-Info.plist */,
+				F7A93C9E17DDEF02007E4EB6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,31 +173,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E690ED9717DD673700F2730E /* MintKitUnitTest */ = {
+		F7A93C6D17DDEF01007E4EB6 /* mintKitSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E690EDA917DD673700F2730E /* Build configuration list for PBXNativeTarget "MintKitUnitTest" */;
+			buildConfigurationList = F7A93CA617DDEF02007E4EB6 /* Build configuration list for PBXNativeTarget "mintKitSample" */;
 			buildPhases = (
-				E690ED9317DD673700F2730E /* Sources */,
-				E690ED9417DD673700F2730E /* Frameworks */,
-				E690ED9517DD673700F2730E /* Resources */,
-				E690ED9617DD673700F2730E /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MintKitUnitTest;
-			productName = MintKitUnitTest;
-			productReference = E690ED9817DD673700F2730E /* MintKitUnitTest.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-		E6F4EDB317C210BF003D115F /* mintKitSample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E6F4EDD117C210BF003D115F /* Build configuration list for PBXNativeTarget "mintKitSample" */;
-			buildPhases = (
-				E6F4EDB017C210BF003D115F /* Sources */,
-				E6F4EDB117C210BF003D115F /* Frameworks */,
-				E6F4EDB217C210BF003D115F /* Resources */,
+				F7A93C6A17DDEF01007E4EB6 /* Sources */,
+				F7A93C6B17DDEF01007E4EB6 /* Frameworks */,
+				F7A93C6C17DDEF01007E4EB6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -197,61 +187,80 @@
 			);
 			name = mintKitSample;
 			productName = mintKitSample;
-			productReference = E6F4EDB417C210BF003D115F /* mintKitSample.app */;
+			productReference = F7A93C6E17DDEF01007E4EB6 /* mintKitSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F7A93C9317DDEF02007E4EB6 /* mintKitSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7A93CA917DDEF02007E4EB6 /* Build configuration list for PBXNativeTarget "mintKitSampleTests" */;
+			buildPhases = (
+				F7A93C8F17DDEF02007E4EB6 /* Sources */,
+				F7A93C9017DDEF02007E4EB6 /* Frameworks */,
+				F7A93C9117DDEF02007E4EB6 /* Resources */,
+				F7A93C9217DDEF02007E4EB6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7A93C9A17DDEF02007E4EB6 /* PBXTargetDependency */,
+			);
+			name = mintKitSampleTests;
+			productName = mintKitSampleTests;
+			productReference = F7A93C9417DDEF02007E4EB6 /* mintKitSampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E6F4EDAC17C210BF003D115F /* Project object */ = {
+		F7A93C6617DDEF01007E4EB6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = mintcode.org;
 			};
-			buildConfigurationList = E6F4EDAF17C210BF003D115F /* Build configuration list for PBXProject "mintKitSample" */;
+			buildConfigurationList = F7A93C6917DDEF01007E4EB6 /* Build configuration list for PBXProject "mintKitSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E6F4EDAB17C210BF003D115F;
-			productRefGroup = E6F4EDB517C210BF003D115F /* Products */;
+			mainGroup = F7A93C6517DDEF01007E4EB6;
+			productRefGroup = F7A93C6F17DDEF01007E4EB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E6F4EDB317C210BF003D115F /* mintKitSample */,
-				E690ED9717DD673700F2730E /* MintKitUnitTest */,
+				F7A93C6D17DDEF01007E4EB6 /* mintKitSample */,
+				F7A93C9317DDEF02007E4EB6 /* mintKitSampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E690ED9517DD673700F2730E /* Resources */ = {
+		F7A93C6C17DDEF01007E4EB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E690EDA217DD673700F2730E /* InfoPlist.strings in Resources */,
+				F7A93C7C17DDEF01007E4EB6 /* InfoPlist.strings in Resources */,
+				F7A93C8417DDEF01007E4EB6 /* Default.png in Resources */,
+				F7A93C8617DDEF01007E4EB6 /* Default@2x.png in Resources */,
+				F7A93C8817DDEF01007E4EB6 /* Default-568h@2x.png in Resources */,
+				F7A93C8B17DDEF01007E4EB6 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6F4EDB217C210BF003D115F /* Resources */ = {
+		F7A93C9117DDEF02007E4EB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6F4EDC217C210BF003D115F /* InfoPlist.strings in Resources */,
-				E6F4EDCA17C210BF003D115F /* Default.png in Resources */,
-				E6F4EDCC17C210BF003D115F /* Default@2x.png in Resources */,
-				E6F4EDCE17C210BF003D115F /* Default-568h@2x.png in Resources */,
-				E6F4EDE217C211EC003D115F /* MainViewController.xib in Resources */,
+				F7A93CA017DDEF02007E4EB6 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E690ED9617DD673700F2730E /* ShellScript */ = {
+		F7A93C9217DDEF02007E4EB6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,39 +276,55 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E690ED9317DD673700F2730E /* Sources */ = {
+		F7A93C6A17DDEF01007E4EB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E690EDA517DD673700F2730E /* MintKitUnitTest.m in Sources */,
+				F7A93C7E17DDEF01007E4EB6 /* main.m in Sources */,
+				F7A93C8217DDEF01007E4EB6 /* AppDelegate.m in Sources */,
+				F7A93C8E17DDEF01007E4EB6 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6F4EDB017C210BF003D115F /* Sources */ = {
+		F7A93C8F17DDEF02007E4EB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6F4EDC417C210BF003D115F /* main.m in Sources */,
-				E6F4EDC817C210BF003D115F /* AppDelegate.m in Sources */,
-				E6F4EDE117C211EC003D115F /* MainViewController.m in Sources */,
+				F7A93CA317DDEF02007E4EB6 /* mintKitSampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F7A93C9A17DDEF02007E4EB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7A93C6D17DDEF01007E4EB6 /* mintKitSample */;
+			targetProxy = F7A93C9917DDEF02007E4EB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		E690EDA017DD673700F2730E /* InfoPlist.strings */ = {
+		F7A93C7A17DDEF01007E4EB6 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E690EDA117DD673700F2730E /* en */,
+				F7A93C7B17DDEF01007E4EB6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E6F4EDC017C210BF003D115F /* InfoPlist.strings */ = {
+		F7A93C8917DDEF01007E4EB6 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E6F4EDC117C210BF003D115F /* en */,
+				F7A93C8A17DDEF01007E4EB6 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F7A93C9E17DDEF02007E4EB6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7A93C9F17DDEF02007E4EB6 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -307,59 +332,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E690EDA717DD673700F2730E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MintKitUnitTest/MintKitUnitTest-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit/Headers\"";
-				INFOPLIST_FILE = "MintKitUnitTest/MintKitUnitTest-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Lib/MintKit\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = YES;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = armv7;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		E690EDA817DD673700F2730E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MintKitUnitTest/MintKitUnitTest-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit/Headers\"";
-				INFOPLIST_FILE = "MintKitUnitTest/MintKitUnitTest-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Lib/MintKit\"",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = YES;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = armv7;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-		E6F4EDCF17C210BF003D115F /* Debug */ = {
+		F7A93CA417DDEF02007E4EB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -390,7 +363,7 @@
 			};
 			name = Debug;
 		};
-		E6F4EDD017C210BF003D115F /* Release */ = {
+		F7A93CA517DDEF02007E4EB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -415,7 +388,7 @@
 			};
 			name = Release;
 		};
-		E6F4EDD217C210BF003D115F /* Debug */ = {
+		F7A93CA717DDEF02007E4EB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -423,8 +396,8 @@
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit/Headers\"";
 				INFOPLIST_FILE = "mintKitSample/mintKitSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
 					"\"$(SRCROOT)/Lib/MintKit\"",
+					"$(inherited)",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,7 +405,7 @@
 			};
 			name = Debug;
 		};
-		E6F4EDD317C210BF003D115F /* Release */ = {
+		F7A93CA817DDEF02007E4EB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -440,8 +413,8 @@
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit/Headers\"";
 				INFOPLIST_FILE = "mintKitSample/mintKitSample-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
 					"\"$(SRCROOT)/Lib/MintKit\"",
+					"$(inherited)",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -449,37 +422,83 @@
 			};
 			name = Release;
 		};
+		F7A93CAA17DDEF02007E4EB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mintKitSample.app/mintKitSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mintKitSample/mintKitSample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit/Headers\"";
+				INFOPLIST_FILE = "mintKitSampleTests/mintKitSampleTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit\"";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F7A93CAB17DDEF02007E4EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mintKitSample.app/mintKitSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mintKitSample/mintKitSample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit/Headers\"";
+				INFOPLIST_FILE = "mintKitSampleTests/mintKitSampleTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit\"";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E690EDA917DD673700F2730E /* Build configuration list for PBXNativeTarget "MintKitUnitTest" */ = {
+		F7A93C6917DDEF01007E4EB6 /* Build configuration list for PBXProject "mintKitSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E690EDA717DD673700F2730E /* Debug */,
-				E690EDA817DD673700F2730E /* Release */,
+				F7A93CA417DDEF02007E4EB6 /* Debug */,
+				F7A93CA517DDEF02007E4EB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6F4EDAF17C210BF003D115F /* Build configuration list for PBXProject "mintKitSample" */ = {
+		F7A93CA617DDEF02007E4EB6 /* Build configuration list for PBXNativeTarget "mintKitSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E6F4EDCF17C210BF003D115F /* Debug */,
-				E6F4EDD017C210BF003D115F /* Release */,
+				F7A93CA717DDEF02007E4EB6 /* Debug */,
+				F7A93CA817DDEF02007E4EB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6F4EDD117C210BF003D115F /* Build configuration list for PBXNativeTarget "mintKitSample" */ = {
+		F7A93CA917DDEF02007E4EB6 /* Build configuration list for PBXNativeTarget "mintKitSampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E6F4EDD217C210BF003D115F /* Debug */,
-				E6F4EDD317C210BF003D115F /* Release */,
+				F7A93CAA17DDEF02007E4EB6 /* Debug */,
+				F7A93CAB17DDEF02007E4EB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E6F4EDAC17C210BF003D115F /* Project object */;
+	rootObject = F7A93C6617DDEF01007E4EB6 /* Project object */;
 }
