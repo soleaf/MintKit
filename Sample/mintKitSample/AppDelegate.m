@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
 
 @implementation AppDelegate
 
@@ -18,7 +17,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    MainViewController *mainCtr = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    self.mainCtr = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
     self.window.rootViewController = mainCtr;
     
     return YES;

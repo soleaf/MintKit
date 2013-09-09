@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E610BAD117D6CA2400E3B1A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E610BAD017D6CA2400E3B1A9 /* QuartzCore.framework */; };
+		E690ED9A17DD673700F2730E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E690ED9917DD673700F2730E /* SenTestingKit.framework */; };
+		E690ED9B17DD673700F2730E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDB717C210BF003D115F /* UIKit.framework */; };
+		E690ED9C17DD673700F2730E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDB917C210BF003D115F /* Foundation.framework */; };
+		E690EDA217DD673700F2730E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E690EDA017DD673700F2730E /* InfoPlist.strings */; };
+		E690EDA517DD673700F2730E /* MintKitUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E690EDA417DD673700F2730E /* MintKitUnitTest.m */; };
+		E690EDAA17DD681100F2730E /* libMintKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDDA17C21168003D115F /* libMintKit.a */; };
 		E6F4EDB817C210BF003D115F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDB717C210BF003D115F /* UIKit.framework */; };
 		E6F4EDBA17C210BF003D115F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDB917C210BF003D115F /* Foundation.framework */; };
 		E6F4EDBC17C210BF003D115F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F4EDBB17C210BF003D115F /* CoreGraphics.framework */; };
@@ -24,6 +30,13 @@
 
 /* Begin PBXFileReference section */
 		E610BAD017D6CA2400E3B1A9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E690ED9817DD673700F2730E /* MintKitUnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MintKitUnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E690ED9917DD673700F2730E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E690ED9F17DD673700F2730E /* MintKitUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MintKitUnitTest-Info.plist"; sourceTree = "<group>"; };
+		E690EDA117DD673700F2730E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E690EDA317DD673700F2730E /* MintKitUnitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MintKitUnitTest.h; sourceTree = "<group>"; };
+		E690EDA417DD673700F2730E /* MintKitUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MintKitUnitTest.m; sourceTree = "<group>"; };
+		E690EDA617DD673700F2730E /* MintKitUnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MintKitUnitTest-Prefix.pch"; sourceTree = "<group>"; };
 		E6F4EDB417C210BF003D115F /* mintKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mintKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F4EDB717C210BF003D115F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E6F4EDB917C210BF003D115F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +57,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E690ED9417DD673700F2730E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E690ED9A17DD673700F2730E /* SenTestingKit.framework in Frameworks */,
+				E690ED9B17DD673700F2730E /* UIKit.framework in Frameworks */,
+				E690ED9C17DD673700F2730E /* Foundation.framework in Frameworks */,
+				E690EDAA17DD681100F2730E /* libMintKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6F4EDB117C210BF003D115F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,10 +83,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E690ED9D17DD673700F2730E /* MintKitUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				E690EDA317DD673700F2730E /* MintKitUnitTest.h */,
+				E690EDA417DD673700F2730E /* MintKitUnitTest.m */,
+				E690ED9E17DD673700F2730E /* Supporting Files */,
+			);
+			path = MintKitUnitTest;
+			sourceTree = "<group>";
+		};
+		E690ED9E17DD673700F2730E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E690ED9F17DD673700F2730E /* MintKitUnitTest-Info.plist */,
+				E690EDA017DD673700F2730E /* InfoPlist.strings */,
+				E690EDA617DD673700F2730E /* MintKitUnitTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E6F4EDAB17C210BF003D115F = {
 			isa = PBXGroup;
 			children = (
 				E6F4EDBD17C210BF003D115F /* mintKitSample */,
+				E690ED9D17DD673700F2730E /* MintKitUnitTest */,
 				E6F4EDB617C210BF003D115F /* Frameworks */,
 				E6F4EDB517C210BF003D115F /* Products */,
 			);
@@ -72,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				E6F4EDB417C210BF003D115F /* mintKitSample.app */,
+				E690ED9817DD673700F2730E /* MintKitUnitTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +130,7 @@
 				E6F4EDB717C210BF003D115F /* UIKit.framework */,
 				E6F4EDB917C210BF003D115F /* Foundation.framework */,
 				E6F4EDBB17C210BF003D115F /* CoreGraphics.framework */,
+				E690ED9917DD673700F2730E /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +165,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E690ED9717DD673700F2730E /* MintKitUnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E690EDA917DD673700F2730E /* Build configuration list for PBXNativeTarget "MintKitUnitTest" */;
+			buildPhases = (
+				E690ED9317DD673700F2730E /* Sources */,
+				E690ED9417DD673700F2730E /* Frameworks */,
+				E690ED9517DD673700F2730E /* Resources */,
+				E690ED9617DD673700F2730E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MintKitUnitTest;
+			productName = MintKitUnitTest;
+			productReference = E690ED9817DD673700F2730E /* MintKitUnitTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		E6F4EDB317C210BF003D115F /* mintKitSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6F4EDD117C210BF003D115F /* Build configuration list for PBXNativeTarget "mintKitSample" */;
@@ -157,11 +222,20 @@
 			projectRoot = "";
 			targets = (
 				E6F4EDB317C210BF003D115F /* mintKitSample */,
+				E690ED9717DD673700F2730E /* MintKitUnitTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E690ED9517DD673700F2730E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E690EDA217DD673700F2730E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6F4EDB217C210BF003D115F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,7 +250,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E690ED9617DD673700F2730E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		E690ED9317DD673700F2730E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E690EDA517DD673700F2730E /* MintKitUnitTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6F4EDB017C210BF003D115F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +288,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		E690EDA017DD673700F2730E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E690EDA117DD673700F2730E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		E6F4EDC017C210BF003D115F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -201,6 +307,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E690EDA717DD673700F2730E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MintKitUnitTest/MintKitUnitTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit/Headers\"";
+				INFOPLIST_FILE = "MintKitUnitTest/MintKitUnitTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Lib/MintKit\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E690EDA817DD673700F2730E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MintKitUnitTest/MintKitUnitTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit/Headers\"";
+				INFOPLIST_FILE = "MintKitUnitTest/MintKitUnitTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Lib/MintKit\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		E6F4EDCF17C210BF003D115F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -292,6 +440,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E690EDA917DD673700F2730E /* Build configuration list for PBXNativeTarget "MintKitUnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E690EDA717DD673700F2730E /* Debug */,
+				E690EDA817DD673700F2730E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E6F4EDAF17C210BF003D115F /* Build configuration list for PBXProject "mintKitSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
