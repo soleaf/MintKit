@@ -36,6 +36,15 @@
     view.frame = frame;
 }
 
++ (void)move:(UIView *)view morePoint:(CGPoint)point
+{
+    CGRect frame = view.frame;
+    frame.origin.x += point.x;
+    frame.origin.y += point.y;
+    
+    view.frame = frame;
+}
+
 + (void)move:(UIView *)view toX:(float)offset
 {
     CGRect frame = view.frame;
@@ -44,6 +53,13 @@
     view.frame = frame;
 }
 
++ (void)move:(UIView *)view toPoint:(CGPoint)point
+{
+    CGRect frame = view.frame;
+    frame.origin = point;
+    
+    view.frame = frame;
+}
 
 + (void)frame:(UIView *)view height:(float)height
 {

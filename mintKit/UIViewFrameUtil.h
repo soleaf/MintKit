@@ -24,10 +24,12 @@
 // Move to releative offset +/-
 +(void) move:(UIView *) view moreY:(float) offset;
 +(void) move:(UIView *) view moreX:(float) offset;
++(void) move:(UIView *) view morePoint:(CGPoint) point;
 
 // Move to absolute offset
 +(void) move:(UIView *) view toY:(float) offset;
 +(void) move:(UIView *) view toX:(float) offset;
++(void) move:(UIView *) view toPoint:(CGPoint) point;
 
 
 /*
