@@ -18,7 +18,7 @@
 @interface AnimationUtil : NSObject
 
 /*
-    Effects
+ Effects
  */
 
 // Make UIView animation like dock bounce.
@@ -26,7 +26,7 @@
 
 
 /*
-   In and out
+ In and out
 */
 // Animate Fade In and Out
 + (void) fadeIn:(UIView *)view;
@@ -43,22 +43,30 @@
 + (void) move:(UIView *) view moreX:(float)x interval:(float)time callBack:(void(^)(void))callBack;
 + (void) move:(UIView *) view moreY:(float)y;
 + (void) move:(UIView *) view moreY:(float)y interval:(float)time callBack:(void(^)(void))callBack;
++ (void) move:(UIView *) view morePoint:(CGPoint)morePont interval:(float)time callBack:(void(^)(void))callBack;
+
 // Moving Animation absolute pos 
 + (void) move:(UIView *) view toX:(float)x;
 + (void) move:(UIView *) view toX:(float)x interval:(float)time callBack:(void(^)(void))callBack;
 + (void) move:(UIView *) view toY:(float)y;
 + (void) move:(UIView *) view toY:(float)y interval:(float)time callBack:(void(^)(void))callBack;
++ (void) move:(UIView *) view toPoint:(CGPoint)point interval:(float)time callBack:(void(^)(void))callBack;
 
 
 /*
- In and out + Animate moving view.
+ In and out +
+ Animate moving view.
  */
 
 // It move +/-fromMoreY or x to current setted frame.origin.y or x
+// animate more pos -> current pos
 + (void) fadeInMove:(UIView *)view fromMoreY:(float)y interval:(float)time callBack:(void(^)(void))callback;
 + (void) fadeInMove:(UIView *)view fromMoreX:(float)x interval:(float)time callBack:(void(^)(void))callback;
++ (void) fadeInMove:(UIView *)view fromMorePoint:(CGPoint) morePoint interval:(float)time callBack:(void(^)(void))callback;
 // It move current setted frame.origin.y or x to +/-fromMoreY or x
+// animate current pos -> more pos
 + (void) fadeInMove:(UIView *)view moreY:(float)y interval:(float)time callBack:(void(^)(void))callback;
 + (void) fadeInMove:(UIView *)view moreX:(float)x interval:(float)time callBack:(void(^)(void))callback;
++ (void) fadeInMove:(UIView *)view morePoint:(CGPoint)morePoint interval:(float)time callBack:(void(^)(void))callback;
 
 @end
