@@ -31,11 +31,4 @@
 //    STFail(@"Unit tests are not implemented yet in testtestTests");
 }
 
-- (void)testStringgggggg
-{
-    
-//    STAssertTrue([testStr isEqualToString:@""], @"blank has no length");
-}
-
-
 @end
