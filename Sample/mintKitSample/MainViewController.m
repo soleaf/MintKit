@@ -56,7 +56,11 @@
     [TestKit debugKey:@"First String Uppercase" andVal:[StringUtil uppercaseFirst:@"the magic of leaf"]];
     
     // UIView Animation  test
-    [AnimationUtil fadeOut:self.ui_button];
+    [AnimationUtil fadeOut:self.ui_button interval:3 callBack:^{
+    
+        [AnimationUtil fadeInMove:self.ui_button morePoint:CGPointMake(0, 100) interval:3 callBack:nil];
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning
