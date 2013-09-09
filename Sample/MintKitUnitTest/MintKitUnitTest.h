@@ -7,17 +7,11 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-#import <MintKit/StringUtil.h>
 
-#import "AppDelegate.h"
-#import "MainViewController.h"
 
 @interface MintKitUnitTest : SenTestCase
 {
-    @private
-    AppDelegate         *appDelegate;
-    MainViewController  *mainViewCtr;
-    UIButton            *animatingButton;
+
 }
 
 @end
