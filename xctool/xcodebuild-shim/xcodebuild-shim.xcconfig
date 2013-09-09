@@ -1,0 +1,28 @@
+//
+// Copyright 2013 Facebook
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+#include "../Configurations/Project.xcconfig"
+
+#include "../Configurations/Install.xcconfig"
+XT_INSTALL_DIR = lib
+
+// xcodebuild uses GC, so we need this or we won't be able to insert the lib into xcodebuild.
+// By setting the main value to 'unsupported' and then setting the arch-specific setting to
+// 'supported', we're able to suppress Xcode's "Target Integrity" warning about GC being deprecated.
+GCC_ENABLE_OBJC_GC = unsupported
+GCC_ENABLE_OBJC_GC[arch=x86_64] = supported
+
+MACOSX_DEPLOYMENT_TARGET = 10.7

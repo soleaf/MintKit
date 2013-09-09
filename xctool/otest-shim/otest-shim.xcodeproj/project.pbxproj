@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		282BFE1B171602C60022F9FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282BFE1A171602C60022F9FF /* Cocoa.framework */; };
+		282BFE2B1716044C0022F9FF /* otest-shim.m in Sources */ = {isa = PBXBuildFile; fileRef = 283CCA9916C2EE4C00F2E343 /* otest-shim.m */; };
+		283CCA9A16C2EE4C00F2E343 /* otest-shim.m in Sources */ = {isa = PBXBuildFile; fileRef = 283CCA9916C2EE4C00F2E343 /* otest-shim.m */; };
+		287A37E916C7776E00319E81 /* dyld-interposing.h in Headers */ = {isa = PBXBuildFile; fileRef = 287A37E816C7776E00319E81 /* dyld-interposing.h */; };
+		28897FC9173E50F9004BA024 /* Swizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 28897FC7173E50F9004BA024 /* Swizzle.h */; };
+		28897FCA173E50F9004BA024 /* Swizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 28897FC7173E50F9004BA024 /* Swizzle.h */; };
+		28897FCB173E50F9004BA024 /* Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 28897FC8173E50F9004BA024 /* Swizzle.m */; };
+		28897FCC173E50F9004BA024 /* Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 28897FC8173E50F9004BA024 /* Swizzle.m */; };
+		28A094B41731DA3500838CDD /* dyld_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 28A094B31731DA3500838CDD /* dyld_priv.h */; };
+		28E28FB417968EC50072376C /* ReporterEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 28E28FB317968EC50072376C /* ReporterEvents.h */; };
+		28E28FB517968EC50072376C /* ReporterEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 28E28FB317968EC50072376C /* ReporterEvents.h */; };
+		28E9B9DF16C32E9A00A52E4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283CCA9416C2EE4C00F2E343 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		282BFE19171602C60022F9FF /* otest-shim-osx.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "otest-shim-osx.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		282BFE1A171602C60022F9FF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		282BFE1D171602C60022F9FF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		282BFE1E171602C60022F9FF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		282BFE1F171602C60022F9FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		282BFE29171602F80022F9FF /* otest-shim-osx.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "otest-shim-osx.xcconfig"; sourceTree = "<group>"; };
+		282BFE2C1716049F0022F9FF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		283CCA8C16C2EE4C00F2E343 /* otest-shim-ios.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "otest-shim-ios.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		283CCA9416C2EE4C00F2E343 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		283CCA9716C2EE4C00F2E343 /* otest-shim-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "otest-shim-Prefix.pch"; sourceTree = "<group>"; };
+		283CCA9916C2EE4C00F2E343 /* otest-shim.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "otest-shim.m"; sourceTree = "<group>"; };
+		287A37E816C7776E00319E81 /* dyld-interposing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dyld-interposing.h"; sourceTree = "<group>"; };
+		28897FC7173E50F9004BA024 /* Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swizzle.h; sourceTree = "<group>"; };
+		28897FC8173E50F9004BA024 /* Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swizzle.m; sourceTree = "<group>"; };
+		28A094B31731DA3500838CDD /* dyld_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dyld_priv.h; sourceTree = "<group>"; };
+		28E28FB317968EC50072376C /* ReporterEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReporterEvents.h; sourceTree = "<group>"; };
+		28E9B98216C2F2D400A52E4D /* otest-shim-ios.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "otest-shim-ios.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		282BFE16171602C60022F9FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282BFE1B171602C60022F9FF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283CCA8916C2EE4C00F2E343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E9B9DF16C32E9A00A52E4D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		282BFE1C171602C60022F9FF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				282BFE1D171602C60022F9FF /* AppKit.framework */,
+				282BFE1E171602C60022F9FF /* CoreData.framework */,
+				282BFE1F171602C60022F9FF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		283CCA8316C2EE4C00F2E343 = {
+			isa = PBXGroup;
+			children = (
+				282BFE29171602F80022F9FF /* otest-shim-osx.xcconfig */,
+				28E9B98216C2F2D400A52E4D /* otest-shim-ios.xcconfig */,
+				283CCA8E16C2EE4C00F2E343 /* Frameworks */,
+				28897FC6173E50F9004BA024 /* Common */,
+				283CCA9516C2EE4C00F2E343 /* otest-shim */,
+				283CCA8D16C2EE4C00F2E343 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		283CCA8D16C2EE4C00F2E343 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				283CCA8C16C2EE4C00F2E343 /* otest-shim-ios.dylib */,
+				282BFE19171602C60022F9FF /* otest-shim-osx.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		283CCA8E16C2EE4C00F2E343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				282BFE2C1716049F0022F9FF /* SenTestingKit.framework */,
+				283CCA9416C2EE4C00F2E343 /* Foundation.framework */,
+				282BFE1A171602C60022F9FF /* Cocoa.framework */,
+				282BFE1C171602C60022F9FF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		283CCA9516C2EE4C00F2E343 /* otest-shim */ = {
+			isa = PBXGroup;
+			children = (
+				28A094B31731DA3500838CDD /* dyld_priv.h */,
+				287A37E816C7776E00319E81 /* dyld-interposing.h */,
+				283CCA9916C2EE4C00F2E343 /* otest-shim.m */,
+				283CCA9616C2EE4C00F2E343 /* Supporting Files */,
+			);
+			path = "otest-shim";
+			sourceTree = "<group>";
+		};
+		283CCA9616C2EE4C00F2E343 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				283CCA9716C2EE4C00F2E343 /* otest-shim-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28897FC6173E50F9004BA024 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				28E28FB317968EC50072376C /* ReporterEvents.h */,
+				28897FC7173E50F9004BA024 /* Swizzle.h */,
+				28897FC8173E50F9004BA024 /* Swizzle.m */,
+			);
+			name = Common;
+			path = ../Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		282BFE17171602C60022F9FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28897FCA173E50F9004BA024 /* Swizzle.h in Headers */,
+				28E28FB517968EC50072376C /* ReporterEvents.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283CCA8A16C2EE4C00F2E343 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287A37E916C7776E00319E81 /* dyld-interposing.h in Headers */,
+				28A094B41731DA3500838CDD /* dyld_priv.h in Headers */,
+				28897FC9173E50F9004BA024 /* Swizzle.h in Headers */,
+				28E28FB417968EC50072376C /* ReporterEvents.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		282BFE18171602C60022F9FF /* otest-shim-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 282BFE28171602C60022F9FF /* Build configuration list for PBXNativeTarget "otest-shim-osx" */;
+			buildPhases = (
+				282BFE15171602C60022F9FF /* Sources */,
+				282BFE16171602C60022F9FF /* Frameworks */,
+				282BFE17171602C60022F9FF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "otest-shim-osx";
+			productName = "otest-shim-osx";
+			productReference = 282BFE19171602C60022F9FF /* otest-shim-osx.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		283CCA8B16C2EE4C00F2E343 /* otest-shim-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283CCA9D16C2EE4C00F2E343 /* Build configuration list for PBXNativeTarget "otest-shim-ios" */;
+			buildPhases = (
+				283CCA8816C2EE4C00F2E343 /* Sources */,
+				283CCA8916C2EE4C00F2E343 /* Frameworks */,
+				283CCA8A16C2EE4C00F2E343 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "otest-shim-ios";
+			productName = "otest-shim";
+			productReference = 283CCA8C16C2EE4C00F2E343 /* otest-shim-ios.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		283CCA8416C2EE4C00F2E343 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Fred Potter";
+			};
+			buildConfigurationList = 283CCA8716C2EE4C00F2E343 /* Build configuration list for PBXProject "otest-shim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 283CCA8316C2EE4C00F2E343;
+			productRefGroup = 283CCA8D16C2EE4C00F2E343 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				283CCA8B16C2EE4C00F2E343 /* otest-shim-ios */,
+				282BFE18171602C60022F9FF /* otest-shim-osx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		282BFE15171602C60022F9FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282BFE2B1716044C0022F9FF /* otest-shim.m in Sources */,
+				28897FCC173E50F9004BA024 /* Swizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		283CCA8816C2EE4C00F2E343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283CCA9A16C2EE4C00F2E343 /* otest-shim.m in Sources */,
+				28897FCB173E50F9004BA024 /* Swizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		282BFE26171602C60022F9FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 282BFE29171602F80022F9FF /* otest-shim-osx.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Library/Frameworks\"",
+				);
+				GCC_PREFIX_HEADER = "otest-shim/otest-shim-Prefix.pch";
+				PRODUCT_NAME = "otest-shim-osx";
+			};
+			name = Debug;
+		};
+		282BFE27171602C60022F9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 282BFE29171602F80022F9FF /* otest-shim-osx.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Library/Frameworks\"",
+				);
+				GCC_PREFIX_HEADER = "otest-shim/otest-shim-Prefix.pch";
+				PRODUCT_NAME = "otest-shim-osx";
+			};
+			name = Release;
+		};
+		283CCA9B16C2EE4C00F2E343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Debug;
+		};
+		283CCA9C16C2EE4C00F2E343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Release;
+		};
+		283CCA9E16C2EE4C00F2E343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28E9B98216C2F2D400A52E4D /* otest-shim-ios.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PREFIX_HEADER = "otest-shim/otest-shim-Prefix.pch";
+				PRODUCT_NAME = "otest-shim-ios";
+			};
+			name = Debug;
+		};
+		283CCA9F16C2EE4C00F2E343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28E9B98216C2F2D400A52E4D /* otest-shim-ios.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PREFIX_HEADER = "otest-shim/otest-shim-Prefix.pch";
+				PRODUCT_NAME = "otest-shim-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		282BFE28171602C60022F9FF /* Build configuration list for PBXNativeTarget "otest-shim-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				282BFE26171602C60022F9FF /* Debug */,
+				282BFE27171602C60022F9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		283CCA8716C2EE4C00F2E343 /* Build configuration list for PBXProject "otest-shim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283CCA9B16C2EE4C00F2E343 /* Debug */,
+				283CCA9C16C2EE4C00F2E343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		283CCA9D16C2EE4C00F2E343 /* Build configuration list for PBXNativeTarget "otest-shim-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283CCA9E16C2EE4C00F2E343 /* Debug */,
+				283CCA9F16C2EE4C00F2E343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 283CCA8416C2EE4C00F2E343 /* Project object */;
+}
