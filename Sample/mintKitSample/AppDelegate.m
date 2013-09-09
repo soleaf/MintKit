@@ -18,7 +18,7 @@
     [self.window makeKeyAndVisible];
     
     self.mainCtr = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
-    self.window.rootViewController = mainCtr;
+    self.window.rootViewController = self.mainCtr;
     
     return YES;
 }
