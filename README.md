@@ -1,6 +1,6 @@
 ![logo](http://www.mintcode.org/images/mintkit.png)
 
-MintKit
+MintKit [![Build Status](https://travis-ci.org/soleaf/MintKit.png?branch=master)](https://travis-ci.org/soleaf/MintKit)
 =======
 
 MintKis is a simple fundemental iOS coding utils package based Objective-C, For only convenience on coding. It help you don't bother about fundemental functions or implementing simple functions.
