@@ -81,6 +81,25 @@
                      }];
 }
 
++ (void)fadeInMove:(UIView *)view fromMorePoint:(CGPoint)morePoint interval:(float)time callBack:(void (^)(void))callback
+{
+    view.alpha = 0.0;
+    CGRect endFrame = view.frame;
+    [UIViewFrameUtil move:view morePoint:morePoint];
+    
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         view.frame = endFrame;
+                         view.alpha = 1.0;
+                         
+                     } completion:^(BOOL finished) {
+                         if (callback != nil) callback();
+                     }];
+}
+
 + (void) fadeInMove:(UIView *)view moreX:(float)x interval:(float)time callBack:(void (^)(void))callback
 {
     view.alpha = 0.0;
@@ -91,6 +110,23 @@
                      animations:^{
                          
                          [UIViewFrameUtil move:view moreX:x];
+                         view.alpha = 1.0;
+                         
+                     } completion:^(BOOL finished) {
+                         if (callback != nil) callback();
+                     }];
+}
+
++ (void)fadeInMove:(UIView *)view morePoint:(CGPoint)morePoint interval:(float)time callBack:(void (^)(void))callback
+{
+    view.alpha = 0.0;
+    
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         [UIViewFrameUtil move:view morePoint:morePoint];
                          view.alpha = 1.0;
                          
                      } completion:^(BOOL finished) {
@@ -188,6 +224,21 @@
                      }];
 }
 
++ (void)move:(UIView *)view morePoint:(CGPoint)morePont interval:(float)time callBack:(void (^)(void))callBack
+{
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         [UIViewFrameUtil move:view morePoint:morePont];
+                         
+                     } completion:^(BOOL finished) {
+                         if (callBack != nil) callBack();
+                     }];
+}
+
+
 + (void)move:(UIView *)view toX:(float)x
 {
     [AnimationUtil move:view toX:x interval:0.3 callBack:nil];
@@ -220,6 +271,20 @@
                      animations:^{
                          
                          [UIViewFrameUtil move:view toY:y];
+                         
+                     } completion:^(BOOL finished) {
+                         if (callBack != nil) callBack();
+                     }];
+}
+
++ (void)move:(UIView *)view toPoint:(CGPoint)point interval:(float)time callBack:(void (^)(void))callBack
+{
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         [UIViewFrameUtil move:view toPoint:point];
                          
                      } completion:^(BOOL finished) {
                          if (callBack != nil) callBack();
