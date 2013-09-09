@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F706E03317DDF74C004783CB /* libMintKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93CAE17DDF074007E4EB6 /* libMintKit.a */; };
 		F7A93C7217DDEF01007E4EB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93C7117DDEF01007E4EB6 /* UIKit.framework */; };
 		F7A93C7417DDEF01007E4EB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93C7317DDEF01007E4EB6 /* Foundation.framework */; };
 		F7A93C7617DDEF01007E4EB6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93C7517DDEF01007E4EB6 /* CoreGraphics.framework */; };
@@ -19,24 +18,9 @@
 		F7A93C8817DDEF01007E4EB6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A93C8717DDEF01007E4EB6 /* Default-568h@2x.png */; };
 		F7A93C8B17DDEF01007E4EB6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7A93C8917DDEF01007E4EB6 /* MainStoryboard.storyboard */; };
 		F7A93C8E17DDEF01007E4EB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A93C8D17DDEF01007E4EB6 /* ViewController.m */; };
-		F7A93C9617DDEF02007E4EB6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93C9517DDEF02007E4EB6 /* SenTestingKit.framework */; };
-		F7A93C9717DDEF02007E4EB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93C7117DDEF01007E4EB6 /* UIKit.framework */; };
-		F7A93C9817DDEF02007E4EB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93C7317DDEF01007E4EB6 /* Foundation.framework */; };
-		F7A93CA017DDEF02007E4EB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7A93C9E17DDEF02007E4EB6 /* InfoPlist.strings */; };
-		F7A93CA317DDEF02007E4EB6 /* mintKitSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A93CA217DDEF02007E4EB6 /* mintKitSampleTests.m */; };
 		F7A93CAD17DDF024007E4EB6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93CAC17DDF024007E4EB6 /* QuartzCore.framework */; };
 		F7A93CAF17DDF074007E4EB6 /* libMintKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A93CAE17DDF074007E4EB6 /* libMintKit.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F7A93C9917DDEF02007E4EB6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F7A93C6617DDEF01007E4EB6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F7A93C6D17DDEF01007E4EB6;
-			remoteInfo = mintKitSample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F7A93C6E17DDEF01007E4EB6 /* mintKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mintKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,12 +39,7 @@
 		F7A93C8A17DDEF01007E4EB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		F7A93C8C17DDEF01007E4EB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F7A93C8D17DDEF01007E4EB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F7A93C9417DDEF02007E4EB6 /* mintKitSampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mintKitSampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7A93C9517DDEF02007E4EB6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		F7A93C9D17DDEF02007E4EB6 /* mintKitSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mintKitSampleTests-Info.plist"; sourceTree = "<group>"; };
-		F7A93C9F17DDEF02007E4EB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F7A93CA117DDEF02007E4EB6 /* mintKitSampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mintKitSampleTests.h; sourceTree = "<group>"; };
-		F7A93CA217DDEF02007E4EB6 /* mintKitSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mintKitSampleTests.m; sourceTree = "<group>"; };
 		F7A93CAC17DDF024007E4EB6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F7A93CAE17DDF074007E4EB6 /* libMintKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMintKit.a; path = Lib/MintKit/libMintKit.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,17 +57,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7A93C9017DDEF02007E4EB6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F706E03317DDF74C004783CB /* libMintKit.a in Frameworks */,
-				F7A93C9617DDEF02007E4EB6 /* SenTestingKit.framework in Frameworks */,
-				F7A93C9717DDEF02007E4EB6 /* UIKit.framework in Frameworks */,
-				F7A93C9817DDEF02007E4EB6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,7 +65,6 @@
 			children = (
 				F7A93CAC17DDF024007E4EB6 /* QuartzCore.framework */,
 				F7A93C7717DDEF01007E4EB6 /* mintKitSample */,
-				F7A93C9B17DDEF02007E4EB6 /* mintKitSampleTests */,
 				F7A93C7017DDEF01007E4EB6 /* Frameworks */,
 				F7A93C6F17DDEF01007E4EB6 /* Products */,
 			);
@@ -107,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				F7A93C6E17DDEF01007E4EB6 /* mintKitSample.app */,
-				F7A93C9417DDEF02007E4EB6 /* mintKitSampleTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,25 +117,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F7A93C9B17DDEF02007E4EB6 /* mintKitSampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				F7A93CA117DDEF02007E4EB6 /* mintKitSampleTests.h */,
-				F7A93CA217DDEF02007E4EB6 /* mintKitSampleTests.m */,
-				F7A93C9C17DDEF02007E4EB6 /* Supporting Files */,
-			);
-			path = mintKitSampleTests;
-			sourceTree = "<group>";
-		};
-		F7A93C9C17DDEF02007E4EB6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F7A93C9D17DDEF02007E4EB6 /* mintKitSampleTests-Info.plist */,
-				F7A93C9E17DDEF02007E4EB6 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,25 +136,6 @@
 			productName = mintKitSample;
 			productReference = F7A93C6E17DDEF01007E4EB6 /* mintKitSample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		F7A93C9317DDEF02007E4EB6 /* mintKitSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F7A93CA917DDEF02007E4EB6 /* Build configuration list for PBXNativeTarget "mintKitSampleTests" */;
-			buildPhases = (
-				F7A93C8F17DDEF02007E4EB6 /* Sources */,
-				F7A93C9017DDEF02007E4EB6 /* Frameworks */,
-				F7A93C9117DDEF02007E4EB6 /* Resources */,
-				F7A93C9217DDEF02007E4EB6 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F7A93C9A17DDEF02007E4EB6 /* PBXTargetDependency */,
-			);
-			name = mintKitSampleTests;
-			productName = mintKitSampleTests;
-			productReference = F7A93C9417DDEF02007E4EB6 /* mintKitSampleTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -231,7 +159,6 @@
 			projectRoot = "";
 			targets = (
 				F7A93C6D17DDEF01007E4EB6 /* mintKitSample */,
-				F7A93C9317DDEF02007E4EB6 /* mintKitSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,31 +176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7A93C9117DDEF02007E4EB6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7A93CA017DDEF02007E4EB6 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		F7A93C9217DDEF02007E4EB6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F7A93C6A17DDEF01007E4EB6 /* Sources */ = {
@@ -286,23 +189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7A93C8F17DDEF02007E4EB6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7A93CA317DDEF02007E4EB6 /* mintKitSampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F7A93C9A17DDEF02007E4EB6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F7A93C6D17DDEF01007E4EB6 /* mintKitSample */;
-			targetProxy = F7A93C9917DDEF02007E4EB6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F7A93C7A17DDEF01007E4EB6 /* InfoPlist.strings */ = {
@@ -319,14 +206,6 @@
 				F7A93C8A17DDEF01007E4EB6 /* en */,
 			);
 			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		F7A93C9E17DDEF02007E4EB6 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7A93C9F17DDEF02007E4EB6 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -422,52 +301,6 @@
 			};
 			name = Release;
 		};
-		F7A93CAA17DDEF02007E4EB6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mintKitSample.app/mintKitSample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "mintKitSample/mintKitSample-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit/Headers\"";
-				INFOPLIST_FILE = "mintKitSampleTests/mintKitSampleTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit\"";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = NO;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		F7A93CAB17DDEF02007E4EB6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mintKitSample.app/mintKitSample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "mintKitSample/mintKitSample-Prefix.pch";
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit/Headers\"";
-				INFOPLIST_FILE = "mintKitSampleTests/mintKitSampleTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Lib/MintKit\"";
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_AFTER_BUILD = NO;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				USER_HEADER_SEARCH_PATHS = "";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -485,15 +318,6 @@
 			buildConfigurations = (
 				F7A93CA717DDEF02007E4EB6 /* Debug */,
 				F7A93CA817DDEF02007E4EB6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F7A93CA917DDEF02007E4EB6 /* Build configuration list for PBXNativeTarget "mintKitSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F7A93CAA17DDEF02007E4EB6 /* Debug */,
-				F7A93CAB17DDEF02007E4EB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
