@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  mintKitSample
 //
-//  Created by soleaf on 13. 8. 19..
+//  Created by soleaf on 13. 9. 9..
 //  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 

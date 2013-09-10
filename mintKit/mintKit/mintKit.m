@@ -2,7 +2,7 @@
 //  mintKit.m
 //  mintKit
 //
-//  Created by soleaf on 13. 8. 6..
+//  Created by soleaf on 13. 9. 9..
 //  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 
@@ -25,10 +25,10 @@
 + (void)version
 {
     NSLog(@"MINTKIT_VERSION  %@ build %d(%@) release %d",
-                                            MINTKIT_VERSION,
-                                            MINTKIT_BUILD,
-                                            MINTKIT_VERSION_DATE,
-                                            MINTKIT_RELEASE);
+          MINTKIT_VERSION,
+          MINTKIT_BUILD,
+          MINTKIT_VERSION_DATE,
+          MINTKIT_RELEASE);
 }
 
 @end
