@@ -12,8 +12,7 @@
 
 @implementation UIViewLayerUtil
 
-
-+ (void)dropShadow:(UIView *)view Opacity:(float)opacity andOffset:(CGSize)offset andColor:(UIColor *)color
++(void)dropShadow:(UIView *)view Opacity:(float)opacity andOffset:(CGSize)offset andColor:(UIColor *)color radius:(float)radius
 {
     UIBezierPath *shadowPath    = [UIBezierPath bezierPathWithRect:view.bounds];
     view.layer.masksToBounds    = NO;
@@ -21,6 +20,12 @@
     view.layer.shadowOffset     = offset;
     view.layer.shadowOpacity    = opacity;
     view.layer.shadowPath       = shadowPath.CGPath;
+    view.layer.shadowRadius     = radius;
+}
+
++ (void)dropShadow:(UIView *)view Opacity:(float)opacity andOffset:(CGSize)offset andColor:(UIColor *)color
+{
+    [UIViewLayerUtil dropShadow:view Opacity:opacity andOffset:offset andColor:color radius:1.0];
     
 }
 

@@ -16,6 +16,7 @@
 @interface UIViewLayerUtil : NSObject
 
 // Drop shadows
++ (void)dropShadow:(UIView *)view Opacity:(float)opacity andOffset:(CGSize)offset andColor:(UIColor *)color radius:(float)radius;
 + (void) dropShadow:(UIView *) view Opacity:(float)opacity andOffset:(CGSize) offset andColor:(UIColor*) color;
 + (void) dropShadow:(UIView *) view Opacity:(float)opacity andOffset:(CGSize) offset;
 
