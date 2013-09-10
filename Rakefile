@@ -1,6 +1,11 @@
+require 'bundler/setup'
+require 'xcode_build'
+require 'xcode_build/tasks/build_task'
+
+
 desc 'Run the tests'
 task :test do
-  exec('xctool/xctool.sh -project mintKit/mintKit.xcodeproj -scheme mintKit-Simulator test GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES -sdk iphonesimulator')
+  exec('xctool/xctool.sh -project Sample/mintKitSample.xcodeproj -scheme MintKitUnitTest test -test-sdk iphonesimulator -configuration Debug')
 end
 
 task :default => :test
