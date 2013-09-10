@@ -262,8 +262,6 @@
 		F7183B4517DE02B000C5CF67 = {
 			isa = PBXGroup;
 			children = (
-				F791DAC817DE08B90092A474 /* UIKit.framework */,
-				F791DAC617DE08B30092A474 /* QuartzCore.framework */,
 				F7183B5317DE02B000C5CF67 /* mintKit */,
 				F7183B6817DE02B100C5CF67 /* mintKitTests */,
 				F7183B5017DE02B000C5CF67 /* Frameworks */,
@@ -284,6 +282,8 @@
 		F7183B5017DE02B000C5CF67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F791DAC817DE08B90092A474 /* UIKit.framework */,
+				F791DAC617DE08B30092A474 /* QuartzCore.framework */,
 				F7183B5117DE02B000C5CF67 /* Foundation.framework */,
 				F7183B6017DE02B100C5CF67 /* SenTestingKit.framework */,
 				F7183B6217DE02B100C5CF67 /* UIKit.framework */,
@@ -301,7 +301,6 @@
 				F791DAB017DE05A30092A474 /* Map */,
 				F791DAB117DE05AE0092A474 /* Graphics */,
 				F791DAB217DE05B90092A474 /* Validation */,
-				F7183B9D17DE04E300C5CF67 /* mintKit-Prefix.pch */,
 				F791DAB317DE05D80092A474 /* UI */,
 				F791DAB417DE05E60092A474 /* ETC */,
 				F7183B5417DE02B000C5CF67 /* Supporting Files */,
@@ -312,6 +311,7 @@
 		F7183B5417DE02B000C5CF67 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F7183B9D17DE04E300C5CF67 /* mintKit-Prefix.pch */,
 				F7183B5517DE02B000C5CF67 /* mintKit-Prefix.pch */,
 			);
 			name = "Supporting Files";

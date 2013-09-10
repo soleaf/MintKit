@@ -63,7 +63,6 @@
 		F7A93C6517DDEF01007E4EB6 = {
 			isa = PBXGroup;
 			children = (
-				F7A93CAC17DDF024007E4EB6 /* QuartzCore.framework */,
 				F7A93C7717DDEF01007E4EB6 /* mintKitSample */,
 				F7A93C7017DDEF01007E4EB6 /* Frameworks */,
 				F7A93C6F17DDEF01007E4EB6 /* Products */,
@@ -81,6 +80,7 @@
 		F7A93C7017DDEF01007E4EB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7A93CAC17DDF024007E4EB6 /* QuartzCore.framework */,
 				F7A93CAE17DDF074007E4EB6 /* libMintKit.a */,
 				F7A93C7117DDEF01007E4EB6 /* UIKit.framework */,
 				F7A93C7317DDEF01007E4EB6 /* Foundation.framework */,
