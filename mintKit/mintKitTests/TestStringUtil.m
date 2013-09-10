@@ -1,15 +1,15 @@
 //
-//  mintKitTests.m
-//  mintKitTests
+//  TestStringUtil.m
+//  mintKit
 //
-//  Created by soleaf on 13. 9. 9..
+//  Created by soleaf on 13. 9. 10..
 //  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 
-#import "mintKitTests.h"
+#import "TestStringUtil.h"
 #import "StringUtil.h"
 
-@implementation mintKitTests
+@implementation TestStringUtil
 
 - (void)setUp
 {
@@ -34,4 +34,5 @@
 {
     STAssertTrue(![StringUtil hasLength:nil], @"OK");
 }
+
 @end

@@ -32,6 +32,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		E6D3C95F17DEC757008C6565 /* TestStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3C95E17DEC756008C6565 /* TestStringUtil.m */; };
 		F7183B5217DE02B000C5CF67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7183B5117DE02B000C5CF67 /* Foundation.framework */; };
 		F7183B5717DE02B000C5CF67 /* mintKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B5617DE02B000C5CF67 /* mintKit.h */; };
 		F7183B5917DE02B000C5CF67 /* mintKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183B5817DE02B000C5CF67 /* mintKit.m */; };
@@ -39,7 +40,6 @@
 		F7183B6417DE02B100C5CF67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7183B5117DE02B000C5CF67 /* Foundation.framework */; };
 		F7183B6717DE02B100C5CF67 /* libmintKit-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7183B4E17DE02B000C5CF67 /* libmintKit-Simulator.a */; };
 		F7183B6D17DE02B100C5CF67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7183B6B17DE02B100C5CF67 /* InfoPlist.strings */; };
-		F7183B7017DE02B100C5CF67 /* mintKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183B6F17DE02B100C5CF67 /* mintKitTests.m */; };
 		F7183B7B17DE040C00C5CF67 /* mintKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183B5817DE02B000C5CF67 /* mintKit.m */; };
 		F7183B7D17DE040C00C5CF67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7183B5117DE02B000C5CF67 /* Foundation.framework */; };
 		F7183B7F17DE040C00C5CF67 /* mintKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B5617DE02B000C5CF67 /* mintKit.h */; };
@@ -171,6 +171,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E6D3C95D17DEC756008C6565 /* TestStringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStringUtil.h; sourceTree = "<group>"; };
+		E6D3C95E17DEC756008C6565 /* TestStringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStringUtil.m; sourceTree = "<group>"; };
 		F7183B4E17DE02B000C5CF67 /* libmintKit-Simulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmintKit-Simulator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7183B5117DE02B000C5CF67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F7183B5517DE02B000C5CF67 /* mintKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mintKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -181,8 +183,6 @@
 		F7183B6217DE02B100C5CF67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F7183B6A17DE02B100C5CF67 /* mintKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mintKitTests-Info.plist"; sourceTree = "<group>"; };
 		F7183B6C17DE02B100C5CF67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F7183B6E17DE02B100C5CF67 /* mintKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mintKitTests.h; sourceTree = "<group>"; };
-		F7183B6F17DE02B100C5CF67 /* mintKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mintKitTests.m; sourceTree = "<group>"; };
 		F7183B8317DE040C00C5CF67 /* libmintKit-Device.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmintKit-Device.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7183B8917DE04D500C5CF67 /* AnimationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationUtil.h; sourceTree = "<group>"; };
 		F7183B8A17DE04D500C5CF67 /* AnimationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationUtil.m; sourceTree = "<group>"; };
@@ -320,8 +320,8 @@
 		F7183B6817DE02B100C5CF67 /* mintKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				F7183B6E17DE02B100C5CF67 /* mintKitTests.h */,
-				F7183B6F17DE02B100C5CF67 /* mintKitTests.m */,
+				E6D3C95D17DEC756008C6565 /* TestStringUtil.h */,
+				E6D3C95E17DEC756008C6565 /* TestStringUtil.m */,
 				F7183B6917DE02B100C5CF67 /* Supporting Files */,
 			);
 			path = mintKitTests;
@@ -617,7 +617,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7183B7017DE02B100C5CF67 /* mintKitTests.m in Sources */,
+				E6D3C95F17DEC757008C6565 /* TestStringUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
