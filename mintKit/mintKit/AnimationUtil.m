@@ -291,5 +291,104 @@
                      }];
 }
 
++ (void) fadeOutMove:(UIView *)view fromMoreY:(float)y interval:(float)time callBack:(void(^)(void))callback
+{
+    CGRect endFrame = view.frame;
+    [UIViewFrameUtil move:view moreY:y];
+    
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         view.frame = endFrame;
+                         view.alpha = 0.0;
+                         
+                     } completion:^(BOOL finished) {
+                         if (callback != nil) callback();
+                     }];
+}
+
++ (void) fadeOutMove:(UIView *)view fromMoreX:(float)x interval:(float)time callBack:(void(^)(void))callback
+{
+    CGRect endFrame = view.frame;
+    [UIViewFrameUtil move:view moreX:x];
+    
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         view.frame = endFrame;
+                         view.alpha = 0.0;
+                         
+                     } completion:^(BOOL finished) {
+                         if (callback != nil) callback();
+                     }];
+}
+
++ (void) fadeOutMove:(UIView *)view fromMorePoint:(CGPoint) morePoint interval:(float)time callBack:(void(^)(void))callback
+{
+    CGRect endFrame = view.frame;
+    [UIViewFrameUtil move:view morePoint:morePoint];
+    
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         view.frame = endFrame;
+                         view.alpha = 0.0;
+                         
+                     } completion:^(BOOL finished) {
+                         if (callback != nil) callback();
+                     }];
+}
+
++ (void) fadeOutMove:(UIView *)view moreY:(float)y interval:(float)time callBack:(void(^)(void))callback
+{
+    
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         [UIViewFrameUtil move:view moreY:y];
+                         view.alpha = 0.0;
+                         
+                     } completion:^(BOOL finished) {
+                         if (callback != nil) callback();
+                     }];
+}
+
++ (void) fadeOutMove:(UIView *)view moreX:(float)x interval:(float)time callBack:(void(^)(void))callback
+{
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         [UIViewFrameUtil move:view moreX:x];
+                         view.alpha = 0.0;
+                         
+                     } completion:^(BOOL finished) {
+                         if (callback != nil) callback();
+                     }];
+}
+
++ (void) fadeOutMove:(UIView *)view morePoint:(CGPoint)morePoint interval:(float)time callBack:(void(^)(void))callback
+{
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         
+                         [UIViewFrameUtil move:view morePoint:morePoint];
+                         view.alpha = 0.0;
+                         
+                     } completion:^(BOOL finished) {
+                         if (callback != nil) callback();
+                     }];
+}
 
 @end

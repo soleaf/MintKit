@@ -58,6 +58,7 @@
  Animate moving view.
  */
 
+// FadeIn + Move
 // It move +/-fromMoreY or x to current setted frame.origin.y or x
 // animate more pos -> current pos
 + (void) fadeInMove:(UIView *)view fromMoreY:(float)y interval:(float)time callBack:(void(^)(void))callback;
@@ -68,5 +69,17 @@
 + (void) fadeInMove:(UIView *)view moreY:(float)y interval:(float)time callBack:(void(^)(void))callback;
 + (void) fadeInMove:(UIView *)view moreX:(float)x interval:(float)time callBack:(void(^)(void))callback;
 + (void) fadeInMove:(UIView *)view morePoint:(CGPoint)morePoint interval:(float)time callBack:(void(^)(void))callback;
+
+// FadeOut + Move
+// It move +/-fromMoreY or x to current setted frame.origin.y or x
+// animate more pos -> current pos
++ (void) fadeOutMove:(UIView *)view fromMoreY:(float)y interval:(float)time callBack:(void(^)(void))callback;
++ (void) fadeOutMove:(UIView *)view fromMoreX:(float)x interval:(float)time callBack:(void(^)(void))callback;
++ (void) fadeOutMove:(UIView *)view fromMorePoint:(CGPoint) morePoint interval:(float)time callBack:(void(^)(void))callback;
+// It move current setted frame.origin.y or x to +/-fromMoreY or x
+// animate current pos -> more pos
++ (void) fadeOutMove:(UIView *)view moreY:(float)y interval:(float)time callBack:(void(^)(void))callback;
++ (void) fadeOutMove:(UIView *)view moreX:(float)x interval:(float)time callBack:(void(^)(void))callback;
++ (void) fadeOutMove:(UIView *)view morePoint:(CGPoint)morePoint interval:(float)time callBack:(void(^)(void))callback;
 
 @end
