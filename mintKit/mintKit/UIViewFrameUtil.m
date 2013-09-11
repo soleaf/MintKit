@@ -106,5 +106,15 @@
 }
 
 
++(CGSize)frame:(UILabel *)label fitByTextConstrainedSize :(CGSize)contrainedSize
+{
+    CGRect frame = label.frame;
+    frame.size = [label.text sizeWithFont:label.font
+                        constrainedToSize:contrainedSize];
+    label.frame = frame;
+    label.numberOfLines = 0;
+    
+    return frame.size;
+}
 
 @end
