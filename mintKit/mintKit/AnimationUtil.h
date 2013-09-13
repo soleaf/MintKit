@@ -34,6 +34,8 @@
 + (void) fadeOut:(UIView *)view;
 + (void) fadeOut:(UIView *)view interval:(float)time callBack:(void(^)(void))callback;
 
+// Animate Fade In and Out to a alpha value.
++ (void) fadeInOut:(UIView*)view toAlpha:(float)alpha interval:(float)time callBack:(void (^)(void))callback;
 
 /*
  Move

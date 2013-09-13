@@ -186,6 +186,18 @@
                      }];
 }
 
++ (void)fadeInOut:(UIView *)view toAlpha:(float)alpha interval:(float)time callBack:(void (^)(void))callback
+{
+    [UIView animateWithDuration:time
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         view.alpha = alpha;
+                     } completion:^(BOOL finished) {
+                         if (callback != nil) callback();
+                     }];
+}
+
 + (void)move:(UIView *)view moreX:(float)x
 {
     [AnimationUtil move:view moreX:x interval:0.3 callBack:nil];

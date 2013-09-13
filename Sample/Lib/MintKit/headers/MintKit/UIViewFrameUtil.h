@@ -46,4 +46,9 @@
 +(void) frame:(UIView *) view moreW:(float) width;
 +(void) frame:(UIView *) view moreW:(float) width andMoreH:(float)height;
 
+/*
+ Resizing UILabel by textsize
+ */
++(CGSize) frame:(UILabel*) label fitByTextConstrainedSize:(CGSize)contrainedSize;
+
 @end
