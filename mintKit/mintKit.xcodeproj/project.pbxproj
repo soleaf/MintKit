@@ -95,6 +95,7 @@
 		F7183BDE17DE052400C5CF67 /* UIViewFrameUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BA817DE04E300C5CF67 /* UIViewFrameUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7183BDF17DE052400C5CF67 /* UIViewLayerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BAA17DE04E300C5CF67 /* UIViewLayerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7183BE017DE052400C5CF67 /* UIViewUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BAC17DE04E300C5CF67 /* UIViewUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F76A140A17EBE3EF008A6A81 /* TestArrayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F76A140917EBE3EF008A6A81 /* TestArrayUtil.m */; };
 		F791DAB517DE081C0092A474 /* TestKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183BA217DE04E300C5CF67 /* TestKit.h */; };
 		F791DAB617DE081C0092A474 /* ArrayUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B8D17DE04E300C5CF67 /* ArrayUtil.h */; };
 		F791DAB717DE081C0092A474 /* DateTimeSet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B8F17DE04E300C5CF67 /* DateTimeSet.h */; };
@@ -219,6 +220,8 @@
 		F7183BAB17DE04E300C5CF67 /* UIViewLayerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewLayerUtil.m; sourceTree = "<group>"; };
 		F7183BAC17DE04E300C5CF67 /* UIViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewUtil.h; sourceTree = "<group>"; };
 		F7183BAD17DE04E300C5CF67 /* UIViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewUtil.m; sourceTree = "<group>"; };
+		F76A140817EBE3EF008A6A81 /* TestArrayUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArrayUtil.h; sourceTree = "<group>"; };
+		F76A140917EBE3EF008A6A81 /* TestArrayUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayUtil.m; sourceTree = "<group>"; };
 		F791DAC617DE08B30092A474 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F791DAC817DE08B90092A474 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -322,6 +325,8 @@
 			children = (
 				E6D3C95D17DEC756008C6565 /* TestStringUtil.h */,
 				E6D3C95E17DEC756008C6565 /* TestStringUtil.m */,
+				F76A140817EBE3EF008A6A81 /* TestArrayUtil.h */,
+				F76A140917EBE3EF008A6A81 /* TestArrayUtil.m */,
 				F7183B6917DE02B100C5CF67 /* Supporting Files */,
 			);
 			path = mintKitTests;
@@ -618,6 +623,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6D3C95F17DEC757008C6565 /* TestStringUtil.m in Sources */,
+				F76A140A17EBE3EF008A6A81 /* TestArrayUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
