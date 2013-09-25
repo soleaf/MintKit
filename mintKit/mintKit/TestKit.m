@@ -93,5 +93,10 @@
     NSAssert(NO, @"Please Do not use above method.");
 }
 
++ (void)needDelegate:(__unsafe_unretained Class) instance;
+{
+    NSLog(@"%@ [ ✕ NEED DELEGATE] for '%@", TestKitConsoleName,  NSStringFromClass(instance));
+    NSAssert(NO, @"Please Do set delegate!");
+}
 
 @end
