@@ -37,11 +37,19 @@
  */
 
 // Resize one property or all.
++(void) size:(UIView *) view height:(float) height;
++(void) size:(UIView *) view width:(float) width;
++(void) size:(UIView *) view width:(float) width andHeight:(float)height;
+// Resize one property or all. - Deprecated: Instead this incoreect methodname, Use 'size:...' method serise
 +(void) frame:(UIView *) view height:(float) height;
 +(void) frame:(UIView *) view width:(float) width;
 +(void) frame:(UIView *) view w:(float) width andH:(float)height;
 
 // Resize to relative size
++(void) size:(UIView *) view moreHeight:(float) height;
++(void) size:(UIView *) view moreWidth:(float) width;
++(void) size:(UIView *) view moreWidth:(float) width andMoreHeight:(float)height;
+// Resize to relative size - Deprecated: Instead this incoreect methodname, Use 'size:...' method serise
 +(void) frame:(UIView *) view moreH:(float) height;
 +(void) frame:(UIView *) view moreW:(float) width;
 +(void) frame:(UIView *) view moreW:(float) width andMoreH:(float)height;
@@ -49,6 +57,8 @@
 /*
  Resizing UILabel by textsize
  */
++(CGSize) size:(UILabel*) label fitByTextConstrainedSize:(CGSize)contrainedSize;
+// Deprecated: Instead this incoreect methodname, Use 'size:...' method serise
 +(CGSize) frame:(UILabel*) label fitByTextConstrainedSize:(CGSize)contrainedSize;
 
 @end

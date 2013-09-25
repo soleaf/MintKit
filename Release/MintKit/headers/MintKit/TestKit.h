@@ -67,4 +67,7 @@
 
 // No use this method
 + (void) methodNoUse: (MINTKIT_DEBUG_METHOD_TYPE) methodName;
+
+// Has no delegate property
++ (void)needDelegate:(__unsafe_unretained Class) instance;
 @end
