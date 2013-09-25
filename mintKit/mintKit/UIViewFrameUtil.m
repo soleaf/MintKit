@@ -8,6 +8,7 @@
 
 
 #import "UIViewFrameUtil.h"
+#import "TestKit.h"
 
 @implementation UIViewFrameUtil
 
@@ -61,21 +62,21 @@
     view.frame = frame;
 }
 
-+ (void)frame:(UIView *)view height:(float)height
++ (void)size:(UIView *)view height:(float)height
 {
     CGRect frame = view.frame;
     frame.size.height = height;
     view.frame = frame;
 }
 
-+ (void)frame:(UIView *)view width:(float)width
++ (void)size:(UIView *)view width:(float)width
 {
     CGRect frame = view.frame;
     frame.size.width = width;
     view.frame = frame;
 }
 
-+ (void)frame:(UIView *)view w:(float)width andH:(float)height
++ (void)size:(UIView *)view width:(float)width andHeight:(float)height
 {
     CGRect frame = view.frame;
     frame.size.width = width;
@@ -83,14 +84,40 @@
     view.frame = frame;
 }
 
-+ (void)frame:(UIView *)view moreH:(float)height
+
++ (void)frame:(UIView *)view height:(float)height
+{
+    [TestKit methodisDeprecated:MINTKIT_DEBUG_METHOD moveTo:@"size:(UIView *)view height:(float)height"];
+    CGRect frame = view.frame;
+    frame.size.height = height;
+    view.frame = frame;
+}
+
++ (void)frame:(UIView *)view width:(float)width
+{
+    [TestKit methodisDeprecated:MINTKIT_DEBUG_METHOD moveTo:@"size:(UIView *)view width:(float)width"];
+    CGRect frame = view.frame;
+    frame.size.width = width;
+    view.frame = frame;
+}
+
++ (void)frame:(UIView *)view w:(float)width andH:(float)height
+{
+    [TestKit methodisDeprecated:MINTKIT_DEBUG_METHOD moveTo:@"size:(UIView *)view width:(float)width andHeight:(float)height"];
+    CGRect frame = view.frame;
+    frame.size.width = width;
+    frame.size.width = height;
+    view.frame = frame;
+}
+
++ (void)size:(UIView *)view moreHeight:(float)height
 {
     CGRect frame = view.frame;
     frame.size.height += height;
     view.frame = frame;
 }
 
-+ (void)frame:(UIView *)view moreW:(float)width
++ (void)size:(UIView *)view moreWidth:(float)width
 {
     CGRect frame = view.frame;
     frame.size.width += width;
@@ -103,6 +130,43 @@
     frame.size.width += width;
     frame.size.width += height;
     view.frame = frame;
+}
+
+
++ (void)frame:(UIView *)view moreH:(float)height
+{
+    [TestKit methodisDeprecated:MINTKIT_DEBUG_METHOD moveTo:@"size:(UIView *)view moreHeight:(float)height"];
+    CGRect frame = view.frame;
+    frame.size.height += height;
+    view.frame = frame;
+}
+
++ (void)frame:(UIView *)view moreW:(float)width
+{
+    [TestKit methodisDeprecated:MINTKIT_DEBUG_METHOD moveTo:@"size:(UIView *)view moreWidth:(float)width"];
+    CGRect frame = view.frame;
+    frame.size.width += width;
+    view.frame = frame;
+}
+
++ (void)frame:(UIView *)view moreW:(float)width andMoreH:(float)height
+{
+    [TestKit methodisDeprecated:MINTKIT_DEBUG_METHOD moveTo:@"size:(UIView *)view moreWidth:(float)width andMoreHeight:(float)height"];
+    CGRect frame = view.frame;
+    frame.size.width += width;
+    frame.size.width += height;
+    view.frame = frame;
+}
+
++(CGSize)size:(UILabel *)label fitByTextConstrainedSize :(CGSize)contrainedSize
+{
+    CGRect frame = label.frame;
+    frame.size = [label.text sizeWithFont:label.font
+                        constrainedToSize:contrainedSize];
+    label.frame = frame;
+    label.numberOfLines = 0;
+    
+    return frame.size;
 }
 
 
