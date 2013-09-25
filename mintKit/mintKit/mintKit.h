@@ -28,5 +28,6 @@
 
 + (void) hello;
 + (void) version;
++ (void) buildNumberCheck:(NSInteger) requestingBuildNumber;
 
 @end

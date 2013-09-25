@@ -31,4 +31,22 @@
           MINTKIT_RELEASE);
 }
 
++ (void) buildNumberCheck:(NSInteger) requestingBuildNumber
+{
+    if (MINTKIT_BUILD != requestingBuildNumber){
+        NSLog(@"MINTKIT BUILD NUMBER CHECK WARNING: You reqeust checking build number :%d, But is not matched to %d",
+               requestingBuildNumber,
+               MINTKIT_BUILD
+               );
+        NSAssert(NO, @"MINTKIT BUILD NUMBER CHECK WARNING: You reqeust checking build number :%d, But is not matched to %d",
+                 requestingBuildNumber,
+                 MINTKIT_BUILD
+                 );
+    }
+    else{
+        NSLog(@"MINTKIT BUILD NUMBER CHECK SUCCESS -> %d", requestingBuildNumber);
+    }
+    
+}
+
 @end
