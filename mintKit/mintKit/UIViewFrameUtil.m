@@ -124,7 +124,7 @@
     view.frame = frame;
 }
 
-+ (void)frame:(UIView *)view moreW:(float)width andMoreH:(float)height
++ (void)size:(UIView *)view moreWidth:(float)width andMoreHeight:(float)height
 {
     CGRect frame = view.frame;
     frame.size.width += width;
