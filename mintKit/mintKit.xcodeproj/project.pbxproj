@@ -34,6 +34,7 @@
 /* Begin PBXBuildFile section */
 		E6C69A7517F27E1A008E23DE /* TestObjectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C69A7417F27E1A008E23DE /* TestObjectUtil.m */; };
 		E6C69A7817F27F24008E23DE /* TestFormatUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C69A7717F27F24008E23DE /* TestFormatUtil.m */; };
+		E6C69A7B17F2A1EF008E23DE /* TestArrayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C69A7A17F2A1EF008E23DE /* TestArrayUtil.m */; };
 		E6D3C95F17DEC757008C6565 /* TestStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3C95E17DEC756008C6565 /* TestStringUtil.m */; };
 		F7183B5217DE02B000C5CF67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7183B5117DE02B000C5CF67 /* Foundation.framework */; };
 		F7183B5717DE02B000C5CF67 /* mintKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B5617DE02B000C5CF67 /* mintKit.h */; };
@@ -177,6 +178,8 @@
 		E6C69A7417F27E1A008E23DE /* TestObjectUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectUtil.m; sourceTree = "<group>"; };
 		E6C69A7617F27F24008E23DE /* TestFormatUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFormatUtil.h; sourceTree = "<group>"; };
 		E6C69A7717F27F24008E23DE /* TestFormatUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFormatUtil.m; sourceTree = "<group>"; };
+		E6C69A7917F2A1EF008E23DE /* TestArrayUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArrayUtil.h; sourceTree = "<group>"; };
+		E6C69A7A17F2A1EF008E23DE /* TestArrayUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayUtil.m; sourceTree = "<group>"; };
 		E6D3C95D17DEC756008C6565 /* TestStringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStringUtil.h; sourceTree = "<group>"; };
 		E6D3C95E17DEC756008C6565 /* TestStringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStringUtil.m; sourceTree = "<group>"; };
 		F7183B4E17DE02B000C5CF67 /* libmintKit-Simulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmintKit-Simulator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -326,6 +329,8 @@
 		F7183B6817DE02B100C5CF67 /* mintKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				E6C69A7917F2A1EF008E23DE /* TestArrayUtil.h */,
+				E6C69A7A17F2A1EF008E23DE /* TestArrayUtil.m */,
 				E6D3C95D17DEC756008C6565 /* TestStringUtil.h */,
 				E6D3C95E17DEC756008C6565 /* TestStringUtil.m */,
 				E6C69A7317F27E1A008E23DE /* TestObjectUtil.h */,
@@ -630,6 +635,7 @@
 				E6C69A7517F27E1A008E23DE /* TestObjectUtil.m in Sources */,
 				E6D3C95F17DEC757008C6565 /* TestStringUtil.m in Sources */,
 				E6C69A7817F27F24008E23DE /* TestFormatUtil.m in Sources */,
+				E6C69A7B17F2A1EF008E23DE /* TestArrayUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
