@@ -84,8 +84,19 @@
 
 + (void) methodisDeprecated: (MINTKIT_DEBUG_METHOD_TYPE) methodName moveTo:(NSString*) newMethodName;
 {
-    NSLog(@"%@ [ ✓ DEPRECATED] '%s' is Deprecated. Please use '%@'.", TestKitConsoleName, methodName, newMethodName);
+    NSLog(@"%@ [ ✓ DEPRECATED] '%s' is Deprecated.\n Please use '%@'.", TestKitConsoleName, methodName, newMethodName);
 }
+
++ (void) methodisDeprecated: (MINTKIT_DEBUG_METHOD_TYPE) methodName inVersion:(NSString *)version
+{
+    NSLog(@"%@ [ ✓ DEPRECATED] '%s' is Deprecated in '%@'.", TestKitConsoleName, methodName, version);
+}
+
++ (void) methodisDeprecated: (MINTKIT_DEBUG_METHOD_TYPE) methodName inVersion:(NSString *)version moveTo:(NSString *)newMethodName
+{
+    NSLog(@"%@ [ ✓ DEPRECATED] '%s' is Deprecated in '%@'. Please use '%@'.", TestKitConsoleName, methodName, version, newMethodName);
+}
+
 
 + (void) methodNoUse: (MINTKIT_DEBUG_METHOD_TYPE) methodName
 {

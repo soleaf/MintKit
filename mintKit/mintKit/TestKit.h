@@ -64,9 +64,12 @@
 
 // Called method is deprecated. Just warning.
 + (void) methodisDeprecated: (MINTKIT_DEBUG_METHOD_TYPE) methodName moveTo:(NSString*) newMethodName;
++ (void) methodisDeprecated: (MINTKIT_DEBUG_METHOD_TYPE) methodName inVersion:(NSString*) version;
++ (void) methodisDeprecated: (MINTKIT_DEBUG_METHOD_TYPE) methodName inVersion:(NSString*) version moveTo:(NSString*) newMethodName;
 
 // No use this method
 + (void) methodNoUse: (MINTKIT_DEBUG_METHOD_TYPE) methodName;
++ (void) methodNoUse: (MINTKIT_DEBUG_METHOD_TYPE) methodName inVersion:(NSString*) version;
 
 // Has no delegate property
 + (void)needDelegate:(__unsafe_unretained Class) instance;
