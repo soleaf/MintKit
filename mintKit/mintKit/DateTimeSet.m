@@ -24,5 +24,14 @@
     return [NSString stringWithFormat:@"DateTimeSet: %@Time(%d:%d:%d) Interval(%f)", dateDesc, hours, minutes, seconds, interval];
 }
 
++ (DateTimeSet *)makeDateTimeSetYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day
+{
+    DateTimeSet *dateTimeSet = [[DateTimeSet alloc] init];
+    dateTimeSet.year    = year;
+    dateTimeSet.month   = month;
+    dateTimeSet.day     = day;
+    
+    return dateTimeSet;
+}
 
 @end
