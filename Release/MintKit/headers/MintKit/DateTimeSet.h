@@ -32,5 +32,6 @@
 @property NSInteger year, month, day;
 
 - (NSString *)description;
++ (DateTimeSet*)makeDateTimeSetYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
 
 @end
