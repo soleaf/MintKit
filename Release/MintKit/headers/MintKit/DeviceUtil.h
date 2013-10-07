@@ -34,4 +34,10 @@
 // Is iPhone?
 + (BOOL) isiPhone;
 
+
+/*
+ iOS version
+*/
++ (BOOL) isIOS7;
++ (BOOL) isIOSversionAbove:(float)version;
 @end
