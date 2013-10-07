@@ -8,6 +8,7 @@
 
 #import "StringUtil.h"
 #import "TestKit.h"
+#import "DeviceUtil.h"
 
 @implementation StringUtil
 
@@ -99,6 +100,46 @@
 }
 
 
++ (CGSize)sizeOf:(NSString *)str systemFontOfSize:(float)fontSize
+{
+    if ([DeviceUtil isIOS7]){
+        return [str sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]}];
+    }
+    else{
+        return [str sizeWithFont:[UIFont systemFontOfSize:fontSize]];
+    }
+}
+
++ (CGSize)sizeOf:(NSString *)str font:(UIFont *)font
+{
+     if ([DeviceUtil isIOS7]){
+         return [str sizeWithAttributes:@{NSFontAttributeName:font}];
+     }
+     else{
+         return [str sizeWithFont:font];
+     }
+}
+
++(CGSize)sizeOf:(NSString *)str font:(UIFont *)font bound:(CGSize)boundSize
+{
+    if ([DeviceUtil isIOS7]){
+        return [self sizeOf:str font:font bound:boundSize options:NSStringDrawingUsesLineFragmentOrigin];
+    }
+    else{
+        return [str sizeWithFont:font constrainedToSize:boundSize lineBreakMode:NSLineBreakByCharWrapping];
+    }
+}
+
++(CGSize)sizeOf:(NSString *)str font:(UIFont *)font bound:(CGSize)boundSize options:(NSStringDrawingOptions)options
+{
+    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:str
+                                                                         attributes:@{NSFontAttributeName: font}];
+    CGRect rect = [attributedText boundingRectWithSize:boundSize
+                                               options:options
+                                               context:nil];
+    return rect.size;
+
+}
 + (NSMutableArray *)LinearHangul:(NSString *)string
 {
     

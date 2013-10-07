@@ -9,6 +9,7 @@
 
 #import "UIViewFrameUtil.h"
 #import "TestKit.h"
+#import "StringUtil.h"
 
 @implementation UIViewFrameUtil
 
@@ -175,6 +176,16 @@
     CGRect frame = label.frame;
     frame.size = [label.text sizeWithFont:label.font
                         constrainedToSize:contrainedSize];
+    label.frame = frame;
+    label.numberOfLines = 0;
+    
+    return frame.size;
+}
+
++ (CGSize)frame:(UILabel *)label fitByTextOnBoundSize:(CGSize)boundSize
+{
+    CGRect frame = label.frame;
+    frame.size = [StringUtil sizeOf:label.text font:label.font bound:boundSize];
     label.frame = frame;
     label.numberOfLines = 0;
     
