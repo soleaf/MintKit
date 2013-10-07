@@ -113,12 +113,11 @@
 
 + (CGSize)sizeOf:(NSString *)str font:(UIFont *)font
 {
-    if ([str respondsToSelector:@selector(sizeWithAttributes:)]){
-       return [str sizeWithAttributes:@{NSFontAttributeName:font}];
-     }
-     else{
-         return [str sizeWithFont:font];
-     }
+    Xcode5Code({
+        return [str sizeWithAttributes:@{NSFontAttributeName:font}];
+    }, {
+        return [str sizeWithFont:font];
+    })
 }
 
 +(CGSize)sizeOf:(NSString *)str font:(UIFont *)font bound:(CGSize)boundSize
@@ -133,17 +132,17 @@
 
 +(CGSize)sizeOf:(NSString *)str font:(UIFont *)font bound:(CGSize)boundSize options:(NSStringDrawingOptions)options
 {
-    if ([str respondsToSelector:@selector(sizeWithAttributes:)]){
+    Xcode5Code({
+    
         NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:str
                                                                              attributes:@{NSFontAttributeName: font}];
         CGRect rect = [attributedText boundingRectWithSize:boundSize
                                                    options:options
                                                    context:nil];
         return rect.size;
-    }
-    else{
+    }, {
         return [str sizeWithFont:font constrainedToSize:boundSize lineBreakMode:NSLineBreakByCharWrapping];
-    }
+    });
 
 }
 + (NSMutableArray *)LinearHangul:(NSString *)string
