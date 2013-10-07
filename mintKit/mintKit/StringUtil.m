@@ -9,6 +9,7 @@
 #import "StringUtil.h"
 #import "TestKit.h"
 #import "DeviceUtil.h"
+#import "BuildSupport.h"
 
 @implementation StringUtil
 
@@ -112,8 +113,8 @@
 
 + (CGSize)sizeOf:(NSString *)str font:(UIFont *)font
 {
-     if ([DeviceUtil isIOS7]){
-         return [str sizeWithAttributes:@{NSFontAttributeName:font}];
+    if ([str respondsToSelector:@selector(sizeWithAttributes:)]){
+       return [str sizeWithAttributes:@{NSFontAttributeName:font}];
      }
      else{
          return [str sizeWithFont:font];
@@ -132,12 +133,17 @@
 
 +(CGSize)sizeOf:(NSString *)str font:(UIFont *)font bound:(CGSize)boundSize options:(NSStringDrawingOptions)options
 {
-    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:str
-                                                                         attributes:@{NSFontAttributeName: font}];
-    CGRect rect = [attributedText boundingRectWithSize:boundSize
-                                               options:options
-                                               context:nil];
-    return rect.size;
+    if ([str respondsToSelector:@selector(sizeWithAttributes:)]){
+        NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:str
+                                                                             attributes:@{NSFontAttributeName: font}];
+        CGRect rect = [attributedText boundingRectWithSize:boundSize
+                                                   options:options
+                                                   context:nil];
+        return rect.size;
+    }
+    else{
+        return [str sizeWithFont:font constrainedToSize:boundSize lineBreakMode:NSLineBreakByCharWrapping];
+    }
 
 }
 + (NSMutableArray *)LinearHangul:(NSString *)string
