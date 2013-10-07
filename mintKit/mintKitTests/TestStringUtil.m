@@ -87,7 +87,7 @@
     STAssertTrue([StringUtil getNotNilOn:@" " and:@" " and:@" "] == nil, @"all has no length, return nil");
 }
 
-- (void)tetGotNotNilWithNVLon
+- (void)testGotNotNilWithNVLon
 {
     STAssertTrue([[StringUtil getNotNilWithNVLOn:@"first" and:@"second" and:@"third"] isEqualToString:@"first"], @"first is not nill");
     STAssertTrue([[StringUtil getNotNilWithNVLOn:nil and:@"second" and:@"third"] isEqualToString:@"second"], @"first is nill");
