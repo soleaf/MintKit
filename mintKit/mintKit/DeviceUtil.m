@@ -27,4 +27,14 @@
     return [ [ [ UIDevice currentDevice ] model ] isEqualToString: @"iPhone" ];
 }
 
++ (BOOL)isIOS7
+{
+    return ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7);
+}
+
++ (BOOL)isIOSversionAbove:(float)version
+{
+    return ([[[UIDevice currentDevice] systemVersion] floatValue] >= version);
+}
+
 @end
