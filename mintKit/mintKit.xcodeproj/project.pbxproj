@@ -32,6 +32,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		E670887C180292AC003F9D52 /* BuildSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = E670887A180292AC003F9D52 /* BuildSupport.h */; };
+		E670887D180292AC003F9D52 /* BuildSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E670887B180292AC003F9D52 /* BuildSupport.m */; };
+		E670887E180292AC003F9D52 /* BuildSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E670887B180292AC003F9D52 /* BuildSupport.m */; };
 		E6C69A7517F27E1A008E23DE /* TestObjectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C69A7417F27E1A008E23DE /* TestObjectUtil.m */; };
 		E6C69A7817F27F24008E23DE /* TestFormatUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C69A7717F27F24008E23DE /* TestFormatUtil.m */; };
 		E6C69A7B17F2A1EF008E23DE /* TestArrayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C69A7A17F2A1EF008E23DE /* TestArrayUtil.m */; };
@@ -174,6 +177,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E670887A180292AC003F9D52 /* BuildSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildSupport.h; sourceTree = "<group>"; };
+		E670887B180292AC003F9D52 /* BuildSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildSupport.m; sourceTree = "<group>"; };
 		E6C69A7317F27E1A008E23DE /* TestObjectUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjectUtil.h; sourceTree = "<group>"; };
 		E6C69A7417F27E1A008E23DE /* TestObjectUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectUtil.m; sourceTree = "<group>"; };
 		E6C69A7617F27F24008E23DE /* TestFormatUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFormatUtil.h; sourceTree = "<group>"; };
@@ -305,6 +310,8 @@
 			children = (
 				F7183B5617DE02B000C5CF67 /* mintKit.h */,
 				F7183B5817DE02B000C5CF67 /* mintKit.m */,
+				E670887A180292AC003F9D52 /* BuildSupport.h */,
+				E670887B180292AC003F9D52 /* BuildSupport.m */,
 				F7183BE117DE053600C5CF67 /* Test */,
 				F791DAAF17DE05760092A474 /* Objects */,
 				F791DAB017DE05A30092A474 /* Map */,
@@ -441,6 +448,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E670887C180292AC003F9D52 /* BuildSupport.h in Headers */,
 				F7183BCF17DE052400C5CF67 /* mintKit.h in Headers */,
 				F7183BD017DE052400C5CF67 /* AnimationUtil.h in Headers */,
 				F7183BD117DE052400C5CF67 /* ArrayUtil.h in Headers */,
@@ -623,6 +631,7 @@
 				F7183BC417DE04E400C5CF67 /* UIRobot.m in Sources */,
 				F7183BC617DE04E400C5CF67 /* UIVIewControllerUtil.m in Sources */,
 				F7183BC817DE04E400C5CF67 /* UIViewFrameUtil.m in Sources */,
+				E670887D180292AC003F9D52 /* BuildSupport.m in Sources */,
 				F7183BCA17DE04E400C5CF67 /* UIViewLayerUtil.m in Sources */,
 				F7183BCC17DE04E400C5CF67 /* UIViewUtil.m in Sources */,
 			);
@@ -659,6 +668,7 @@
 				F7183BC517DE04E400C5CF67 /* UIRobot.m in Sources */,
 				F7183BC717DE04E400C5CF67 /* UIVIewControllerUtil.m in Sources */,
 				F7183BC917DE04E400C5CF67 /* UIViewFrameUtil.m in Sources */,
+				E670887E180292AC003F9D52 /* BuildSupport.m in Sources */,
 				F7183BCB17DE04E400C5CF67 /* UIViewLayerUtil.m in Sources */,
 				F7183BCD17DE04E400C5CF67 /* UIViewUtil.m in Sources */,
 			);
