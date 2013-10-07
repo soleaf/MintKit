@@ -103,12 +103,11 @@
 
 + (CGSize)sizeOf:(NSString *)str systemFontOfSize:(float)fontSize
 {
-    if ([DeviceUtil isIOS7]){
+    Xcode5Code({
         return [str sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]}];
-    }
-    else{
+    },{
         return [str sizeWithFont:[UIFont systemFontOfSize:fontSize]];
-    }
+    })
 }
 
 + (CGSize)sizeOf:(NSString *)str font:(UIFont *)font
