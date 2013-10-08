@@ -14,7 +14,7 @@
     Simple Alert ...
  */
 
-@interface UIVIewControllerUtil : NSObject
+@interface UIViewControllerUtil : NSObject
 
 /*
  Navigation

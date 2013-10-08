@@ -9,9 +9,9 @@
 #import "mintKit.h"
 
 #define MINTKIT_VERSION            @"0.0.1"
-#define MINTKIT_BUILD              55
+#define MINTKIT_BUILD              56
 #define MINTKIT_RELEASE            0
-#define MINTKIT_VERSION_DATE       @"2013.10.07"
+#define MINTKIT_VERSION_DATE       @"2013.10.08"
 
 @implementation mintKit
 
