@@ -6,7 +6,7 @@
 //  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 
-#import "UIVIewControllerUtil.h"
+#import "UIViewControllerUtil.h"
 
 #import <objc/runtime.h>
 typedef void (^ActionBlock)();
@@ -19,14 +19,12 @@ static char UIButtonBlockKey;
 
 @end
 
-
 @implementation UIButton (UIBlockButton)
 
 - (void)handleControlEvent:(UIControlEvents)event withBlock:(ActionBlock)block {
     objc_setAssociatedObject(self, &UIButtonBlockKey, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
     [self addTarget:self action:@selector(callActionBlock:) forControlEvents:event];
 }
-
 
 - (void)callActionBlock:(id)sender {
     ActionBlock block = (ActionBlock)objc_getAssociatedObject(self, &UIButtonBlockKey);
@@ -38,7 +36,7 @@ static char UIButtonBlockKey;
 @end
 
 
-@implementation UIVIewControllerUtil
+@implementation UIViewControllerUtil
 
 
 
