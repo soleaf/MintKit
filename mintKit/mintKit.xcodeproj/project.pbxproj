@@ -75,8 +75,8 @@
 		F7183BC317DE04E400C5CF67 /* TestKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183BA317DE04E300C5CF67 /* TestKit.m */; };
 		F7183BC417DE04E400C5CF67 /* UIRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183BA517DE04E300C5CF67 /* UIRobot.m */; };
 		F7183BC517DE04E400C5CF67 /* UIRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183BA517DE04E300C5CF67 /* UIRobot.m */; };
-		F7183BC617DE04E400C5CF67 /* UIVIewControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183BA717DE04E300C5CF67 /* UIVIewControllerUtil.m */; };
-		F7183BC717DE04E400C5CF67 /* UIVIewControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183BA717DE04E300C5CF67 /* UIVIewControllerUtil.m */; };
+		F7183BC617DE04E400C5CF67 /* UIViewControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183BA717DE04E300C5CF67 /* UIViewControllerUtil.m */; };
+		F7183BC717DE04E400C5CF67 /* UIViewControllerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183BA717DE04E300C5CF67 /* UIViewControllerUtil.m */; };
 		F7183BC817DE04E400C5CF67 /* UIViewFrameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183BA917DE04E300C5CF67 /* UIViewFrameUtil.m */; };
 		F7183BC917DE04E400C5CF67 /* UIViewFrameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183BA917DE04E300C5CF67 /* UIViewFrameUtil.m */; };
 		F7183BCA17DE04E400C5CF67 /* UIViewLayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7183BAB17DE04E300C5CF67 /* UIViewLayerUtil.m */; };
@@ -97,7 +97,7 @@
 		F7183BDA17DE052400C5CF67 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BA017DE04E300C5CF67 /* StringUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7183BDB17DE052400C5CF67 /* TestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BA217DE04E300C5CF67 /* TestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7183BDC17DE052400C5CF67 /* UIRobot.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BA417DE04E300C5CF67 /* UIRobot.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7183BDD17DE052400C5CF67 /* UIVIewControllerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BA617DE04E300C5CF67 /* UIVIewControllerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7183BDD17DE052400C5CF67 /* UIViewControllerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BA617DE04E300C5CF67 /* UIViewControllerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7183BDE17DE052400C5CF67 /* UIViewFrameUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BA817DE04E300C5CF67 /* UIViewFrameUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7183BDF17DE052400C5CF67 /* UIViewLayerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BAA17DE04E300C5CF67 /* UIViewLayerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7183BE017DE052400C5CF67 /* UIViewUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BAC17DE04E300C5CF67 /* UIViewUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -113,7 +113,7 @@
 		F791DABE17DE081C0092A474 /* GraphicsUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B9917DE04E300C5CF67 /* GraphicsUtil.h */; };
 		F791DABF17DE081C0092A474 /* FormValidation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B9717DE04E300C5CF67 /* FormValidation.h */; };
 		F791DAC017DE081C0092A474 /* UIRobot.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183BA417DE04E300C5CF67 /* UIRobot.h */; };
-		F791DAC117DE081C0092A474 /* UIVIewControllerUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183BA617DE04E300C5CF67 /* UIVIewControllerUtil.h */; };
+		F791DAC117DE081C0092A474 /* UIViewControllerUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183BA617DE04E300C5CF67 /* UIViewControllerUtil.h */; };
 		F791DAC217DE081C0092A474 /* UIViewFrameUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183BA817DE04E300C5CF67 /* UIViewFrameUtil.h */; };
 		F791DAC317DE081C0092A474 /* UIViewLayerUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183BAA17DE04E300C5CF67 /* UIViewLayerUtil.h */; };
 		F791DAC417DE081C0092A474 /* UIViewUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183BAC17DE04E300C5CF67 /* UIViewUtil.h */; };
@@ -155,7 +155,7 @@
 				F791DABE17DE081C0092A474 /* GraphicsUtil.h in CopyFiles */,
 				F791DABF17DE081C0092A474 /* FormValidation.h in CopyFiles */,
 				F791DAC017DE081C0092A474 /* UIRobot.h in CopyFiles */,
-				F791DAC117DE081C0092A474 /* UIVIewControllerUtil.h in CopyFiles */,
+				F791DAC117DE081C0092A474 /* UIViewControllerUtil.h in CopyFiles */,
 				F791DAC217DE081C0092A474 /* UIViewFrameUtil.h in CopyFiles */,
 				F791DAC317DE081C0092A474 /* UIViewLayerUtil.h in CopyFiles */,
 				F791DAC417DE081C0092A474 /* UIViewUtil.h in CopyFiles */,
@@ -225,8 +225,8 @@
 		F7183BA317DE04E300C5CF67 /* TestKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestKit.m; sourceTree = "<group>"; };
 		F7183BA417DE04E300C5CF67 /* UIRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRobot.h; sourceTree = "<group>"; };
 		F7183BA517DE04E300C5CF67 /* UIRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRobot.m; sourceTree = "<group>"; };
-		F7183BA617DE04E300C5CF67 /* UIVIewControllerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIVIewControllerUtil.h; sourceTree = "<group>"; };
-		F7183BA717DE04E300C5CF67 /* UIVIewControllerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIVIewControllerUtil.m; sourceTree = "<group>"; };
+		F7183BA617DE04E300C5CF67 /* UIViewControllerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerUtil.h; sourceTree = "<group>"; };
+		F7183BA717DE04E300C5CF67 /* UIViewControllerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerUtil.m; sourceTree = "<group>"; };
 		F7183BA817DE04E300C5CF67 /* UIViewFrameUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewFrameUtil.h; sourceTree = "<group>"; };
 		F7183BA917DE04E300C5CF67 /* UIViewFrameUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewFrameUtil.m; sourceTree = "<group>"; };
 		F7183BAA17DE04E300C5CF67 /* UIViewLayerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewLayerUtil.h; sourceTree = "<group>"; };
@@ -420,8 +420,8 @@
 			children = (
 				F7183BA417DE04E300C5CF67 /* UIRobot.h */,
 				F7183BA517DE04E300C5CF67 /* UIRobot.m */,
-				F7183BA617DE04E300C5CF67 /* UIVIewControllerUtil.h */,
-				F7183BA717DE04E300C5CF67 /* UIVIewControllerUtil.m */,
+				F7183BA617DE04E300C5CF67 /* UIViewControllerUtil.h */,
+				F7183BA717DE04E300C5CF67 /* UIViewControllerUtil.m */,
 				F7183BA817DE04E300C5CF67 /* UIViewFrameUtil.h */,
 				F7183BA917DE04E300C5CF67 /* UIViewFrameUtil.m */,
 				F7183BAA17DE04E300C5CF67 /* UIViewLayerUtil.h */,
@@ -463,7 +463,7 @@
 				F7183BDA17DE052400C5CF67 /* StringUtil.h in Headers */,
 				F7183BDB17DE052400C5CF67 /* TestKit.h in Headers */,
 				F7183BDC17DE052400C5CF67 /* UIRobot.h in Headers */,
-				F7183BDD17DE052400C5CF67 /* UIVIewControllerUtil.h in Headers */,
+				F7183BDD17DE052400C5CF67 /* UIViewControllerUtil.h in Headers */,
 				F7183BDE17DE052400C5CF67 /* UIViewFrameUtil.h in Headers */,
 				F7183BDF17DE052400C5CF67 /* UIViewLayerUtil.h in Headers */,
 				F7183BE017DE052400C5CF67 /* UIViewUtil.h in Headers */,
@@ -629,7 +629,7 @@
 				F7183BC017DE04E400C5CF67 /* StringUtil.m in Sources */,
 				F7183BC217DE04E400C5CF67 /* TestKit.m in Sources */,
 				F7183BC417DE04E400C5CF67 /* UIRobot.m in Sources */,
-				F7183BC617DE04E400C5CF67 /* UIVIewControllerUtil.m in Sources */,
+				F7183BC617DE04E400C5CF67 /* UIViewControllerUtil.m in Sources */,
 				F7183BC817DE04E400C5CF67 /* UIViewFrameUtil.m in Sources */,
 				E670887D180292AC003F9D52 /* BuildSupport.m in Sources */,
 				F7183BCA17DE04E400C5CF67 /* UIViewLayerUtil.m in Sources */,
@@ -666,7 +666,7 @@
 				F7183BC117DE04E400C5CF67 /* StringUtil.m in Sources */,
 				F7183BC317DE04E400C5CF67 /* TestKit.m in Sources */,
 				F7183BC517DE04E400C5CF67 /* UIRobot.m in Sources */,
-				F7183BC717DE04E400C5CF67 /* UIVIewControllerUtil.m in Sources */,
+				F7183BC717DE04E400C5CF67 /* UIViewControllerUtil.m in Sources */,
 				F7183BC917DE04E400C5CF67 /* UIViewFrameUtil.m in Sources */,
 				E670887E180292AC003F9D52 /* BuildSupport.m in Sources */,
 				F7183BCB17DE04E400C5CF67 /* UIViewLayerUtil.m in Sources */,
