@@ -34,6 +34,10 @@
 // NSInterval -> DateTimeSet(properties: interval, hours, minutes, seconds)
 + (DateTimeSet *) NSIntervalToTimeSet: (NSTimeInterval) interval;
 
+// Make NSDate form year, month, day
++ (NSDate*) makeNSDateYear:(NSInteger) year
+                  andMonth:(NSInteger) month
+                    andDay:(NSInteger) day;
 
 /*
     Get Date nad Calculation before, after date
@@ -67,6 +71,11 @@
                                     AndYear:(NSInteger) theYear
                                    andMonth:(NSInteger) theMonth
                                      andDay:(NSInteger) theDay;
+
+// Get Last day of month by NSDate
++ (NSInteger) getLastDayOfMonth:(NSDate*) date;
+
+
 
 
 @end
