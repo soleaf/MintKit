@@ -14,7 +14,10 @@
 
 + (NSDictionary *) NSDateToDateDic:(NSDate*) date
 {
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:date];
+    NSDateComponents *components = [[NSCalendar currentCalendar]
+                                    components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit
+                                    fromDate:date];
+    
     NSInteger day   = [components day];
     NSInteger month = [components month];
     NSInteger year  = [components year];
@@ -34,7 +37,9 @@
 
 + (DateTimeSet *) NSDateToDateTimeSet:(NSDate *)date
 {
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:date];
+    NSDateComponents *components = [[NSCalendar currentCalendar]
+                                    components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit
+                                    fromDate:date];
 
     DateTimeSet *dateTimeSet = [[DateTimeSet alloc] init];
     dateTimeSet.year    = [components year];
@@ -69,6 +74,20 @@
 }
 
 
++ (NSDate*) makeNSDateYear:(NSInteger) year
+                  andMonth:(NSInteger) month
+                    andDay:(NSInteger) day;
+{
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    [components setDay:day];
+    [components setMonth:month];
+    [components setYear:year];
+    
+    return [gregorian dateFromComponents:components];
+}
+
 + (NSDictionary *)getNowDate
 {
     return [DateUtil NSDateToDateDic:[NSDate date]];
@@ -79,7 +98,10 @@
     return [DateUtil NSDateToDateTimeSet:[NSDate date]];
 }
 
-+ (NSDate *)getNextDate:(NSInteger) offset AndYear:(NSInteger) theYear andMonth:(NSInteger) theMonth andDay:(NSInteger) theDay
++ (NSDate *)getNextDate:(NSInteger) offset
+                AndYear:(NSInteger) theYear
+               andMonth:(NSInteger) theMonth
+                 andDay:(NSInteger) theDay
 {
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
@@ -96,16 +118,33 @@
     return nextDate;
 }
 
-+ (NSDictionary *)getNextDateDicFromOffset:(NSInteger)offset AndYear:(NSInteger)theYear andMonth:(NSInteger)theMonth andDay:(NSInteger)theDay
++ (NSDictionary *)getNextDateDicFromOffset:(NSInteger)offset
+                                   AndYear:(NSInteger)theYear
+                                  andMonth:(NSInteger)theMonth
+                                    andDay:(NSInteger)theDay
 {
     NSDate *nextDate = [DateUtil getNextDate:offset AndYear:theYear andMonth:theMonth andDay:theDay];
     return [DateUtil NSDateToDateDic:nextDate];
 }
 
-+ (DateTimeSet *)getNextDateSetFromOffset:(NSInteger)offset AndYear:(NSInteger)theYear andMonth:(NSInteger)theMonth andDay:(NSInteger)theDay
++ (DateTimeSet *)getNextDateSetFromOffset:(NSInteger)offset
+                                  AndYear:(NSInteger)theYear
+                                 andMonth:(NSInteger)theMonth
+                                   andDay:(NSInteger)theDay
 {
     NSDate *nextDate = [DateUtil getNextDate:offset AndYear:theYear andMonth:theMonth andDay:theDay];
     return [DateUtil NSDateToDateTimeSet:nextDate];
 }
+
++ (NSInteger)getLastDayOfMonth:(NSDate*) date
+{
+    
+    NSCalendar *currentCalendar = [NSCalendar currentCalendar];
+    NSRange daysRange =
+    [currentCalendar rangeOfUnit:NSDayCalendarUnit inUnit:NSMonthCalendarUnit forDate:date];
+    
+    return daysRange.length;
+}
+
 
 @end
