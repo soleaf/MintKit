@@ -18,5 +18,18 @@
     else                              return     YES;
 }
 
++ (NSMutableDictionary *)deepCopyNSMutableDictionary:(NSMutableDictionary *)originalDictionary
+{
+    return (NSMutableDictionary *) CFBridgingRelease(CFPropertyListCreateDeepCopy(kCFAllocatorDefault,
+                                                                (CFDictionaryRef)originalDictionary,
+                                                                kCFPropertyListMutableContainers));
+}
+
++ (NSMutableArray *)deepCopyNSMutableArray:(NSMutableArray *)originalArray
+{
+    return (NSMutableArray*)CFBridgingRelease(CFPropertyListCreateDeepCopy(kCFAllocatorDefault,
+                                                         (CFPropertyListRef)originalArray,
+                                                         kCFPropertyListMutableContainers));
+}
 
 @end
