@@ -24,6 +24,17 @@
  */
 
 // Check A point is equal to other point.
+// (You can use 'CGPointEqualToPoint' <-- I dont know this function exists :( When made it.)
 + (BOOL) CGPoint:(CGPoint) point isEqual:(CGPoint) otherPoint;
+
+
+/*
+ 
+ Deep Copy
+ 
+ */
++ (NSMutableDictionary *)deepCopyNSMutableDictionary:(NSMutableDictionary *)originalDictionary;
++ (NSMutableArray *)deepCopyNSMutableArray:(NSMutableArray*) originalArray;
+
 
 @end

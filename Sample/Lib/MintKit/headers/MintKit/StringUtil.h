@@ -57,6 +57,16 @@
 + (NSString*)uppercaseFirst:(NSString*)str;
 
 
+/*
+ 
+ Sizing
+ : it auto detect iOS7/ iOS6.
+ */
++ (CGSize) sizeOf:(NSString*)str systemFontOfSize:(float) fontSize;
++ (CGSize) sizeOf:(NSString*)str font:(UIFont*)font;
++ (CGSize) sizeOf:(NSString*)str font:(UIFont*)font bound:(CGSize) boundSize;
++ (CGSize) sizeOf:(NSString*)str font:(UIFont*)font bound:(CGSize) boundSize options:(NSStringDrawingOptions) options;
+
 /* 
  
  ETC character split

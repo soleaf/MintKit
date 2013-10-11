@@ -55,10 +55,15 @@
 +(void) frame:(UIView *) view moreW:(float) width andMoreH:(float)height;
 
 /*
- Resizing UILabel by textsize
+ Resizing UILabel by textsize for  ~ iOS6
  */
 +(CGSize) size:(UILabel*) label fitByTextConstrainedSize:(CGSize)contrainedSize;
 // Deprecated: Instead this incoreect methodname, Use 'size:...' method serise
 +(CGSize) frame:(UILabel*) label fitByTextConstrainedSize:(CGSize)contrainedSize;
+
+/*
+ Resizing UILabel by textsize for  above iOS7
+ */
++(CGSize) frame:(UILabel *)label fitByTextOnBoundSize:(CGSize)boundSize;
 
 @end
