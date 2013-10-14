@@ -104,7 +104,10 @@
 + (CGSize)sizeOf:(NSString *)str systemFontOfSize:(float)fontSize
 {
     Xcode5Code({
-        return [str sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]}];
+        if ([DeviceUtil isIOS7])
+            return [str sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]}];
+        else
+            return [str sizeWithFont:[UIFont systemFontOfSize:fontSize]];
     },{
         return [str sizeWithFont:[UIFont systemFontOfSize:fontSize]];
     })
@@ -113,7 +116,10 @@
 + (CGSize)sizeOf:(NSString *)str font:(UIFont *)font
 {
     Xcode5Code({
-        return [str sizeWithAttributes:@{NSFontAttributeName:font}];
+        if ([DeviceUtil isIOS7])
+            return [str sizeWithAttributes:@{NSFontAttributeName:font}];
+        else
+            return [str sizeWithFont:font];
     }, {
         return [str sizeWithFont:font];
     })
@@ -132,13 +138,18 @@
 +(CGSize)sizeOf:(NSString *)str font:(UIFont *)font bound:(CGSize)boundSize options:(NSStringDrawingOptions)options
 {
     Xcode5Code({
+        if ([DeviceUtil isIOS7]){
+            NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:str
+                                                                                 attributes:@{NSFontAttributeName: font}];
+            CGRect rect = [attributedText boundingRectWithSize:boundSize
+                                                       options:options
+                                                       context:nil];
+            return rect.size;
+        }
+        else{
+            return [str sizeWithFont:font constrainedToSize:boundSize lineBreakMode:NSLineBreakByCharWrapping];
+        }
     
-        NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:str
-                                                                             attributes:@{NSFontAttributeName: font}];
-        CGRect rect = [attributedText boundingRectWithSize:boundSize
-                                                   options:options
-                                                   context:nil];
-        return rect.size;
     }, {
         return [str sizeWithFont:font constrainedToSize:boundSize lineBreakMode:NSLineBreakByCharWrapping];
     });
