@@ -27,7 +27,7 @@
     NSArray* resultArray = [json objectForKey:@"results"];
     if (error) return nil;
     
-    if ([resultArray objectAtIndex:0] != nil && [[resultArray objectAtIndex:0] objectForKey:@"formatted_address"]){
+    if (resultArray != nil && [resultArray objectAtIndex:0] != nil && [[resultArray objectAtIndex:0] objectForKey:@"formatted_address"]){
         NSString* locationString = [[resultArray objectAtIndex:0] objectForKey:@"formatted_address"];
         
             return locationString;
