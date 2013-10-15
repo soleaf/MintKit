@@ -35,6 +35,8 @@
 		E670887C180292AC003F9D52 /* BuildSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = E670887A180292AC003F9D52 /* BuildSupport.h */; };
 		E670887D180292AC003F9D52 /* BuildSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E670887B180292AC003F9D52 /* BuildSupport.m */; };
 		E670887E180292AC003F9D52 /* BuildSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E670887B180292AC003F9D52 /* BuildSupport.m */; };
+		E68A6D8C180BD6D300ED9E43 /* TestMapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E68A6D8B180BD6D300ED9E43 /* TestMapUtil.m */; };
+		E68A6D8E180BD78200ED9E43 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68A6D8D180BD78200ED9E43 /* CoreLocation.framework */; };
 		E6C69A7517F27E1A008E23DE /* TestObjectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C69A7417F27E1A008E23DE /* TestObjectUtil.m */; };
 		E6C69A7817F27F24008E23DE /* TestFormatUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C69A7717F27F24008E23DE /* TestFormatUtil.m */; };
 		E6C69A7B17F2A1EF008E23DE /* TestArrayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C69A7A17F2A1EF008E23DE /* TestArrayUtil.m */; };
@@ -180,6 +182,9 @@
 /* Begin PBXFileReference section */
 		E670887A180292AC003F9D52 /* BuildSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildSupport.h; sourceTree = "<group>"; };
 		E670887B180292AC003F9D52 /* BuildSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildSupport.m; sourceTree = "<group>"; };
+		E68A6D8A180BD6D300ED9E43 /* TestMapUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMapUtil.h; sourceTree = "<group>"; };
+		E68A6D8B180BD6D300ED9E43 /* TestMapUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMapUtil.m; sourceTree = "<group>"; };
+		E68A6D8D180BD78200ED9E43 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E6C69A7317F27E1A008E23DE /* TestObjectUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjectUtil.h; sourceTree = "<group>"; };
 		E6C69A7417F27E1A008E23DE /* TestObjectUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectUtil.m; sourceTree = "<group>"; };
 		E6C69A7617F27F24008E23DE /* TestFormatUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFormatUtil.h; sourceTree = "<group>"; };
@@ -255,6 +260,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68A6D8E180BD78200ED9E43 /* CoreLocation.framework in Frameworks */,
 				F791DAC917DE08B90092A474 /* UIKit.framework in Frameworks */,
 				F791DAC717DE08B30092A474 /* QuartzCore.framework in Frameworks */,
 				F7183B6117DE02B100C5CF67 /* SenTestingKit.framework in Frameworks */,
@@ -299,6 +305,7 @@
 		F7183B5017DE02B000C5CF67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E68A6D8D180BD78200ED9E43 /* CoreLocation.framework */,
 				F791DAC817DE08B90092A474 /* UIKit.framework */,
 				F791DAC617DE08B30092A474 /* QuartzCore.framework */,
 				F7183B5117DE02B000C5CF67 /* Foundation.framework */,
@@ -345,6 +352,8 @@
 				E6D3C95E17DEC756008C6565 /* TestStringUtil.m */,
 				E6C69A7317F27E1A008E23DE /* TestObjectUtil.h */,
 				E6C69A7417F27E1A008E23DE /* TestObjectUtil.m */,
+				E68A6D8A180BD6D300ED9E43 /* TestMapUtil.h */,
+				E68A6D8B180BD6D300ED9E43 /* TestMapUtil.m */,
 				E6C69A7617F27F24008E23DE /* TestFormatUtil.h */,
 				E6C69A7717F27F24008E23DE /* TestFormatUtil.m */,
 				F71BF8DC1806DEA900DE28F8 /* TestDateUtil.h */,
@@ -646,6 +655,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68A6D8C180BD6D300ED9E43 /* TestMapUtil.m in Sources */,
 				E6C69A7517F27E1A008E23DE /* TestObjectUtil.m in Sources */,
 				E6D3C95F17DEC757008C6565 /* TestStringUtil.m in Sources */,
 				E6C69A7817F27F24008E23DE /* TestFormatUtil.m in Sources */,
