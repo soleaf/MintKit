@@ -42,5 +42,30 @@
 }
 
 
++ (NSAttributedString *)makeAttribuedTitle:(NSString *)titleStr
+                             highilightStr:(NSString *)highlightStr
+                                     color:(UIColor *)highlightColor
+{
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:titleStr];
+    NSRange range = [titleStr rangeOfString:highlightStr];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:highlightColor range:range];
+    
+    return attributedString;
+}
+
++ (NSAttributedString *)makeAttribuedTitle:(NSString *)titleStr
+                                 textColor:(UIColor *)titleColor
+                             highilightStr:(NSString *)highlightStr
+                                     color:(UIColor *)highlightColor
+{
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:titleStr];
+    NSRange range = [titleStr rangeOfString:highlightStr];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:titleColor range:NSMakeRange(0, titleStr.length)];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:highlightColor range:range];
+    
+    return attributedString;
+}
+
+
 
 @end

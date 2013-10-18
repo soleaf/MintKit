@@ -29,4 +29,18 @@
 + (void) putIfNotnillOrLength0:(NSString *)str toButton:(UIButton*) target;
 + (void) putIfNotnillOrLength0:(NSString *)str toLabel:(UILabel*) target;
 
+
+/*
+ AttributedString
+ */
+
++ (NSAttributedString *)makeAttribuedTitle:(NSString *)titleStr
+                             highilightStr:(NSString *)highlightStr
+                                     color:(UIColor *)highlightColor;
+
++ (NSAttributedString *)makeAttribuedTitle:(NSString *)titleStr
+                                 textColor:(UIColor *)titleColor
+                             highilightStr:(NSString *)highlightStr
+                                     color:(UIColor *)highlightColor;
+
 @end

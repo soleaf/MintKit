@@ -146,5 +146,15 @@
     return daysRange.length;
 }
 
++(BOOL)dateDic:(NSDictionary *)dateDic isEqualTo:(NSDictionary *)comparison
+{
+    if ([[dateDic objectForKey:DATEDIC_YEAR] integerValue] == [[comparison objectForKey:DATEDIC_YEAR] integerValue] &&
+        [[dateDic objectForKey:DATEDIC_MONTH] integerValue] == [[comparison objectForKey:DATEDIC_MONTH] integerValue] &&
+        [[dateDic objectForKey:DATEDIC_DAY] integerValue] == [[comparison objectForKey:DATEDIC_DAY] integerValue])
+        return YES;
+    else
+        return NO;
+}
+
 
 @end

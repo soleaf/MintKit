@@ -174,4 +174,44 @@
     }
 }
 
+- (void) testIsEqualToDate
+{
+    DateTimeSet *date1 = [DateTimeSet makeDateTimeSetYear:2013 month:10 day:17];
+    DateTimeSet *date2 = [DateTimeSet makeDateTimeSetYear:2013 month:10 day:17];
+    DateTimeSet *date3diff = [DateTimeSet makeDateTimeSetYear:2013 month:6 day:4];
+    
+    STAssertTrue([date1 isEqualToDate:date2], @"equal date");
+    STAssertFalse([date1 isEqualToDate:date3diff], @"not equal date");
+}
+
+- (void) testIsEqualToTime
+{
+    DateTimeSet *date1 = [DateTimeSet makeDateTimeSetHour:12 minute:5 second:2];
+    DateTimeSet *date2 = [DateTimeSet makeDateTimeSetHour:12 minute:5 second:2];
+    DateTimeSet *date3diff = [DateTimeSet makeDateTimeSetHour:10 minute:5 second:2];
+    
+    STAssertTrue([date1 isEqualToTime:date2], @"equal time");
+    STAssertFalse([date1 isEqualToTime:date3diff], @"not equal time");
+}
+
+- (void) testIsEqualToDateTime
+{
+    DateTimeSet *date1 = [DateTimeSet makeDateTimeSetYear:2013 month:6 day:4 hour:3 minute:2 second:2];
+    DateTimeSet *date2 = [DateTimeSet makeDateTimeSetYear:2013 month:6 day:4 hour:3 minute:2 second:2];
+    DateTimeSet *date3diff = [DateTimeSet makeDateTimeSetYear:2013 month:5 day:4 hour:2 minute:2 second:2];
+    
+    STAssertTrue([date1 isEqualToDateTimes:date2], @"equal datetime");
+    STAssertFalse([date1 isEqualToDateTimes:date3diff], @"not equal datetime");
+}
+
+- (void) testDateDicIsEqual
+{
+    NSDictionary *dateDic = [DateUtil getNowDate];
+    NSDictionary *dateDic2 = [DateUtil getNowDate];
+    NSDictionary *dateDic3 = [DateUtil getNextDateDicFromOffset:1 AndYear:2013 andMonth:5 andDay:2];
+    
+    STAssertTrue([DateUtil dateDic:dateDic isEqualTo:dateDic2], @"equal date");
+    STAssertFalse([DateUtil dateDic:dateDic isEqualTo:dateDic3], @"not equal date");
+}
+
 @end
