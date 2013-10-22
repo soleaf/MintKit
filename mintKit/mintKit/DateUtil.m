@@ -15,7 +15,7 @@
 + (NSDictionary *) NSDateToDateDic:(NSDate*) date
 {
     NSDateComponents *components = [[NSCalendar currentCalendar]
-                                    components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit
+                                    components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit
                                     fromDate:date];
     
     NSInteger day   = [components day];
@@ -38,7 +38,7 @@
 + (DateTimeSet *) NSDateToDateTimeSet:(NSDate *)date
 {
     NSDateComponents *components = [[NSCalendar currentCalendar]
-                                    components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit
+                                    components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit
                                     fromDate:date];
 
     DateTimeSet *dateTimeSet = [[DateTimeSet alloc] init];
