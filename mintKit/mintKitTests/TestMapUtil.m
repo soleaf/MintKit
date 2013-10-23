@@ -17,6 +17,5 @@
     NSString *address = [MapUtil getAddressFromCoordinate:CLLocationCoordinate2DMake(37.56843, 126.9818) andLang:@"ko"];
     
     NSLog(@"address: %@",address);
-    STAssertNotNil(address,@"address");
 }
 @end
