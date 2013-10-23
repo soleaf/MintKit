@@ -27,7 +27,7 @@
     NSArray* resultArray = [json objectForKey:@"results"];
     if (error) return nil;
     
-    if (resultArray != nil && [resultArray objectAtIndex:0] != nil && [[resultArray objectAtIndex:0] objectForKey:@"formatted_address"]){
+    if (resultArray != nil && resultArray.count > 0 && [resultArray objectAtIndex:0] != nil && [[resultArray objectAtIndex:0] objectForKey:@"formatted_address"]){
         NSString* locationString = [[resultArray objectAtIndex:0] objectForKey:@"formatted_address"];
         
             return locationString;
@@ -55,8 +55,7 @@
     
     NSArray* resultArray = [json objectForKey:@"results"];
     
-    
-    if ( resultArray.count > 0 && [resultArray objectAtIndex:0]){
+    if (resultArray != nil && resultArray.count > 0 && [resultArray objectAtIndex:0]){
         NSDictionary* geometry = [[[resultArray objectAtIndex:0] objectForKey:@"geometry"] objectForKey:@"location"];
         
         return geometry;
