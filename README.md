@@ -12,15 +12,23 @@ MintKis is a simple fundemental iOS coding utils package based Objective-C, For 
 
 
 #### Example of codebase down.
+This Code make AttributedString with Highlighted some strs in fullText
+
 Before Code)
 ```objective-c
-CGRect frame = self.ui_textField.frame;
-frame.x += 320;
-self.ui_textField.frame = frame;
+NSString *titleStr = @"FULL TEXT IN HIGHLIGHT"";
+NSString *highlightStr = @"HIGHLIGHT";
+NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:titleStr];
+NSRange range = [titleStr rangeOfString:highlightStr];
+[attributedString addAttribute:NSForegroundColorAttributeName value:titleColor range:NSMakeRange(0, titleStr.length)];
+[attributedString addAttribute:NSForegroundColorAttributeName value:highlightColor range:range];
 ```
 MintKit Code)
 ```objective-c
-[UIViewFrameUtil move:self.ui_textField moreX:320];
+[UIRobot makeAttribuedTitle:@"FULL TEXT IN HIGHLIGHT"
+                                 textColor:[UIColor blackColor]
+                             highilightStr:@"HIGHLIGHT"
+                                     color:[UIColor redColor]];
 ```
 
 #### Contribute 
