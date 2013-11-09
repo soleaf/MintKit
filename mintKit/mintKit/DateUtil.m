@@ -146,6 +146,11 @@
     return daysRange.length;
 }
 
++ (NSInteger)getLastDayOfMonth:(NSInteger)month andYear:(NSInteger)year
+{
+    return [self getLastDayOfMonth:[self makeNSDateYear:year andMonth:month andDay:1]];
+}
+
 +(BOOL)dateDic:(NSDictionary *)dateDic isEqualTo:(NSDictionary *)comparison
 {
     if ([[dateDic objectForKey:DATEDIC_YEAR] integerValue] == [[comparison objectForKey:DATEDIC_YEAR] integerValue] &&
@@ -156,5 +161,53 @@
         return NO;
 }
 
++(DateTimeSet *)getNextDayOf:(DateTimeSet *)originDay
+{
+    DateTimeSet *dateTime = originDay;
+    dateTime.day+=1;
+    
+    // is The Last day of month?
+    NSInteger lastDayOfThisMonth = [self getLastDayOfMonth:
+                                    [self makeNSDateYear:dateTime.year andMonth:dateTime.month andDay:dateTime.day]];
+    
+    if (dateTime.day > lastDayOfThisMonth){
+        dateTime.day = 1;
+        // Last Month?!
+        if (dateTime.month == 12) {
+            dateTime.month = 1;
+            dateTime.year+=1;
+        }
+        else{
+            dateTime.month +=1;
+        }
+    }
+    
+    return dateTime;
+}
+
++ (DateTimeSet *)getPrevDayOf:(DateTimeSet *)originDay
+{
+    DateTimeSet *dateTime = originDay;
+    dateTime.day-=1;
+    
+    // Day is 0?
+    if (dateTime.day == 0){
+        
+        // If Dec, .month ->Jan, .year ->-1
+        if (dateTime.month == 12){
+            dateTime.month = 1;
+            dateTime.year-=1;
+        }
+        else{
+            dateTime.month-=1;
+        }
+        
+        NSInteger lastDayOfThisMonth = [self getLastDayOfMonth:
+                                        [self makeNSDateYear:dateTime.year andMonth:dateTime.month andDay:dateTime.day]];
+        dateTime.day = lastDayOfThisMonth;
+    }
+    
+    return dateTime;
+}
 
 @end

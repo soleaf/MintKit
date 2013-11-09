@@ -32,6 +32,11 @@
 @property NSInteger year, month, day;
 
 - (NSString *)description;
-+ (DateTimeSet*)makeDateTimeSetYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
+- (BOOL)isEqualToDateTimes:(DateTimeSet*) target;
+- (BOOL)isEqualToDate:(DateTimeSet*) target;
+- (BOOL)isEqualToTime:(DateTimeSet*) target;
 
++ (DateTimeSet*)makeDateTimeSetYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
++ (DateTimeSet*)makeDateTimeSetHour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
++ (DateTimeSet*)makeDateTimeSetYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
 @end
