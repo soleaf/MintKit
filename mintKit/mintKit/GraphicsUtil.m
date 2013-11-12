@@ -52,7 +52,10 @@
 {
     unsigned rgbValue = 0;
     NSScanner *scanner = [NSScanner scannerWithString:hexString];
-    [scanner setScanLocation:1]; // bypass '#' character
+    
+    if ([hexString rangeOfString:@"#"].location == !NSNotFound){
+        [scanner setScanLocation:1]; // bypass '#' character
+    }
     [scanner scanHexInt:&rgbValue];
     
     return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0
