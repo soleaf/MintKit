@@ -27,4 +27,7 @@
 // ex) cutAddress:@"aa bb cc" limit:2 -> return @"aa bb";
 + (NSString*) cutAddress:(NSString *)addressStr limit:(NSInteger) limit;
 
+// Currency Format 1000 -> 1,000
++ (NSString *)toCurrency:(NSNumber*)number;
+
 @end

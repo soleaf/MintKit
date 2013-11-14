@@ -25,5 +25,14 @@
     STAssertTrue([@"23-23, city" isEqualToString:[FormatUtil cutAddress:@"23-23, city nation" limit:2]], @"23-23, city nation -> 23-23, city");
 }
 
+- (void)testToCurrency
+{
+    NSNumber *number = [NSNumber numberWithInt:1000];
+    STAssertTrue([[FormatUtil toCurrency:number] isEqualToString:@"1,000"], @"Correct ->1,000");
+    
+    NSNumber *number2 = [NSNumber numberWithInt:10001];
+    STAssertTrue([[FormatUtil toCurrency:number2] isEqualToString:@"10,001"], @"Correct ->10,001");
+}
+
 
 @end

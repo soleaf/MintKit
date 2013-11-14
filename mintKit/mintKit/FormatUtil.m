@@ -89,4 +89,11 @@
     return cuttedAddress;
 }
 
++ (NSString *)toCurrency:(NSNumber*)number
+{
+    NSNumberFormatter *formatter = [NSNumberFormatter new];
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    return [formatter stringFromNumber:number];
+}
+
 @end
