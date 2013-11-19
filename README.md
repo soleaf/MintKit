@@ -55,7 +55,8 @@ Just copy Files on Release folder and Link Your project!
 3. Open your project
 4. Project Setting > Target > Build Phases> `Link Binary With Libraries`> Add 'libMintKit-Aggregate.a' in your project directory
 5. … > Build Setting > search `Header Search Paths`  and Add `"$(SRCROOT)/Lib/MintKit/Headers"` *('Lib' is my location. If You use other location for MintKit, change it.)*
-6. Use It! with import headers `MintKit/[header]`
+6. Project Setting > Target > Build Settings> Set Always Search User Paths -> 'YES'
+7. Use It! with import headers `MintKit/[header]`
 
 ```objective-c
 #import <MintKit/mintKit.h>
@@ -78,6 +79,7 @@ Just copy Files on Release folder and Link Your project!
     * Open your project
     * Project Setting > Target > Build Phases> `Link Binary With Libraries`> Add 'libMintKit-Aggregate.a' on your project directory
     *  … > Build Setting > search `Header Search Paths`  and Add `"$(SRCROOT)/Lib/MintKit/Headers"` *('Lib' is my location. If You use other location for MintKit, change it.)*
+    * Project Setting > Target > Build Settings> Set Always Search User Paths -> 'YES'
 6. Use It! with import headers `MintKit/[header]`
 
 ```objective-c
