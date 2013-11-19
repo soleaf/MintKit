@@ -81,6 +81,8 @@
     dateTimeSet.minutes = minute;
     dateTimeSet.seconds = second;
     
-    return dateTimeSet;}
+    return dateTimeSet;
+}
+
 
 @end

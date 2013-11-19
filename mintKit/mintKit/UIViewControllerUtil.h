@@ -29,7 +29,9 @@
  */
 
 // Show BackButtonIn UIViewNavigationBar With Custome Image
-+ (void) showBackButton:(UIViewController *)view title: (NSString *) titleText andImageNamed: (NSString *) imgName;
++ (void) showBackButton:(UIViewController *)view
+                  title: (NSString *) titleText
+          andImageNamed: (NSString *) imgName;
 
 
 /*

@@ -37,6 +37,9 @@
         return [FromValidation limitLength:5 onTextField:textfiled inRange:range replaceString:string];
     }
 */
-+(BOOL) limitLength:(NSInteger) limit onTextField:(UITextField *)textField inRange:(NSRange)range replaceString:(NSString *)string;
++(BOOL) limitLength:(NSInteger) limit
+        onTextField:(UITextField *)textField
+            inRange:(NSRange)range
+      replaceString:(NSString *)string;
 
 @end

@@ -14,12 +14,12 @@
     For easy using Date calculation.
  
  */
-
 @interface DateUtil : NSObject
 
 #define DATEDIC_YEAR @"year"
 #define DATEDIC_MONTH @"month"
 #define DATEDIC_DAY   @"day"
+
 
 /*
     Convert NSDate, NSDictionary, DateTimeSet
@@ -72,10 +72,14 @@
                                    andMonth:(NSInteger) theMonth
                                      andDay:(NSInteger) theDay;
 
++ (DateTimeSet*)getNextDayOf:(DateTimeSet*) originDay;
++ (DateTimeSet*)getPrevDayOf:(DateTimeSet*) originDay;
+
 // Get Last day of month by NSDate
 + (NSInteger) getLastDayOfMonth:(NSDate*) date;
++ (NSInteger) getLastDayOfMonth:(NSInteger)month andYear:(NSInteger)year;
 
-
++ (BOOL) dateDic:(NSDictionary*)dateDic isEqualTo:(NSDictionary*) comparison;
 
 
 @end

@@ -16,17 +16,38 @@
 @interface UIViewLayerUtil : NSObject
 
 // Drop shadows
-+ (void)dropShadow:(UIView *)view Opacity:(float)opacity andOffset:(CGSize)offset andColor:(UIColor *)color radius:(float)radius;
-+ (void) dropShadow:(UIView *) view Opacity:(float)opacity andOffset:(CGSize) offset andColor:(UIColor*) color;
-+ (void) dropShadow:(UIView *) view Opacity:(float)opacity andOffset:(CGSize) offset;
++ (void)dropShadow:(UIView *)view
+           Opacity:(float)opacity
+         andOffset:(CGSize)offset
+          andColor:(UIColor *)color
+            radius:(float)radius;
+
++ (void) dropShadow:(UIView *) view
+            Opacity:(float)opacity
+          andOffset:(CGSize) offset
+           andColor:(UIColor*) color;
+
++ (void) dropShadow:(UIView *) view
+            Opacity:(float)opacity
+          andOffset:(CGSize) offset;
 
 // Fill vertical gradient
-+ (void) gradient:(UIView *) view start:(UIColor *)startColor endColor:(UIColor*) endColor;
-+ (void) gradient:(UIView *) view colors:(NSArray*)colorArray; // (colorArray: UIColor array)
++ (void) gradient:(UIView *) view
+            start:(UIColor *)startColor
+         endColor:(UIColor*) endColor;
+
++ (void) gradient:(UIView *) view
+           colors:(NSArray*)colorArray; // (colorArray: UIColor array)
 
 // Make border
-+ (void) border:(UIView*) view size:(float) size andColor:(UIColor*) color;
-+ (void) border:(UIView*) view size:(float) size andColor:(UIColor*) color andRadius:(float) radius;
++ (void) border:(UIView*) view
+           size:(float) size
+       andColor:(UIColor*) color;
+
++ (void) border:(UIView*) view
+           size:(float) size
+       andColor:(UIColor*) color
+      andRadius:(float) radius;
 
 
 @end

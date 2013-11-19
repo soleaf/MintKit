@@ -28,4 +28,7 @@
 // Rsize Image to newSize
 + (UIImage*)resizeWithImage:(UIImage*)image toSize:(CGSize)newSize;
 
+// Hexcode to UIColor
++ (UIColor*)uiColorWithHexString:hexString;
+
 @end
