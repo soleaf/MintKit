@@ -33,6 +33,7 @@
 
 // Is iPhone?
 + (BOOL) isiPhone;
++ (NSString*) modelString;
 
 
 /*
