@@ -105,6 +105,11 @@ Requirement
    * <b>QuartzCore.framework<b/>
    * UIkit.framework
    * CoreGraphics.framework
+   
+Todo
+===
+* Updating Documents
+* Reorganize methods
 
 Credits
 ===
