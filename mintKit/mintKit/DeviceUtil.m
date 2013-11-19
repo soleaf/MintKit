@@ -9,6 +9,7 @@
 
 
 #import "DeviceUtil.h"
+#import <sys/utsname.h>
 
 @implementation DeviceUtil
 
@@ -25,6 +26,15 @@
 + (BOOL) isiPhone
 {
     return [ [ [ UIDevice currentDevice ] model ] isEqualToString: @"iPhone" ];
+}
+
++ (NSString *)modelString
+{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    
+    return [NSString stringWithCString:systemInfo.machine
+                              encoding:NSUTF8StringEncoding];
 }
 
 + (BOOL)isIOS7
