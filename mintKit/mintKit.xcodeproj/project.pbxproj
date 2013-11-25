@@ -127,6 +127,9 @@
 		F791DACB17DE099F0092A474 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F791DAC617DE08B30092A474 /* QuartzCore.framework */; };
 		F791DAD117DE0B820092A474 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F791DAC617DE08B30092A474 /* QuartzCore.framework */; };
 		F791DAD217DE0B870092A474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F791DAC817DE08B90092A474 /* UIKit.framework */; };
+		F7CDF497183C832E0004D58F /* EncryptUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7CDF495183C832E0004D58F /* EncryptUtil.h */; };
+		F7CDF498183C832E0004D58F /* EncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CDF496183C832E0004D58F /* EncryptUtil.m */; };
+		F7E4FE381842E8790058C473 /* TestEncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E4FE371842E8790058C473 /* TestEncryptUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,6 +246,10 @@
 		F71BF8DD1806DEA900DE28F8 /* TestDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDateUtil.m; sourceTree = "<group>"; };
 		F791DAC617DE08B30092A474 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F791DAC817DE08B90092A474 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F7CDF495183C832E0004D58F /* EncryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptUtil.h; sourceTree = "<group>"; };
+		F7CDF496183C832E0004D58F /* EncryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptUtil.m; sourceTree = "<group>"; };
+		F7E4FE361842E8790058C473 /* TestEncryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEncryptUtil.h; sourceTree = "<group>"; };
+		F7E4FE371842E8790058C473 /* TestEncryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEncryptUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,6 +365,8 @@
 				E6C69A7717F27F24008E23DE /* TestFormatUtil.m */,
 				F71BF8DC1806DEA900DE28F8 /* TestDateUtil.h */,
 				F71BF8DD1806DEA900DE28F8 /* TestDateUtil.m */,
+				F7E4FE361842E8790058C473 /* TestEncryptUtil.h */,
+				F7E4FE371842E8790058C473 /* TestEncryptUtil.m */,
 				F7183B6917DE02B100C5CF67 /* Supporting Files */,
 			);
 			path = mintKitTests;
@@ -396,6 +405,8 @@
 				F7183BA117DE04E300C5CF67 /* StringUtil.m */,
 				F7183B9517DE04E300C5CF67 /* FormatUtil.h */,
 				F7183B9617DE04E300C5CF67 /* FormatUtil.m */,
+				F7CDF495183C832E0004D58F /* EncryptUtil.h */,
+				F7CDF496183C832E0004D58F /* EncryptUtil.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -472,6 +483,7 @@
 				F7183BD517DE052400C5CF67 /* FormatUtil.h in Headers */,
 				F7183BD617DE052400C5CF67 /* FormValidation.h in Headers */,
 				F7183BD717DE052400C5CF67 /* GraphicsUtil.h in Headers */,
+				F7CDF497183C832E0004D58F /* EncryptUtil.h in Headers */,
 				F7183BD817DE052400C5CF67 /* MapUtil.h in Headers */,
 				F7183BD917DE052400C5CF67 /* ObjectUtil.h in Headers */,
 				F7183BDA17DE052400C5CF67 /* StringUtil.h in Headers */,
@@ -644,6 +656,7 @@
 				F7183BC217DE04E400C5CF67 /* TestKit.m in Sources */,
 				F7183BC417DE04E400C5CF67 /* UIRobot.m in Sources */,
 				F7183BC617DE04E400C5CF67 /* UIViewControllerUtil.m in Sources */,
+				F7CDF498183C832E0004D58F /* EncryptUtil.m in Sources */,
 				F7183BC817DE04E400C5CF67 /* UIViewFrameUtil.m in Sources */,
 				E670887D180292AC003F9D52 /* BuildSupport.m in Sources */,
 				F7183BCA17DE04E400C5CF67 /* UIViewLayerUtil.m in Sources */,
@@ -659,6 +672,7 @@
 				E6C69A7517F27E1A008E23DE /* TestObjectUtil.m in Sources */,
 				E6D3C95F17DEC757008C6565 /* TestStringUtil.m in Sources */,
 				E6C69A7817F27F24008E23DE /* TestFormatUtil.m in Sources */,
+				F7E4FE381842E8790058C473 /* TestEncryptUtil.m in Sources */,
 				F71BF8DE1806DEA900DE28F8 /* TestDateUtil.m in Sources */,
 				E6C69A7B17F2A1EF008E23DE /* TestArrayUtil.m in Sources */,
 			);
