@@ -38,6 +38,7 @@
 
 + (DateTimeSet*)makeDateTimeSetYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
 + (DateTimeSet*)makeDateTimeSetHour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
-+ (DateTimeSet*)makeDateTimeSetYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
++ (DateTimeSet*)makeDateTimeSetYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day
+                               hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
 
 @end
