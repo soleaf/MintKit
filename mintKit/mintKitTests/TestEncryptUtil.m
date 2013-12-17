@@ -25,4 +25,12 @@
     STAssertTrue([target isEqualToString:dec], @"Decripting Error");
 }
 
+- (void)testMD5Encrypt
+{
+    NSString *input = @"hello!!";
+    NSString *encripted = [EncryptUtil md5:input];
+    
+    STAssertTrue([encripted isEqualToString:@"81d95db337a18c65384d35ba7ea2efda"], @"Encripting Error");
+    
+}
 @end

@@ -127,7 +127,7 @@
 		F791DACB17DE099F0092A474 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F791DAC617DE08B30092A474 /* QuartzCore.framework */; };
 		F791DAD117DE0B820092A474 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F791DAC617DE08B30092A474 /* QuartzCore.framework */; };
 		F791DAD217DE0B870092A474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F791DAC817DE08B90092A474 /* UIKit.framework */; };
-		F7CDF497183C832E0004D58F /* EncryptUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7CDF495183C832E0004D58F /* EncryptUtil.h */; };
+		F7CDF497183C832E0004D58F /* EncryptUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7CDF495183C832E0004D58F /* EncryptUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7CDF498183C832E0004D58F /* EncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CDF496183C832E0004D58F /* EncryptUtil.m */; };
 		F7E4FE381842E8790058C473 /* TestEncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E4FE371842E8790058C473 /* TestEncryptUtil.m */; };
 /* End PBXBuildFile section */
