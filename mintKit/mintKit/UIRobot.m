@@ -66,6 +66,33 @@
     return attributedString;
 }
 
++ (NSAttributedString *)makeAttribuedTitle:(NSString *)titleStr
+                                 textColor:(UIColor *)titleColor
+                          highilightStrAll:(NSString *)highlightStr
+                                     color:(UIColor *)highlightColor
+{
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:titleStr];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:titleColor range:NSMakeRange(0, titleStr.length)];
+    
+    NSRange searchRange = NSMakeRange(0,titleStr.length);
+    NSRange foundRange;
+    while (searchRange.location < titleStr.length) {
+        searchRange.length = titleStr.length-searchRange.location;
+        foundRange = [titleStr rangeOfString:highlightStr options:0 range:searchRange];
+        if (foundRange.location != NSNotFound) {
+            // found an occurrence of the substring! do stuff here
+            searchRange.location = foundRange.location+foundRange.length;
+            [attributedString addAttribute:NSForegroundColorAttributeName value:highlightColor range:foundRange];
+            
+        } else {
+            // no more substring to find
+            break;
+        }
+    }
+
+    return attributedString;
+}
+
 
 
 @end
