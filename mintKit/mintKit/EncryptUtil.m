@@ -99,7 +99,6 @@
                                  encoding:NSUTF8StringEncoding];
 }
 
-
 + (NSString*)md5:(NSString*)input
 {
     // Scrapted from http://stackoverflow.com/questions/2018550/how-do-i-create-an-md5-hash-of-a-string-in-cocoa
