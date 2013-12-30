@@ -22,6 +22,7 @@
 #import <MintKit/TestKit.h>
 #import <MintKit/StringUtil.h>
 #import <MintKit/AnimationUtil.h>
+#import <MintKit/EncryptUtil.h>
 
 @interface ViewController ()
 
@@ -53,6 +54,14 @@
         
     }];
 
+    
+    // Description
+    NSString *target = @"Dowyg0SsdjLp2eRCsSLMHYsbcocYEIbJa0V8M2lf/0jb0VOh1foUIyQnomfFlZRZvUl4DWKFG6Vcigy0mwyITgN/C73GsPQct3SYy48XpBkxzyj36IUFdhxZkv0trXB7JZmk2jedImU8ZIV9LkHwkPd7cSPqEs72qnFa+A8X4oJXPPf7U0TWBqmvlcJ5tNxU3Ove7cGXSVtQPJD37RAARiLhUrADaoBKIcHYh1K+V1ib4sTn1XRqQx1mc6v7JF5g3ag+MaNEvSLVzcYlC1qcBZfK39s04cDC8ozf1S5yluPxzMv4KzwvU7nA/AFYdRNTVbAt+CATZO3QosTysRhp4f8l43szuUNO1oeO8K3hy8REawETyLkVbI9vSS6L98dXCoHUe5yJwDy/bxpd61hmo1PJVvdsz4p8dfViup7RgjexEPP5mu+J8K98LeoAw==";
+    NSString *key = @"HOWTOMAKE2014010";
+    
+    NSString *dec = [EncryptUtil AESDecryptString:target withKey:key];
+    
+    NSLog(@"encStr:%@",dec);
 }
 
 - (void)didReceiveMemoryWarning
