@@ -43,4 +43,9 @@
                              highilightStr:(NSString *)highlightStr
                                      color:(UIColor *)highlightColor;
 
++ (NSAttributedString *)makeAttribuedTitle:(NSString *)titleStr
+                                 textColor:(UIColor *)titleColor
+                          highilightStrAll:(NSString *)highlightStr
+                                     color:(UIColor *)highlightColor;
+
 @end
