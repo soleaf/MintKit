@@ -104,6 +104,7 @@
 		F7183BDF17DE052400C5CF67 /* UIViewLayerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BAA17DE04E300C5CF67 /* UIViewLayerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7183BE017DE052400C5CF67 /* UIViewUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F7183BAC17DE04E300C5CF67 /* UIViewUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F71BF8DE1806DEA900DE28F8 /* TestDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F71BF8DD1806DEA900DE28F8 /* TestDateUtil.m */; };
+		F720CDFF18619F72004779EC /* EncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CDF496183C832E0004D58F /* EncryptUtil.m */; };
 		F791DAB517DE081C0092A474 /* TestKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183BA217DE04E300C5CF67 /* TestKit.h */; };
 		F791DAB617DE081C0092A474 /* ArrayUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B8D17DE04E300C5CF67 /* ArrayUtil.h */; };
 		F791DAB717DE081C0092A474 /* DateTimeSet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B8F17DE04E300C5CF67 /* DateTimeSet.h */; };
@@ -682,6 +683,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F720CDFF18619F72004779EC /* EncryptUtil.m in Sources */,
 				F7183B7B17DE040C00C5CF67 /* mintKit.m in Sources */,
 				F7183B8C17DE04D500C5CF67 /* AnimationUtil.m in Sources */,
 				F7183BAF17DE04E400C5CF67 /* ArrayUtil.m in Sources */,
