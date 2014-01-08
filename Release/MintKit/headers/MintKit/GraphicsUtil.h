@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <QuartzCore/QuartzCore.h>
 
 /*
     Handling like reszing image.
@@ -27,6 +26,13 @@
 
 // Rsize Image to newSize
 + (UIImage*)resizeWithImage:(UIImage*)image toSize:(CGSize)newSize;
+
+// Image Tint
++ (UIImage*)image:(UIImage*)image withTint:(UIColor*)tintColor;
+
+/*
+ Color
+ */
 
 // Hexcode to UIColor
 + (UIColor*)uiColorWithHexString:hexString;

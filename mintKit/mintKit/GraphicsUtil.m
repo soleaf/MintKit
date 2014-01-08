@@ -5,6 +5,8 @@
 //  Created by soleaf on 13. 1. 11..
 //  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
+#import <QuartzCore/QuartzCore.h>
+
 #import "GraphicsUtil.h"
 #import "TestKit.h"
 
@@ -45,6 +47,31 @@
     UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
 
+    return newImage;
+}
+
++ (UIImage *)image:(UIImage *)baseImage withTint:(UIColor *)tintColor
+{
+    
+    // Scraped from http://stackoverflow.com/a/11258530
+    // Thank you!
+    
+    UIGraphicsBeginImageContext(baseImage.size);
+    
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGRect area = CGRectMake(0, 0, baseImage.size.width, baseImage.size.height);
+    
+    CGContextScaleCTM(ctx, 1, -1);
+    CGContextTranslateCTM(ctx, 0, -area.size.height);
+    CGContextSaveGState(ctx);
+    CGContextClipToMask(ctx, area, baseImage.CGImage);
+    [tintColor set];
+    CGContextFillRect(ctx, area);
+    CGContextRestoreGState(ctx);
+    CGContextSetBlendMode(ctx, kCGBlendModeMultiply);
+    CGContextDrawImage(ctx, area, baseImage.CGImage);
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
     return newImage;
 }
 

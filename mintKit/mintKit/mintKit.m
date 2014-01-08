@@ -9,7 +9,7 @@
 #import "mintKit.h"
 
 #define MINTKIT_VERSION            @"0.0.2"
-#define MINTKIT_BUILD              63
+#define MINTKIT_BUILD              64
 #define MINTKIT_RELEASE            1
 #define MINTKIT_VERSION_DATE       @"2013.12.17"
 
@@ -24,10 +24,9 @@
 
 + (void)version
 {
-    NSLog(@"MINTKIT_VERSION  %@ build %d(%@) release %d",
+    NSLog(@"MINTKIT_VERSION  %@ build %d release %d",
           MINTKIT_VERSION,
           MINTKIT_BUILD,
-          MINTKIT_VERSION_DATE,
           MINTKIT_RELEASE);
 }
 

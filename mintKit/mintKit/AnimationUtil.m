@@ -6,6 +6,7 @@
 //  Copyright (c) 2013년 mintcode.org. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "AnimationUtil.h"
 #import "UIViewFrameUtil.h"
 
