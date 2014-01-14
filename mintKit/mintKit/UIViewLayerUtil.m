@@ -9,6 +9,8 @@
 #import <QuartzCore/QuartzCore.h>
 
 #import "UIViewLayerUtil.h"
+#import "UIView+frame.h"
+
 
 @implementation UIViewLayerUtil
 
@@ -66,6 +68,38 @@
     view.layer.borderWidth  = size;
     view.layer.borderColor  = color.CGColor;
     view.layer.cornerRadius = radius;
+}
+
++ (CALayer*) border:(UIView*) view
+           size:(float) size
+       andColor:(UIColor*) color
+          where:(UIViewLayerBorderPosition) position
+{
+    
+    CALayer *border = [CALayer layer];
+    
+    switch (position) {
+        case UIViewLayerBorderTop:
+            border.frame = CGRectMake(0.0f, 0, view.sizeWidth, size);
+            break;
+        case UIViewLayerBorderRight:
+            border.frame = CGRectMake(view.sizeWidth, 0, size, view.sizeHeight);
+            break;
+        case UIViewLayerBorderBottom:
+            border.frame = CGRectMake(0.0, view.sizeHeight, view.sizeWidth, size);
+            break;
+        case UIViewLayerBorderLeft:
+            border.frame = CGRectMake(0, 0, size, view.sizeHeight);
+            break;
+        default:
+            break;
+    }
+    
+    border.backgroundColor = color.CGColor;
+    [view.layer addSublayer:border];
+    
+    return border;
+    
 }
 
 @end

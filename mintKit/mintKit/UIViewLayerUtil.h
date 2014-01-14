@@ -13,6 +13,14 @@
     For drop shadow, gradient, etc...
  */
 
+enum UIViewLayerBorderPosition{
+    UIViewLayerBorderTop = 0,
+    UIViewLayerBorderRight,
+    UIViewLayerBorderBottom,
+    UIViewLayerBorderLeft
+    };
+typedef NSInteger UIViewLayerBorderPosition;
+
 @interface UIViewLayerUtil : NSObject
 
 // Drop shadows
@@ -48,6 +56,11 @@
            size:(float) size
        andColor:(UIColor*) color
       andRadius:(float) radius;
+
++ (CALayer*) border:(UIView*) view
+               size:(float) size
+           andColor:(UIColor*) color
+              where:(UIViewLayerBorderPosition) position;
 
 
 @end
