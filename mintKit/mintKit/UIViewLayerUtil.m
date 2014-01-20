@@ -80,7 +80,7 @@
     
     switch (position) {
         case UIViewLayerBorderTop:
-            border.frame = CGRectMake(0.0f, 0, view.sizeWidth, size);
+            border.frame = CGRectMake(0.0f, 0.0f, view.sizeWidth, size);
             break;
         case UIViewLayerBorderRight:
             border.frame = CGRectMake(view.sizeWidth, 0, size, view.sizeHeight);
