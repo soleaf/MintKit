@@ -108,9 +108,9 @@
 		F72D9F0E1884DE11006058F3 /* UIView+frame.h in Headers */ = {isa = PBXBuildFile; fileRef = F72D9F0C1884DE11006058F3 /* UIView+frame.h */; };
 		F72D9F0F1884DE11006058F3 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F72D9F0D1884DE11006058F3 /* UIView+frame.m */; };
 		F736B7A5189897270023CFFD /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = F736B7A3189897270023CFFD /* NSData+Base64.h */; };
-		F736B7A6189897270023CFFD /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F736B7A4189897270023CFFD /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F736B7A6189897270023CFFD /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F736B7A4189897270023CFFD /* NSData+Base64.m */; };
 		F736B7A7189897270023CFFD /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F736B7A4189897270023CFFD /* NSData+Base64.m */; };
-		F736B7A8189897270023CFFD /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F736B7A4189897270023CFFD /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F736B7A8189897270023CFFD /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F736B7A4189897270023CFFD /* NSData+Base64.m */; };
 		F791DAB517DE081C0092A474 /* TestKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183BA217DE04E300C5CF67 /* TestKit.h */; };
 		F791DAB617DE081C0092A474 /* ArrayUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B8D17DE04E300C5CF67 /* ArrayUtil.h */; };
 		F791DAB717DE081C0092A474 /* DateTimeSet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B8F17DE04E300C5CF67 /* DateTimeSet.h */; };

@@ -22,4 +22,9 @@
 // Add Left Padding on UITextField
 + (void) addLeftpaddingToUITextField:(UITextField*) textField with:(float)width;
 
+/*
+ Others
+ */
++ (UIImage *) imageWithView:(UIView *)view;
+
 @end

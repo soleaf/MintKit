@@ -18,4 +18,18 @@
 
 }
 
++ (UIImage *) imageWithView:(UIView *)view
+{
+    //http://stackoverflow.com/a/4334902
+    
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.opaque, 0.0);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    UIImage * img = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return img;
+}
+
 @end
