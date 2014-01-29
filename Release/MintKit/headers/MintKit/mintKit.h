@@ -20,9 +20,29 @@
  How To Use and Other Detail Information is on README.md
  And More References on GitHub repository above.
  
- If You any question or Contact me?, Send mail to milk@mintcode.org.
+ If You any question or Contact me?, Send mail to soleaf@gmail.com
  
  */
+
+// Import Package
+// without AddressUtil, MapUtil Because these need frameworks that not commonly used.
+// !important: some classes(animationtuil... etc) need `QuartzCore` famework.
+
+#import "ArrayUtil.h"
+#import "DateUtil.h"
+#import "ObjectUtil.h"
+#import "StringUtil.h"
+#import "FormatUtil.h"
+#import "EncryptUtil.h"
+#import "AnimationUtil.h"
+#import "GraphicsUtil.h"
+#import "FormValidation.h"
+#import "UIRobot.h"
+#import "UIViewControllerUtil.h"
+#import "UIViewFrameUtil.h"
+#import "UIViewLayerUtil.h"
+#import "UIViewUtil.h"
+#import "DeviceUtil.h"
 
 @interface mintKit : NSObject
 

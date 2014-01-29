@@ -179,4 +179,14 @@
     }
     return resultList;
 }
+
++ (NSString*)trimLastSpace:(NSString*)str
+{
+    // Scraped from http://stackoverflow.com/a/13859216
+    
+    int i = str.length - 1;
+    for (; i >= 0 && [str characterAtIndex:i] == ' '; i--);
+    return [str substringToIndex:i + 1];
+}
+
 @end

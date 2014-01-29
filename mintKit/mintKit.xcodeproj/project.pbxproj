@@ -107,6 +107,10 @@
 		F720CDFF18619F72004779EC /* EncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CDF496183C832E0004D58F /* EncryptUtil.m */; };
 		F72D9F0E1884DE11006058F3 /* UIView+frame.h in Headers */ = {isa = PBXBuildFile; fileRef = F72D9F0C1884DE11006058F3 /* UIView+frame.h */; };
 		F72D9F0F1884DE11006058F3 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F72D9F0D1884DE11006058F3 /* UIView+frame.m */; };
+		F736B7A5189897270023CFFD /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = F736B7A3189897270023CFFD /* NSData+Base64.h */; };
+		F736B7A6189897270023CFFD /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F736B7A4189897270023CFFD /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F736B7A7189897270023CFFD /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F736B7A4189897270023CFFD /* NSData+Base64.m */; };
+		F736B7A8189897270023CFFD /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F736B7A4189897270023CFFD /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F791DAB517DE081C0092A474 /* TestKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183BA217DE04E300C5CF67 /* TestKit.h */; };
 		F791DAB617DE081C0092A474 /* ArrayUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B8D17DE04E300C5CF67 /* ArrayUtil.h */; };
 		F791DAB717DE081C0092A474 /* DateTimeSet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7183B8F17DE04E300C5CF67 /* DateTimeSet.h */; };
@@ -249,6 +253,8 @@
 		F71BF8DD1806DEA900DE28F8 /* TestDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDateUtil.m; sourceTree = "<group>"; };
 		F72D9F0C1884DE11006058F3 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
 		F72D9F0D1884DE11006058F3 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		F736B7A3189897270023CFFD /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		F736B7A4189897270023CFFD /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		F791DAC617DE08B30092A474 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F791DAC817DE08B90092A474 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F7CDF495183C832E0004D58F /* EncryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptUtil.h; sourceTree = "<group>"; };
@@ -412,6 +418,8 @@
 				F7183B9617DE04E300C5CF67 /* FormatUtil.m */,
 				F7CDF495183C832E0004D58F /* EncryptUtil.h */,
 				F7CDF496183C832E0004D58F /* EncryptUtil.m */,
+				F736B7A3189897270023CFFD /* NSData+Base64.h */,
+				F736B7A4189897270023CFFD /* NSData+Base64.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -494,6 +502,7 @@
 				F7183BD817DE052400C5CF67 /* MapUtil.h in Headers */,
 				F7183BD917DE052400C5CF67 /* ObjectUtil.h in Headers */,
 				F7183BDA17DE052400C5CF67 /* StringUtil.h in Headers */,
+				F736B7A5189897270023CFFD /* NSData+Base64.h in Headers */,
 				F72D9F0E1884DE11006058F3 /* UIView+frame.h in Headers */,
 				F7183BDB17DE052400C5CF67 /* TestKit.h in Headers */,
 				F7183BDC17DE052400C5CF67 /* UIRobot.h in Headers */,
@@ -652,6 +661,7 @@
 				F7183B5917DE02B000C5CF67 /* mintKit.m in Sources */,
 				F7183B8B17DE04D500C5CF67 /* AnimationUtil.m in Sources */,
 				F7183BAE17DE04E400C5CF67 /* ArrayUtil.m in Sources */,
+				F736B7A6189897270023CFFD /* NSData+Base64.m in Sources */,
 				F7183BB017DE04E400C5CF67 /* DateTimeSet.m in Sources */,
 				F7183BB217DE04E400C5CF67 /* DateUtil.m in Sources */,
 				F7183BB417DE04E400C5CF67 /* DeviceUtil.m in Sources */,
@@ -682,6 +692,7 @@
 				E6D3C95F17DEC757008C6565 /* TestStringUtil.m in Sources */,
 				E6C69A7817F27F24008E23DE /* TestFormatUtil.m in Sources */,
 				F7E4FE381842E8790058C473 /* TestEncryptUtil.m in Sources */,
+				F736B7A7189897270023CFFD /* NSData+Base64.m in Sources */,
 				F71BF8DE1806DEA900DE28F8 /* TestDateUtil.m in Sources */,
 				E6C69A7B17F2A1EF008E23DE /* TestArrayUtil.m in Sources */,
 			);
@@ -708,6 +719,7 @@
 				F7183BC517DE04E400C5CF67 /* UIRobot.m in Sources */,
 				F7183BC717DE04E400C5CF67 /* UIViewControllerUtil.m in Sources */,
 				F7183BC917DE04E400C5CF67 /* UIViewFrameUtil.m in Sources */,
+				F736B7A8189897270023CFFD /* NSData+Base64.m in Sources */,
 				E670887E180292AC003F9D52 /* BuildSupport.m in Sources */,
 				F7183BCB17DE04E400C5CF67 /* UIViewLayerUtil.m in Sources */,
 				F7183BCD17DE04E400C5CF67 /* UIViewUtil.m in Sources */,

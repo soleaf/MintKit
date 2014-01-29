@@ -7,6 +7,7 @@
 //
 
 #import "EncryptUtil.h"
+#import "NSData+Base64.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
 
@@ -97,6 +98,17 @@
 {
 	NSData *data= [[plaintext dataUsingEncoding:NSUTF8StringEncoding] AES256EncryptWithKey:key];
     return [self base64forData:data];;
+}
+
++ (NSString*) AESDecrypt:(NSData*)data withKey:(NSString*)key
+{
+    return [[NSString alloc] initWithData:[data AES256DecryptWithKey:key]
+                                 encoding:NSUTF8StringEncoding];
+}
+
++ (NSString *)AESDecryptWithString:(NSString *)string withKey:(NSString *)key
+{
+    return [EncryptUtil AESDecrypt:[NSData dataFromBase64String:string] withKey:key];
 }
 
 + (NSString*)md5:(NSString*)input

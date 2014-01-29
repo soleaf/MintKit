@@ -52,6 +52,7 @@
 
 // Trim String
 + (NSString *)trimed:(NSString *)str;
++ (NSString*)trimLastSpace:(NSString*)str;
 
 // Uppercase First string in sentence
 + (NSString*)uppercaseFirst:(NSString*)str;

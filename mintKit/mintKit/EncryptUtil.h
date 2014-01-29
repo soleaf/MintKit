@@ -10,14 +10,29 @@
 
 @interface EncryptUtil : NSObject
 
-// AES
-+ (NSData*) AESEncrypt:(NSString*)plaintext withKey:(NSString*)key;
-+ (NSString*) stringAESEncrypt:(NSString*)plaintext withKey:(NSString*)key;
-+ (NSString*) AESDecrypt:(NSData*)ciphertext withKey:(NSString*)key;
+/*
+ AES
+ */
 
-// MD5
+// Encrypt string to NSData
++ (NSData*) AESEncrypt:(NSString*)plaintext withKey:(NSString*)key;
+// Encrypt string to Base64 NSString
++ (NSString*) stringAESEncrypt:(NSString*)plaintext withKey:(NSString*)key;
+
+// Decript NSData to base65 NSString
++ (NSString*) AESDecrypt:(NSData*)data withKey:(NSString*)key;
+// Descript NSdata to utf8 NSString(common used encoding)
++ (NSString *) AESDecryptWithString:(NSString *)base64string withKey:(NSString *)key;
+
+
+/*
+ MD5
+ */
 + (NSString*) md5:(NSString*)input;
 
-// Stuff
+
+/*
+ Stuff
+ */
 + (NSString*) base64forData:(NSData*)theData;
 @end
